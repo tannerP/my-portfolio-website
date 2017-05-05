@@ -3,7 +3,6 @@
 
 *{
   font-family: Arial, Helvetica, sans-serif;
-
   margin: 0;
   padding: 0;
   border: 0;
@@ -18,7 +17,9 @@ h1, h2, h3, h4, p, ol, ul{
   width: auto;
 }
 
-@media(max-width: $breakpoint-desk) {
-  width: 80%;
+@media(max-width: $breakpoint-mobile) {
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-destination: 0% 0%;
+  scroll-snapp-type: mandatory;
 }
 

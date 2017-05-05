@@ -3,26 +3,31 @@
     <img src="assets/medias/me.jpg">
   </div>
   <div class='pane ' id='menu'>
-    <div class="display_content"> </div>
     <div class='main_menu'>
-      <span class="menu_title">MENU</span>
+      <span class="menu_title">Content</span>
       <ul>
-        <li> Startup</li>
-        <li> Blog </li>
-        <li> People </li>
+        <li> startup</li>
+        <li> blog </li>
+        <li (click)="log($event)"> people </li>
       </ul>
     </div>
   </div>
 </main>
 <div id='content_viewer'>
   <span id="content">
-    <p> I am a frontend software developer based in Seattle, WA.
-      I'm most excited about creating better living experience for the future.
-      I focus on people and simplicity when solving a design challenge. I'm also a Robotics, Neural net,
-      and Hydroponics Farming enthusiast.
-    <br>
+    <p>
+      "A good design leverages users' domain intuition.
+      And intuition is just the subconscious's version of a promising idea."
     </p>
-    <p id="signature"> -Tanner</p>
+    <span id="signature">
+      <img id="me" src='assets/medias/me.jpg'>
+      <p id="tag"> -Tanner</p>
+    </span>
+    </span>
+</div>
+<div id='footer'>
+  <span class="site_version" (click)="log($event)">&copy; Tanner 2017</span>
+  <span class="icons">
+    <img id="framework_icon" src='assets/medias/angular.png'>
   </span>
 </div>
-<button class="resume_download_btn"> Download Resume </button>

@@ -13,7 +13,9 @@ h1, h2, h3, h4, p, ol, ul {
   height: auto;
   width: auto; }
 
-@media (max-width: 1600px) {
-  width: 80%; }
+@media (max-width: 700px) {
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-destination: 0% 0%;
+  scroll-snapp-type: mandatory; }
 
 /*# sourceMappingURL=styles.css.map */
