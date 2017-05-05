@@ -1,24 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'app/palette.scss';
-
-*{
+* {
   font-family: Arial, Helvetica, sans-serif;
-
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
   font-size: 100%;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
-h1, h2, h3, h4, p, ol, ul{
+h1, h2, h3, h4, p, ol, ul {
   height: auto;
-  width: auto;
-}
+  width: auto; }
 
-@media(max-width: $breakpoint-desk) {
-  width: 80%;
-}
+@media (max-width: 1600px) {
+  width: 80%; }
 
+/*# sourceMappingURL=styles.css.map */
