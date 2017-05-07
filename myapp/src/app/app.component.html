@@ -1,33 +1,49 @@
 <main class="main">
-  <div class="icon_bar">
+  <div class="pane_top">
     <img src="assets/medias/me.jpg">
+   <span class="about">
+    <h4>
+      Application Developer
+    </h4>
+    <p>
+      <br>
+      Angular2 | Ionic2
+      <br>
+      Seattle, Washington
+    </p>
+     </span>
   </div>
-  <div class='pane ' id='menu'>
+  <div id='pane_middle'>
     <div class='main_menu'>
       <span class="menu_title">Content</span>
       <ul>
-        <li> startup</li>
-        <li> blog </li>
-        <li (click)="log($event)"> people </li>
+        <li (click)="onClick('bio')"> bio </li>
+        <li  [@heroState]="state"> startup </li>
+        <li> people </li>
       </ul>
     </div>
   </div>
 </main>
-<div id='content_viewer'>
+<div id='slogan'>
   <span id="content">
     <p>
-      "A good design leverages users' domain intuition.
-      And intuition is just the subconscious's version of a promising idea."
+      "You can find me designing at the intersection of Engineering and Psychology."
     </p>
     <span id="signature">
       <img id="me" src='assets/medias/me.jpg'>
-      <p id="tag"> -Tanner</p>
+      <!--<p id="tag"> Tanner P.</p>-->
     </span>
     </span>
 </div>
 <div id='footer'>
-  <span class="site_version" (click)="log($event)">&copy; Tanner 2017</span>
-  <span class="icons">
+  <div class="site_version" (click)="log($event)">
+      <div class="site_slogan" (click)="log($event)">
+        Application Dev
+      </div><br>
+    &copy; Tanner 2017</div>
+  <div class="contact"> Collaborate</div>
+  <div class="icons">
+    <img id="framework_icon" src='assets/medias/ionic2.png'>
     <img id="framework_icon" src='assets/medias/angular.png'>
-  </span>
+  </div>
 </div>
