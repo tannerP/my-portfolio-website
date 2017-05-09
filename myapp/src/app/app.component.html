@@ -1,49 +1,84 @@
 <main class="main">
   <div class="pane_top">
-    <img src="assets/medias/me.jpg">
-   <span class="about">
-    <h4>
+    <img id='self' src="assets/medias/me.jpg">
+    <div class="about">
+    <h3>
       Application Developer
-    </h4>
-    <p>
-      <br>
+    </h3>
+     <br>
+     <p>
       Angular2 | Ionic2
-      <br>
-      Seattle, Washington
     </p>
-     </span>
+     <br>
+     <p>
+      Seattle, WA
+    </p>
+   </div>
   </div>
   <div id='pane_middle'>
     <div class='main_menu'>
       <span class="menu_title">Content</span>
       <ul>
-        <li (click)="onClick('bio')"> bio </li>
-        <li  [@heroState]="state"> startup </li>
-        <li> people </li>
+        <li> startup </li>
+        <li> software </li>
+        <li> designs </li>
       </ul>
     </div>
   </div>
 </main>
 <div id='slogan'>
   <span id="content">
-    <p>
-      "You can find me designing at the intersection of Engineering and Psychology."
-    </p>
-    <span id="signature">
       <img id="me" src='assets/medias/me.jpg'>
+    <!--<p id="bio">-->
+      <!--"You can find me designing at the intersection of Engineering and Psychology."-->
+        <!--"You can find me designing at the intersection of Engineering and Psychology."-->
+        <!--"You can find me designing at the intersection of Engineering and Psychology."-->
+    <!--</p>-->
+    <p id="content_text">
+      <span id="startup"> A successful startup has an agile,
+      multi-skill and diverse group of entrepreneurs working together to make life better.
+        The domains close to my heart are IoT, Vertical Farming, and Small Business.</span>
+      <!--<span id="software"> I focus on frontend-->
+      <!--application development - building features based on business requirements.-->
+        <!--My tools of choice are TypeScript, Angular/Ionic2, and Firebase for most of my projects.-->
+      <!--</span>-->
+      <!--<span id="designs"> I approach design challenges by first internalizing the-->
+      <!--design criteria - And begin experimenting for a-->
+        <!--solution from our evolved intuition with technology.</span>-->
+    </p>
+    <p id="sloga_text">
+      <br>
+      startup | software| designs
+    </p>
       <!--<p id="tag"> Tanner P.</p>-->
-    </span>
     </span>
 </div>
 <div id='footer'>
-  <div class="site_version" (click)="log($event)">
-      <div class="site_slogan" (click)="log($event)">
-        Application Dev
-      </div><br>
-    &copy; Tanner 2017</div>
-  <div class="contact"> Collaborate</div>
-  <div class="icons">
-    <img id="framework_icon" src='assets/medias/ionic2.png'>
-    <img id="framework_icon" src='assets/medias/angular.png'>
+  <!--<div class="site_version" (click)="onClick($event)">-->
+      <!--<div class="site_slogan" (click)="onClick($event)">-->
+        <!--America - Vietnam-->
+      <!--</div>-->
+    <!--&copy; TP 2017-->
+    <!--</div>-->
+  <div id="follow_list">
+    <ul>
+      <li><a href='https://www.linkedin.com/in/tanner-phan-b70999aa/' target='_top'>
+        <img src="assets/medias/linkedin_blk.png">
+      </a></li>
+      <li><a href='https://twitter.com/tannerphan?lang=en' target='_top'>
+        <img src="assets/medias/twitter_blk.png">
+      </a></li>
+      <li><a href='mailto:tannerphan@gmail.com?' target='_top'>
+        <img src="assets/medias/mail_blk.png">
+      </a></li>
+      <li><a href='https://github.com/tannerP' target='_top'>
+        <img src="assets/medias/github_blk.png">
+      </a></li>
+    </ul>
   </div>
+  <!--<div class="contact"> Collaborate</div>-->
+  <!--<div class="icons">-->
+    <!--<img id="framework_icon" src='assets/medias/angular.png'>-->
+    <!--<img id="framework_icon" src='assets/medias/ionic2.png'>-->
+  <!--</div>-->
 </div>

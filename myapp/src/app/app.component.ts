@@ -27,7 +27,7 @@ import {
     ])
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   private _state = false;
   public state = ' ';
   public  title = 'app works!';
@@ -49,13 +49,14 @@ export class AppComponent {
 
   onClick(event: any): void {
     console.log(event);
-    this._state = !this._state;
-    if(this._state === true){
-      this.state = 'active'
-    }
-    else{
-      this.state = 'inactive'
-    }
+    return;
+    // this._state = !this._state;
+    // if (this._state === true) {
+    //   this.state = 'active';
+    // }
+    // else{
+    //   this.state = 'inactive';
+    // }
   }
 }
 

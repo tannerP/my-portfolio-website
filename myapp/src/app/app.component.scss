@@ -6,12 +6,6 @@
 $icon_bar_height: 80px;
 
 @media(max-width: $breakpoint-mobile) {
-  .main {
-    scroll-snap-points-y: repeat(40%);
-    scroll-snapp-type: mandatory;
-    background-color: black;
-    opacity: .7;
-  }
   .pane_top {
     background-color: darkorange;
     position: relative;
@@ -19,34 +13,47 @@ $icon_bar_height: 80px;
     display: block;
     z-index: 100;
     width: 100%;
-    height: 150px;
+    height: 120px;
     font-size: 12pt;
     .about {
-      padding: 10px;
-      position: absolute;
-      text-align: left;
-      p, h4 {
-        padding: 5px;
+      position: static;
+      height: 100%;
+      a, p, h3 {
         display: inline-flex;
       }
+      h3{
+        padding: 20px;
+        padding-bottom: 0px;
+        margin-top: 4px;
+        //letter-spacing: .5pt;
+      }
+      p{
+        opacity: .7;
+        letter-spacing: -.4pt;
+        position: relative;
+        padding-left: 20px;
+        font-size: 11pt;
+        text-align: left;
+        top: 14px;
+      }
     }
-    img {
+    img#self {
       float: left;
       position: absolute;
-      right: 15px;
-      top: 15px;
-      padding: 15px;
+      opacity: .9;
+      right: 5px;
+      top: 10px;
+      padding: 10px;
       z-index: 100;
-      opacity: $opacity_inactive;
       border-radius: 50%;
       width: auto;
-      height: 90px;
+      height: 75px;
     }
   }
-  .menu_btn:active {
-    img {
-      opacity: 1;
-    }
+  .main {
+    background-color: black;
+    opacity: .7;
+    height: 100%;
   }
   #pane_middle {
     color: $white;
@@ -58,30 +65,36 @@ $icon_bar_height: 80px;
     height: auto;
     .main_menu {
       background-color: inherit;
-      position: absolute;
+      position: relative;
       height: auto;
+      top: 30px;
       z-index: 99;
       display: inline-block;
       text-align: center;
-      bottom:15px;
       .menu_title {
         opacity: .2;
         z-index: 99;
-        font-size: 45pt;
+        font-size: 50pt;
         font-weight: 300;
-        width: 30%;
+        font-stretch: ultra-expanded;
+        width: 50%;
         letter-spacing: 4pt;
         border-bottom: solid white;
         border-bottom-width: 1px;
       }
       li {
+        transform: scaleY(1.8);
         opacity: .6;
-        font-size: 40pt;
+        font-size: 30pt;
         font-weight: 100;
-        letter-spacing: 1pt;
+        letter-spacing: 0pt;
+        padding-bottom: 15px;
+      }
+      li:hover{
+        color: darkorange;
       }
       li:first-child {
-        margin-top: 5px;
+        padding-top: 10px;
       }
     }
   }
@@ -89,82 +102,96 @@ $icon_bar_height: 80px;
     padding: 10px;
     opacity: .7;
     position: static;
-    height: auto;
+    height: 100px;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
     #content {
-      position: relative;
       z-index: 101;
       height: auto;
-      width: 90%;
-      h1 {
+      auto: 90%;
+      h4 {
         padding-top: 10px;
         padding-left: 10px;
       }
       p{
+        top: 10px;
+        width: 90%;
         opacity: .5;
         font-size: 10pt;
         font-style: italic;
       }
-      #signature {
-        display: inline-block;
-        position: relative;
-        width: 100%;
-        font-weight: inherit;
-        color: inherit;
-        //padding: 2%;
-        font-size: 10pt;
-        #me{
-          display: block;
-          position: relative;
-          right: 2px;
+      img#me{
+          opacity: .7;
+          float: right;
           width: 50px;
           height: auto;
-          margin-left: 70%;
-        }
-        #tag{
-          opacity: .5;
-          padding: 1%;
-          margin-left: 65%;
-        }
+          margin-left: 5%;
       }
     }
   }
   #footer {
     display: block;
-    position: relative;
-    height: 40px;
-    background-color: black;
-    opacity: .6;
+    position: absolute;
+    //background-color: whitesmoke;
     width: 100%;
+    height: 40px;
+    ul {
+      opacity: .2;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: auto;
+      bottom: 5px;
+      padding-bottom: 0;
+      list-style-type: none;
+      overflow: hidden;
+      li {
+        float: left;
+        width: 25%;
+        align-content: center;
+        a {
+          opacity: .7;
+          width: 100%;
+          height: 100%;
+          img {
+            display: block;
+            margin: auto;
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+      li:nth-of-type(3){
+       padding-top: 2px;
+        a{
+          img{
+            width: auto;
+            height: 22px;
+          }
+        }
+      }
+    }
     .site_slogan{
-      padding: 0;
+      text-align: center;
+      font-size: 8pt;
     }
     .site_version {
       color: white;
-      position: absolute;
-      bottom: 2px;
-      left: 2%;
+      position: static;
+      text-align: center;
+      //bottom: 7px;
+      //vertical-align: middle;
+      //left: 2%;
       padding: 5px;
+      font-style: italic;
       font-weight: 500;
-      font-size: 6pt;
+      font-size: 8pt;
       height: auto;
       width: auto;
       opacity: .6;
     }
-    .contact{
-      width:auto;
-      height:auto;
-      color: darkorange;
-      position: absolute;
-      top: 5px;
-      left: 50%;
-      font-size: 10pt;
-      opacity: .7;
-    }
     .icons{
-      color: white;
       padding: 2px;
       width: auto;
       height: auto;
@@ -172,8 +199,9 @@ $icon_bar_height: 80px;
       position: absolute;
       background-color: black;
       right: 2%;
-      bottom: 4px;
+      bottom: 8px;
       opacity: .6;
+      vertical-align: middle;
       #framework_icon{
         width: 22px;
         height:auto;
