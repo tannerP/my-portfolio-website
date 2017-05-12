@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
+import { MenuStateService } from './menu-state.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [MenuStateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class StateService{
+export class MenuStateService {
   state: String;
 
   constructor() {

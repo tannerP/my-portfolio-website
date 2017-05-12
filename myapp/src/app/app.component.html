@@ -6,52 +6,60 @@
       Application Developer
     </h3>
      <br>
-     <p>
-      Angular2 | Ionic2
+     <p id="slogan">
+      Startup | Software | Design
     </p>
      <br>
-     <p>
+     <p id="city">
       Seattle, WA
     </p>
    </div>
   </div>
-  <div id='pane_middle'>
+  <div id='visual_pane'>
     <div class='main_menu'>
-      <span class="menu_title">Content</span>
+      <span class="menu_title_wrapper">
+        <p class="menu_title" (click)="menu_onClick($event, 'bio')">About</p>
+        <!--<p> (tanner phan) </p>-->
+      </span>
       <ul>
-        <li> startup </li>
-        <li> software </li>
-        <li> designs </li>
+        <li *ngFor="let item of menu_items"
+          (click)="menu_onClick($event, item)"
+          [ngClass]="menu_state == item? 'selected':''">
+          {{item}}
+        </li>
       </ul>
     </div>
   </div>
 </main>
-<div id='slogan'>
+<div id='monolog_pane'>
   <span id="content">
       <img id="me" src='assets/medias/me.jpg'>
-    <!--<p id="bio">-->
-      <!--"You can find me designing at the intersection of Engineering and Psychology."-->
-        <!--"You can find me designing at the intersection of Engineering and Psychology."-->
-        <!--"You can find me designing at the intersection of Engineering and Psychology."-->
-    <!--</p>-->
+    <p id="bio" [style.display]="monolog_pane_showorhide('bio')">
+      "You can find me designing at the intersection of Engineering and Psychology."
+        "You can find me designing at the intersection of Engineering and Psychology."
+        "You can find me designing at the intersection of Engineering and Psychology."
+    </p>
     <p id="content_text">
-      <span id="startup"> A successful startup has an agile,
-      multi-skill and diverse group of entrepreneurs working together to make life better.
-        The domains close to my heart are IoT, Vertical Farming, and Small Business.</span>
-      <!--<span id="software"> I focus on frontend-->
-      <!--application development - building features based on business requirements.-->
-        <!--My tools of choice are TypeScript, Angular/Ionic2, and Firebase for most of my projects.-->
-      <!--</span>-->
-      <!--<span id="designs"> I approach design challenges by first internalizing the-->
-      <!--design criteria - And begin experimenting for a-->
-        <!--solution from our evolved intuition with technology.</span>-->
+      <span id="startup" [style.display]="monolog_pane_showorhide('startup')"> So
+        The topics close to my heart are IoT, Vertical Farming, and Small Business.
+       The topics close to my heart are IoT, Vertical Farming, and Small Business.
+       The topics close to my heart are IoT, Vertical Farming, and Small Business.</span>
+      <span id="software"  [style.display]="monolog_pane_showorhide('software')"> I focus on frontend
+      application development - building features based on business requirements.
+        My tools of choice are TypeScript, Angular/Ionic2, and Firebase for most of my projects.
+      </span>
+      <span id="people"  [style.display]="monolog_pane_showorhide('people')"> I approach design challenges by first internalizing the
+      design criteria - And begin experimenting for a
+        solution from our evolved intuition with technology.</span>
     </p>
-    <p id="sloga_text">
-      <br>
-      startup | software| designs
-    </p>
-      <!--<p id="tag"> Tanner P.</p>-->
-    </span>
+  </span>
+  <div id="dummy_menu">
+    startup
+    <span class="hor_line">|</span>
+    software
+    <span class="hor_line">|</span>
+    designs
+  </div>
 </div>
 <div id='footer'>
   <!--<div class="site_version" (click)="onClick($event)">-->

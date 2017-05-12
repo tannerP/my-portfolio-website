@@ -32,9 +32,14 @@ $icon_bar_height: 80px;
         letter-spacing: -.4pt;
         position: relative;
         padding-left: 20px;
-        font-size: 11pt;
+        font-size: 10pt;
         text-align: left;
         top: 14px;
+      }
+      p#slogan{
+        position: relative;
+        bottom: 15px;
+        font-size: 9pt;
       }
     }
     img#self {
@@ -42,7 +47,7 @@ $icon_bar_height: 80px;
       position: absolute;
       opacity: .9;
       right: 5px;
-      top: 10px;
+      top: 15px;
       padding: 10px;
       z-index: 100;
       border-radius: 50%;
@@ -55,42 +60,48 @@ $icon_bar_height: 80px;
     opacity: .7;
     height: 100%;
   }
-  #pane_middle {
+  #visual_pane {
     color: $white;
+    width: 100%;
+    height: auto;
     position: static;
     z-index: 98;
     background-color: black;
     opacity: 0.7;
-    width: 100%;
-    height: auto;
     .main_menu {
       background-color: inherit;
-      position: relative;
+      position: absolute;
       height: auto;
-      top: 30px;
+      bottom: 20px;
       z-index: 99;
       display: inline-block;
       text-align: center;
-      .menu_title {
-        opacity: .2;
+      .menu_title_wrapper {
+        width: auto;
+        height: auto;
         z-index: 99;
-        font-size: 50pt;
-        font-weight: 300;
-        font-stretch: ultra-expanded;
-        width: 50%;
-        letter-spacing: 4pt;
-        border-bottom: solid white;
-        border-bottom-width: 1px;
+        //border-bottom-width: 1px;
+        //border-bottom: solid white;
+        .menu_title {
+          letter-spacing: 2pt;
+          transform: scaleY(3);
+          opacity: .2;
+          font-size: 40pt;
+          font-weight: 500;
+          padding-bottom: 10px;
+        }
       }
       li {
-        transform: scaleY(1.8);
         opacity: .6;
-        font-size: 30pt;
+        font-size: 35pt;
         font-weight: 100;
-        letter-spacing: 0pt;
+        letter-spacing: 3pt;
         padding-bottom: 15px;
       }
-      li:hover{
+      li.selected{
+        color: red;
+        font-size: 35pt;
+       // -webkit-tap-highlight-color: darkorange;
         color: darkorange;
       }
       li:first-child {
@@ -98,18 +109,18 @@ $icon_bar_height: 80px;
       }
     }
   }
-  #slogan {
+  #monolog_pane {
+    position: static;
     padding: 10px;
     opacity: .7;
     position: static;
-    height: 100px;
+    height: auto;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    #content {
+    span#content {
       z-index: 101;
       height: auto;
-      auto: 90%;
       h4 {
         padding-top: 10px;
         padding-left: 10px;
@@ -130,6 +141,27 @@ $icon_bar_height: 80px;
       }
     }
   }
+ div#dummy_menu {
+    position: relative;
+    top: 10px;
+    //left: 100px;
+    padding: 2px;
+    width: 100%;
+    //margin-left: auto;
+    height: auto;
+   // color: black;
+    opacity: .7;
+    font-size: 10pt;
+    font-style: italic;
+    letter-spacing: 2pt;
+    color: darkorange;
+   span.hor_line{
+      letter-spacing: 0pt;
+      color: darkorange;
+      opacity: 1;
+    }
+  }
+
   #footer {
     display: block;
     position: absolute;

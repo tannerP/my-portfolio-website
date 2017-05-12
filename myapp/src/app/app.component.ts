@@ -1,4 +1,5 @@
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { MenuStateService } from './menu-state.service';
 import { DOCUMENT } from '@angular/platform-browser';
 import {
   trigger,
@@ -28,13 +29,9 @@ import {
   ]
 })
 export class AppComponent implements OnInit {
-  private _state = false;
-  public state = ' ';
-  public  title = 'app works!';
-  constructor(@Inject(DOCUMENT) private document: any) { }
-
-  ngOnInit() { }
-
+  public menu_items = ['startup', 'software', 'people'];
+  constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService) { }
+  public menu_state: String;
   @HostListener('window:scroll', [])
   onWindowScroll() {
     // let number = this.document.body.scrollTop;
@@ -47,16 +44,19 @@ export class AppComponent implements OnInit {
     // }
   }
 
-  onClick(event: any): void {
-    console.log(event);
+  ngOnInit() {
+    this.menu_state =  'bio';
+  }
+
+  menu_onClick(event: any, item): void {
+    console.log(this.menu_state);
+    console.log(item);
+    this.menuSrvc.setState(item);
+    this.menu_state = this.menuSrvc.getState();
     return;
-    // this._state = !this._state;
-    // if (this._state === true) {
-    //   this.state = 'active';
-    // }
-    // else{
-    //   this.state = 'inactive';
-    // }
+  }
+  monolog_pane_showorhide(id): String {
+      return id === this.menu_state ? '' : 'none';
   }
 }
 
