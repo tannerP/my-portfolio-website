@@ -14,17 +14,28 @@ import {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    trigger('heroState', [
-      state('inactive', style({
-        backgroundColor: '#eee',
+    trigger('menu_state_text_content', [
+      state('bio', style({
+        backgroundColor: 'red',
         transform: 'scale(1)'
       })),
-      state('active',   style({
-        backgroundColor: '#cfd8dc',
+      state('startup',   style({
+        backgroundColor: 'blue',
         transform: 'scale(1.1)'
       })),
-      transition('inactive => active', animate('100ms ease-in')),
-      transition('active => inactive', animate('100ms ease-out'))
+      state('software',   style({
+        backgroundColor: 'purple',
+        transform: 'scale(1.1)'
+      })),
+      state('people',   style({
+        backgroundColor: 'green',
+        transform: 'scale(1.1)'
+      })),
+      state('*', style({
+        display: 'none'
+      })),
+      transition('about => *', animate('100ms ease-in')),
+      transition('software => *', animate('100ms ease-out'))
     ])
   ]
 })
@@ -57,6 +68,9 @@ export class AppComponent implements OnInit {
   }
   monolog_pane_showorhide(id): String {
       return id === this.menu_state ? '' : 'none';
+  }
+  getMenuState(): String {
+    return this.menuSrvc.getState();
   }
 }
 

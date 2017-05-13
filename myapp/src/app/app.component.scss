@@ -29,10 +29,11 @@ $icon_bar_height: 80px;
       }
       p{
         opacity: .7;
-        letter-spacing: 2pt;
+        letter-spacing: 1pt;
         position: relative;
         padding-left: 20px;
         font-size: 12pt;
+        font-weight: 300;
         text-align: left;
         top: 14px;
       }
@@ -45,7 +46,7 @@ $icon_bar_height: 80px;
     img#self {
       float: left;
       position: absolute;
-      opacity: .9;
+      opacity: 1;
       right: 5px;
       top: 15px;
       padding: 10px;
@@ -83,6 +84,15 @@ $icon_bar_height: 80px;
           opacity: .2;
           font-size: 50pt;
           font-weight: 500;
+          span.menu_subtitle{
+            padding: 0;
+            font-size: 15pt;
+          }
+          span.menu_subtitle_selected{
+            color: darkorange;
+            padding: 0;
+            font-size: 35pt;
+          }
         }
       }
       li {
@@ -104,24 +114,32 @@ $icon_bar_height: 80px;
   #monolog_pane {
     position: static;
     padding: 10px;
-    opacity: .7;
     height: 25%;
     width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+    padding-left: 0;
     span#content {
       h4 {
         padding-top: 10px;
         padding-left: 10px;
       }
       p{
+        display: inherit;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        //background: gray;
+        color: black;
         top: 30px;
-        width: 90%;
-        opacity: .5;
+        width: 80%;
+        opacity: .7;
         font-size: 10pt;
+        text-align: right;
+        padding: 5px;
+        font-weight: lighter;
         font-style: italic;
+        border: darkorange;
       }
       img#me{
+          border-radius: 50%;
           opacity: .7;
           float: right;
           width: 50px;
@@ -196,7 +214,7 @@ $icon_bar_height: 80px;
   }
   div#footer{
     background-color: black;
-    opacity: .5;
+    opacity: .7;
     display: inline-block;
     position: relative;
     width: 100%;

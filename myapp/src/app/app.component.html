@@ -18,8 +18,10 @@
   <div id='visual_pane'>
     <div class='main_menu'>
       <span class="menu_title_wrapper">
-        <p class="menu_title" (click)="menu_onClick($event, 'bio')">Content</p>
-        <!--<p> (tanner phan) </p>-->
+        <h1 class="menu_title" (click)="menu_onClick($event, 'bio')">Content
+        <br><span class="menu_subtitle"
+                  [ngClass]="menu_state == 'bio'? 'menu_subtitle_selected':''"> main </span>
+        </h1>
       </span>
       <ul>
         <li *ngFor="let item of menu_items"
@@ -31,38 +33,39 @@
     </div>
   </div>
 </div>
+
 <div id='monolog_pane'>
   <span id="content">
       <img id="me" src='assets/medias/me.jpg'>
     <br>
-    <p id="bio" [style.display]="monolog_pane_showorhide('bio')">
+    <p id="content_span">
+    <!--<span id="content_text" [@menu_state_text_content]="getMenuState()"-->
+          <!--[style.display]="monolog_pane_showorhide('bio')">-->
+      <span id="content_text"
+            [@menu_state_text_content]="menu_state"
+            [style.display]="monolog_pane_showorhide('bio')">
       I started hacking at 12 years old when AOL was giving out free internet access on a disc.
       Today I focus on front-end development- building software solutions for peoples' problems.
-    </p>
-    <p id="content_text">
-      <span id="startup" [style.display]="monolog_pane_showorhide('startup')">
+    </span>
+      <span id="startup" [@menu_state_text_content]="menu_state"
+            [style.display]="monolog_pane_showorhide('startup')">
       I love startup because it allows radically ideas to take shape.
          Over the last years,
         I've had the opportunity to work at 3 different startups. Read more about my experience below:
       </span>
-      <span id="software"  [style.display]="monolog_pane_showorhide('software')">
+      <span id="software"   [@menu_state_text_content]="menu_state"
+            [style.display]="monolog_pane_showorhide('software')">
         As a frontend developer, my go-to tools are TypeScript, Angular2 and Ionic2.
         I like to focus on the customers to find their root of problems through various
         quantitative and qualitative techniques.
       </span>
-      <span id="people"  [style.display]="monolog_pane_showorhide('people')">
+      <span id="people"   [@menu_state_text_content]="menu_state"
+            [style.display]="monolog_pane_showorhide('people')">
        People are the heart of my work.
         My interest to better understand human behaviors came out of my passion to design awesome product/service.
       </span>
-    </p>
-  </span>
-  <div id="dummy_menu">
-    startup
-    <span class="hor_line">|</span>
-    software
-    <span class="hor_line">|</span>
-    designs
-  </div>
+      </p>
+    </span>
 </div>
 <div id='social_media_bar'>
   <div id="follow_list">
