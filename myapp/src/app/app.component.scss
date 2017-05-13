@@ -14,7 +14,7 @@ $icon_bar_height: 80px;
     z-index: 100;
     width: 100%;
     height: 120px;
-    font-size: 12pt;
+    font-size: 14pt;
     .about {
       position: static;
       height: 100%;
@@ -29,17 +29,17 @@ $icon_bar_height: 80px;
       }
       p{
         opacity: .7;
-        letter-spacing: -.4pt;
+        letter-spacing: 2pt;
         position: relative;
         padding-left: 20px;
-        font-size: 10pt;
+        font-size: 12pt;
         text-align: left;
         top: 14px;
       }
       p#slogan{
         position: relative;
         bottom: 15px;
-        font-size: 9pt;
+        font-size: 11pt;
       }
     }
     img#self {
@@ -55,7 +55,7 @@ $icon_bar_height: 80px;
       height: 75px;
     }
   }
-  .main {
+  #main {
     background-color: black;
     opacity: .7;
     height: 100%;
@@ -66,8 +66,6 @@ $icon_bar_height: 80px;
     height: auto;
     position: static;
     z-index: 98;
-    background-color: black;
-    opacity: 0.7;
     .main_menu {
       background-color: inherit;
       position: absolute;
@@ -80,29 +78,23 @@ $icon_bar_height: 80px;
         width: auto;
         height: auto;
         z-index: 99;
-        //border-bottom-width: 1px;
-        //border-bottom: solid white;
         .menu_title {
-          letter-spacing: 2pt;
-          transform: scaleY(3);
+          letter-spacing: 4pt;
           opacity: .2;
-          font-size: 40pt;
+          font-size: 50pt;
           font-weight: 500;
-          padding-bottom: 10px;
         }
       }
       li {
         opacity: .6;
         font-size: 35pt;
-        font-weight: 100;
-        letter-spacing: 3pt;
-        padding-bottom: 15px;
+        font-weight: lighter;
+        letter-spacing: 2pt;
+        padding-bottom: 5px;
       }
       li.selected{
-        color: red;
         font-size: 35pt;
-       // -webkit-tap-highlight-color: darkorange;
-        color: darkorange;
+       color: darkorange;
       }
       li:first-child {
         padding-top: 10px;
@@ -113,20 +105,17 @@ $icon_bar_height: 80px;
     position: static;
     padding: 10px;
     opacity: .7;
-    position: static;
-    height: auto;
+    height: 25%;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
     span#content {
-      z-index: 101;
-      height: auto;
       h4 {
         padding-top: 10px;
         padding-left: 10px;
       }
       p{
-        top: 10px;
+        top: 30px;
         width: 90%;
         opacity: .5;
         font-size: 10pt;
@@ -141,17 +130,17 @@ $icon_bar_height: 80px;
       }
     }
   }
+
  div#dummy_menu {
-    position: relative;
-    top: 10px;
-    //left: 100px;
+    position: absolute;
+    bottom: -25%;
     padding: 2px;
-    width: 100%;
+    width: auto;
     //margin-left: auto;
     height: auto;
    // color: black;
-    opacity: .7;
-    font-size: 10pt;
+    opacity: .8;
+    font-size: 9pt;
     font-style: italic;
     letter-spacing: 2pt;
     color: darkorange;
@@ -162,14 +151,14 @@ $icon_bar_height: 80px;
     }
   }
 
-  #footer {
+  #social_media_bar {
     display: block;
     position: absolute;
     //background-color: whitesmoke;
     width: 100%;
     height: 40px;
     ul {
-      opacity: .2;
+      opacity: .4;
       position: absolute;
       display: block;
       width: 100%;
@@ -183,14 +172,14 @@ $icon_bar_height: 80px;
         width: 25%;
         align-content: center;
         a {
-          opacity: .7;
           width: 100%;
           height: 100%;
           img {
+            padding: 1px;
             display: block;
             margin: auto;
-            width: 25px;
-            height: 25px;
+            width: 32px;
+            height: 32px;
           }
         }
       }
@@ -199,46 +188,26 @@ $icon_bar_height: 80px;
         a{
           img{
             width: auto;
-            height: 22px;
+            height: 29px;
           }
         }
       }
     }
-    .site_slogan{
-      text-align: center;
-      font-size: 8pt;
-    }
-    .site_version {
-      color: white;
-      position: static;
-      text-align: center;
-      //bottom: 7px;
-      //vertical-align: middle;
-      //left: 2%;
-      padding: 5px;
-      font-style: italic;
-      font-weight: 500;
-      font-size: 8pt;
-      height: auto;
-      width: auto;
-      opacity: .6;
-    }
-    .icons{
-      padding: 2px;
-      width: auto;
-      height: auto;
-      display: block;
-      position: absolute;
-      background-color: black;
-      right: 2%;
-      bottom: 8px;
-      opacity: .6;
-      vertical-align: middle;
-      #framework_icon{
-        width: 22px;
-        height:auto;
-      }
-    }
+  }
+  div#footer{
+    background-color: black;
+    opacity: .5;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    font-size: 8pt;
+    font-weight: 500;
+    line-height: 25px;
+    padding-left: auto;
+    padding-right: auto;
+    color: white;
+    text-align: center;
   }
 }
 

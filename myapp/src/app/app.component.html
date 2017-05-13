@@ -1,4 +1,4 @@
-<main class="main">
+<div id="main">
   <div class="pane_top">
     <img id='self' src="assets/medias/me.jpg">
     <div class="about">
@@ -7,7 +7,7 @@
     </h3>
      <br>
      <p id="slogan">
-      Startup | Software | Design
+     Tanner Phan
     </p>
      <br>
      <p id="city">
@@ -18,7 +18,7 @@
   <div id='visual_pane'>
     <div class='main_menu'>
       <span class="menu_title_wrapper">
-        <p class="menu_title" (click)="menu_onClick($event, 'bio')">About</p>
+        <p class="menu_title" (click)="menu_onClick($event, 'bio')">Content</p>
         <!--<p> (tanner phan) </p>-->
       </span>
       <ul>
@@ -30,27 +30,30 @@
       </ul>
     </div>
   </div>
-</main>
+</div>
 <div id='monolog_pane'>
   <span id="content">
       <img id="me" src='assets/medias/me.jpg'>
+    <br>
     <p id="bio" [style.display]="monolog_pane_showorhide('bio')">
-      "You can find me designing at the intersection of Engineering and Psychology."
-        "You can find me designing at the intersection of Engineering and Psychology."
-        "You can find me designing at the intersection of Engineering and Psychology."
+      I started hacking at 12 years old when AOL was giving out free internet access on a disc.
+      Today I focus on front-end development- building software solutions for peoples' problems.
     </p>
     <p id="content_text">
-      <span id="startup" [style.display]="monolog_pane_showorhide('startup')"> So
-        The topics close to my heart are IoT, Vertical Farming, and Small Business.
-       The topics close to my heart are IoT, Vertical Farming, and Small Business.
-       The topics close to my heart are IoT, Vertical Farming, and Small Business.</span>
-      <span id="software"  [style.display]="monolog_pane_showorhide('software')"> I focus on frontend
-      application development - building features based on business requirements.
-        My tools of choice are TypeScript, Angular/Ionic2, and Firebase for most of my projects.
+      <span id="startup" [style.display]="monolog_pane_showorhide('startup')">
+      I love startup because it allows radically ideas to take shape.
+         Over the last years,
+        I've had the opportunity to work at 3 different startups. Read more about my experience below:
       </span>
-      <span id="people"  [style.display]="monolog_pane_showorhide('people')"> I approach design challenges by first internalizing the
-      design criteria - And begin experimenting for a
-        solution from our evolved intuition with technology.</span>
+      <span id="software"  [style.display]="monolog_pane_showorhide('software')">
+        As a frontend developer, my go-to tools are TypeScript, Angular2 and Ionic2.
+        I like to focus on the customers to find their root of problems through various
+        quantitative and qualitative techniques.
+      </span>
+      <span id="people"  [style.display]="monolog_pane_showorhide('people')">
+       People are the heart of my work.
+        My interest to better understand human behaviors came out of my passion to design awesome product/service.
+      </span>
     </p>
   </span>
   <div id="dummy_menu">
@@ -61,13 +64,7 @@
     designs
   </div>
 </div>
-<div id='footer'>
-  <!--<div class="site_version" (click)="onClick($event)">-->
-      <!--<div class="site_slogan" (click)="onClick($event)">-->
-        <!--America - Vietnam-->
-      <!--</div>-->
-    <!--&copy; TP 2017-->
-    <!--</div>-->
+<div id='social_media_bar'>
   <div id="follow_list">
     <ul>
       <li><a href='https://www.linkedin.com/in/tanner-phan-b70999aa/' target='_top'>
@@ -83,6 +80,9 @@
         <img src="assets/medias/github_blk.png">
       </a></li>
     </ul>
+  </div>
+  <div id="footer">
+    &copy; Tanner Phan 2017
   </div>
   <!--<div class="contact"> Collaborate</div>-->
   <!--<div class="icons">-->
