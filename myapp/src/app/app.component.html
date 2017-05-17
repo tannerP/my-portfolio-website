@@ -1,56 +1,55 @@
-<div id="main">
-  <div class="pane_top">
-    <img id='self' src="assets/medias/me.jpg">
-    <div class="about">
-    <h3>
-      Application Developer
-    </h3>
-     <br>
-     <p id="slogan">
-     Tanner Phan
-    </p>
-     <br>
-     <p id="city">
-      Seattle, WA
-    </p>
-   </div>
+<div class="pane_top">
+  <img id='self' src="assets/medias/me.jpg">
+  <div class="about">
+    <h3>Application Developer</h3>
+    <br>
+    <p id="name">Tanner Phan</p>
+    <br>
+    <p id="city">Seattle, WA</p>
   </div>
+</div>
+<div id="main">
   <div id='visual_pane'>
-    <div class='main_menu'>
-      <span class="menu_title_wrapper">
-        <p class="menu_title" (click)="menu_onClick($event, 'bio')">
-        <br><span class="menu_subtitle"
-                  [ngClass]="menu_state == 'bio'? 'menu_subtitle_selected':''"> main </span>
-        </p>
-      </span>
-      <ul>
-        <li *ngFor="let item of menu_items"
-          (click)="menu_onClick($event, item)"
-          [ngClass]="menu_state == item? 'selected':''">
-          {{item}}
-        </li>
-      </ul>
-    </div>
+    <!--<div class='main_menu'>-->
+      <!--<span class="menu_title_wrapper">-->
+        <!--<p class="menu_title" (click)="menu_onClick($event, 'main')">-->
+        <!--<span class="menu_subtitle"-->
+                  <!--[ngClass]="menu_state == 'main'? 'menu_subtitle_selected':''"> main </span>-->
+        <!--</p>-->
+      <!--</span>-->
+      <!--<ul>-->
+        <!--<li *ngFor="let item of menu_items"-->
+          <!--(click)="menu_onClick($event, item)"-->
+          <!--[ngClass]="menu_state == item? 'selected':''">-->
+          <!--{{item}}-->
+        <!--</li>-->
+      <!--</ul>-->
+    <!--</div>-->
   </div>
 </div>
 
 <div id='monolog_pane'>
   <ul id="bread_crums">
+    <span> | </span>
+    <li (click)="menu_onClick($event, 'main')"
+        [ngClass]="menu_state == 'main'? 'selected':''">
+     main
+    </li>
+    <span> | </span>
     <li *ngFor="let item of menu_items"
         (click)="menu_onClick($event, item)"
         [ngClass]="menu_state == item? 'selected':''">
       {{item}}
+    <span style="color:black"> | </span>
     </li>
   </ul>
   <span id="content">
       <img id="me" src='assets/medias/me.jpg'>
     <br>
     <p id="content_span">
-    <!--<span id="content_text" [@menu_state_text_content]="getMenuState()"-->
-          <!--[style.display]="monolog_pane_showorhide('bio')">-->
       <span id="content_text"
             [@menu_state_text_content]="menu_state"
-            [style.display]="monolog_pane_showorhide('bio')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.
+            [style.display]="monolog_pane_showorhide('main')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.
       Today I focus on front-end development- building software solutions for peoples' problems.
     </span>
       <span id="startup" [@menu_state_text_content]="menu_state"

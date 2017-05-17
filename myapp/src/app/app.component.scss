@@ -5,18 +5,15 @@
 $icon_bar_height: 80px;
 
 @media(max-width: $breakpoint-mobile) {
-  iframe{
-    width: 100%;
-    heigh: auto;
-  }
   .pane_top {
+    color: white;
     background-color: darkorange;
-    position: relative;
+    position: static;
     opacity: 0.7;
     display: block;
     z-index: 100;
     width: 100%;
-    height: 120px;
+    height: 20%;
     font-size: 14pt;
     .about {
       position: static;
@@ -26,33 +23,31 @@ $icon_bar_height: 80px;
       }
       h3{
         opacity: .7;
-        padding: 20px;
-        padding-bottom: 0px;
-        margin-top: 4px;
-        //letter-spacing: .5pt;
+        padding: 15px;
+        margin-top: 2px;
       }
       p{
-        opacity: .5;
+        top: 0px;
+        opacity: .7;
         letter-spacing: 1pt;
         position: relative;
         padding-left: 20px;
         font-size: 12pt;
-        font-weight: 300;
+        font-weight: 500;
         text-align: left;
-        top: 14px;
       }
-      p#slogan{
+      p#name{
         position: relative;
-        bottom: 15px;
+        bottom: 0px;
         font-size: 11pt;
       }
     }
     img#self {
+      opacity: .8;
       float: left;
-      position: absolute;
-      opacity: 1;
+      position: absolute;;
       right: 5px;
-      top: 15px;
+      top: 10px;
       padding: 10px;
       z-index: 100;
       border-radius: 50%;
@@ -61,70 +56,88 @@ $icon_bar_height: 80px;
     }
   }
   #main {
-    background-color: black;
     opacity: .7;
-    height: 100%;
-  }
-  #visual_pane {
-    color: $white;
-    width: 100%;
-    height: auto;
     position: static;
-    z-index: 98;
-    .main_menu {
-      background-color: inherit;
-      position: absolute;
+    top: 20%;
+    display: block;
+    height: 60%;
+    background-image: url('../assets/medias/IMG_2797.png');
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    #visual_pane {
+      color: $white;
+      width: 100%;
       height: auto;
-      bottom: 20px;
-      z-index: 99;
-      display: inline-block;
-      text-align: center;
-      .menu_title_wrapper {
-        width: auto;
+      position: static;
+      z-index: 98;
+      .main_menu {
         height: auto;
-        z-index: 99;
-        .menu_title {
-          letter-spacing: 4pt;
-          opacity: .3;
-          font-size: 50pt;
-          font-weight: 500;
-          span.menu_subtitle{
-            padding: 0;
-            font-size: 15pt;
-          }
-          span.menu_subtitle_selected{
-            color: darkorange;
-            padding: 0;
-            font-size: 35pt;
+        //bottom: 20px;
+        //z-index: 99;
+        //display: inline-block;
+        text-align: center;
+        .menu_title_wrapper {
+          width: auto;
+          height: auto;
+          z-index: 99;
+          .menu_title {
+            letter-spacing: 4pt;
+            opacity: 1;
+            font-size: 50pt;
+            font-weight: 500;
+            span.menu_subtitle {
+              padding: 0;
+              font-size: 35pt;
+            }
+            span.menu_subtitle_selected {
+              color: darkorange;
+              padding: 0;
+              font-size: 35pt;
+            }
           }
         }
-      }
-      li {
-        opacity: .7;
-        font-size: 35pt;
-        font-weight: lighter;
-        letter-spacing: 2pt;
-        padding-bottom: 5px;
-      }
-      li.selected{
-        font-size: 35pt;
-       color: darkorange;
-      }
-      li:first-child {
-        padding-top: 10px;
+        li {
+          list-style-type: none;
+          opacity: 1;
+          font-size: 35pt;
+          font-weight: 400;
+          letter-spacing: 2pt;
+          padding-bottom: 5px;
+        }
+        li.selected {
+          font-size: 35pt;
+          color: darkorange;
+        }
+        li:first-child {
+          padding-top: 10px;
+        }
       }
     }
   }
   #monolog_pane {
     position: static;
+    top: 80%;
     padding: 10px;
     height: 25%;
     width: 90%;
     padding-left: 0;
     #bread_crums{
-      color:blue;
-      li {
-        float: left;
+      text-align: center;
+      width: auto;
+      height: auto;
+      font-size: 8pt;
+      letter-spacing: 1pt;
+      color: black;
+     li{
+       font-weight: 500;
+       display: inline;
+       list-style-type: none;
+      // padding: auto;
+     }
+      li.selected {
+        color: darkorange;
       }
     }
     span#content {
@@ -142,6 +155,7 @@ $icon_bar_height: 80px;
         opacity: .7;
         font-size: 10pt;
         padding: 5px;
+        padding-right: 10px;
         font-weight: lighter;
         text-indent: 0;
       }
@@ -155,40 +169,15 @@ $icon_bar_height: 80px;
       }
     }
   }
-
- div#dummy_menu {
-    position: absolute;
-    bottom: -25%;
-    padding: 2px;
-    width: auto;
-    //margin-left: auto;
-    height: auto;
-   // color: black;
-    opacity: .8;
-    font-size: 9pt;
-    font-style: italic;
-    letter-spacing: 2pt;
-    color: darkorange;
-   span.hor_line{
-      letter-spacing: 0pt;
-      color: darkorange;
-      opacity: 1;
-    }
-  }
-
   #social_media_bar {
     display: block;
-    position: absolute;
-    //background-color: whitesmoke;
+    position: static;
     width: 100%;
-    height: 40px;
+    height: auto;
     ul {
-      opacity: .4;
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: auto;
-      bottom: 5px;
+      position: relative;
+      background-color: #fafafa;
+      opacity: .8;
       padding-bottom: 0;
       list-style-type: none;
       overflow: hidden;
@@ -197,41 +186,35 @@ $icon_bar_height: 80px;
         width: 25%;
         align-content: center;
         a {
-          width: 100%;
-          height: 100%;
           img {
-            padding: 1px;
+            opacity: .5;
+            padding: 10px;
             display: block;
             margin: auto;
-            width: 32px;
-            height: 32px;
-          }
-        }
-      }
-      li:nth-of-type(3){
-       padding-top: 2px;
-        a{
-          img{
-            width: auto;
-            height: 29px;
+            width: 25px;
+            height: 25px;
+            margin-bottom: 0;
           }
         }
       }
     }
   }
   div#footer{
-    background-color: black;
-    opacity: .7;
+    border-style: solid;
+    border-width: 1px 0 0 0 ;
+    border-color:black;
+    background-color: #fafafa;
     display: inline-block;
-    position: relative;
+    position: static;
+    top: 145%;
     width: 100%;
-    height: 80%;
+    height: auto;
     font-size: 8pt;
     font-weight: 500;
     line-height: 25px;
     padding-left: auto;
     padding-right: auto;
-    color: white;
+    color: black;
     text-align: center;
   }
 }

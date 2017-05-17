@@ -15,9 +15,8 @@ import {
   styleUrls: ['./app.component.scss'],
   animations: [
     trigger('menu_state_text_content', [
-      state('bio', style({
-        backgroundColor: 'darkorange',
-        transform: 'scale(1)'
+      state('main', style({
+        backgroundColor: 'darkorange'
       })),
       state('startup',   style({
         backgroundColor: 'darkorange',
@@ -28,7 +27,7 @@ import {
         transform: 'scale(1.1)'
       })),
       state('people',   style({
-        //backgroundColor: 'grey',
+
         transform: 'translateY(100px)'
       })),
       state('*', style({
@@ -56,7 +55,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.menu_state =  'bio';
+    this.menu_state =  'main';
   }
 
   menu_onClick(event: any, item): void {
