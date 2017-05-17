@@ -2,7 +2,6 @@
 // State-Class should be attached from a another stylesheet.
 // This yields more functionality in Designs and Animations.
 @import 'palette.scss';
-
 $icon_bar_height: 80px;
 
 @media(max-width: $breakpoint-mobile) {
@@ -22,13 +21,14 @@ $icon_bar_height: 80px;
         display: inline-flex;
       }
       h3{
+        opacity: .7;
         padding: 20px;
         padding-bottom: 0px;
         margin-top: 4px;
         //letter-spacing: .5pt;
       }
       p{
-        opacity: .7;
+        opacity: .5;
         letter-spacing: 1pt;
         position: relative;
         padding-left: 20px;
@@ -81,7 +81,7 @@ $icon_bar_height: 80px;
         z-index: 99;
         .menu_title {
           letter-spacing: 4pt;
-          opacity: .2;
+          opacity: .3;
           font-size: 50pt;
           font-weight: 500;
           span.menu_subtitle{
@@ -96,7 +96,7 @@ $icon_bar_height: 80px;
         }
       }
       li {
-        opacity: .6;
+        opacity: .7;
         font-size: 35pt;
         font-weight: lighter;
         letter-spacing: 2pt;

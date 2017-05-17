@@ -16,26 +16,26 @@ import {
   animations: [
     trigger('menu_state_text_content', [
       state('bio', style({
-        backgroundColor: 'red',
+        backgroundColor: 'grey',
         transform: 'scale(1)'
       })),
       state('startup',   style({
-        backgroundColor: 'blue',
-        transform: 'scale(1.1)'
+        backgroundColor: 'grey',
+        transform: 'translateY(100px)'
       })),
       state('software',   style({
-        backgroundColor: 'purple',
+        backgroundColor: 'grey',
         transform: 'scale(1.1)'
       })),
       state('people',   style({
-        backgroundColor: 'green',
-        transform: 'scale(1.1)'
+        //backgroundColor: 'grey',
+        transform: 'translateY(100px)'
       })),
       state('*', style({
         display: 'none'
       })),
-      transition('about => *', animate('100ms ease-in')),
-      transition('software => *', animate('100ms ease-out'))
+      transition('* => people', animate('1000ms ease-in')),
+      transition('people => *', animate('1000ms ease-out'))
     ])
   ]
 })
