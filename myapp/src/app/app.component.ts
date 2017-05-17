@@ -33,8 +33,8 @@ import {
       state('*', style({
         display: 'none'
       })),
-      transition('* => people', animate('1000ms ease-in')),
-      transition('people => *', animate('1000ms ease-out'))
+      transition('* => *', animate('1000ms ease-in')),
+      // transition('* => inactive', animate('1000ms ease-out'))
     ])
   ]
 })

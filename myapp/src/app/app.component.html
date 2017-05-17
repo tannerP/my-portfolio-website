@@ -10,21 +10,6 @@
 </div>
 <div id="main">
   <div id='visual_pane'>
-    <!--<div class='main_menu'>-->
-      <!--<span class="menu_title_wrapper">-->
-        <!--<p class="menu_title" (click)="menu_onClick($event, 'main')">-->
-        <!--<span class="menu_subtitle"-->
-                  <!--[ngClass]="menu_state == 'main'? 'menu_subtitle_selected':''"> main </span>-->
-        <!--</p>-->
-      <!--</span>-->
-      <!--<ul>-->
-        <!--<li *ngFor="let item of menu_items"-->
-          <!--(click)="menu_onClick($event, item)"-->
-          <!--[ngClass]="menu_state == item? 'selected':''">-->
-          <!--{{item}}-->
-        <!--</li>-->
-      <!--</ul>-->
-    <!--</div>-->
   </div>
 </div>
 
@@ -50,17 +35,16 @@
       <span id="content_text"
             [@menu_state_text_content]="menu_state"
             [style.display]="monolog_pane_showorhide('main')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.
-      Today I focus on front-end development- building software solutions for peoples' problems.
+      Now I enjoy writing software applications to solve efficiency problems.
     </span>
       <span id="startup" [@menu_state_text_content]="menu_state"
             [style.display]="monolog_pane_showorhide('startup')">I love startup because it allows radically ideas to take shape.
          Over the last years,
-        I've had the opportunity to work at 3 different startups. Read more about my experience below:
+        I've had the opportunity to work at several different startups based in Seattle.
       </span>
       <span id="software"   [@menu_state_text_content]="menu_state"
-            [style.display]="monolog_pane_showorhide('software')">As a frontend developer, my go-to tools are TypeScript, Angular2 and Ionic2.
-        I like to focus on the customers to find their root of problems through various
-        quantitative and qualitative techniques.
+            [style.display]="monolog_pane_showorhide('software')">My go-to tools are TypeScript, Angular2 and Ionic2.
+        I have experience with system designs and continue to hone the art of writing elegant algorithms.
       </span>
       <span id="people"   [@menu_state_text_content]="menu_state"
             [style.display]="monolog_pane_showorhide('people')">People are the heart of my work.
