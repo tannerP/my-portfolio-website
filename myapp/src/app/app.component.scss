@@ -5,6 +5,10 @@
 $icon_bar_height: 80px;
 
 @media(max-width: $breakpoint-mobile) {
+  iframe{
+    width: 100%;
+    heigh: auto;
+  }
   .pane_top {
     background-color: darkorange;
     position: relative;
@@ -117,6 +121,12 @@ $icon_bar_height: 80px;
     height: 25%;
     width: 90%;
     padding-left: 0;
+    #bread_crums{
+      color:blue;
+      li {
+        float: left;
+      }
+    }
     span#content {
       h4 {
         padding-top: 10px;
@@ -126,17 +136,14 @@ $icon_bar_height: 80px;
         display: inherit;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
-        //background: gray;
         color: black;
         top: 30px;
         width: 80%;
         opacity: .7;
         font-size: 10pt;
-        text-align: right;
         padding: 5px;
         font-weight: lighter;
-        font-style: italic;
-        border: darkorange;
+        text-indent: 0;
       }
       img#me{
           border-radius: 50%;

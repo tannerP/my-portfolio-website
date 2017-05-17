@@ -16,15 +16,15 @@ import {
   animations: [
     trigger('menu_state_text_content', [
       state('bio', style({
-        backgroundColor: 'grey',
+        backgroundColor: 'darkorange',
         transform: 'scale(1)'
       })),
       state('startup',   style({
-        backgroundColor: 'grey',
+        backgroundColor: 'darkorange',
         transform: 'translateY(100px)'
       })),
       state('software',   style({
-        backgroundColor: 'grey',
+        backgroundColor: 'darkorange',
         transform: 'scale(1.1)'
       })),
       state('people',   style({

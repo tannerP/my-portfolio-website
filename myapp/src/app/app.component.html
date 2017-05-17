@@ -18,10 +18,10 @@
   <div id='visual_pane'>
     <div class='main_menu'>
       <span class="menu_title_wrapper">
-        <h1 class="menu_title" (click)="menu_onClick($event, 'bio')">Content
+        <p class="menu_title" (click)="menu_onClick($event, 'bio')">
         <br><span class="menu_subtitle"
                   [ngClass]="menu_state == 'bio'? 'menu_subtitle_selected':''"> main </span>
-        </h1>
+        </p>
       </span>
       <ul>
         <li *ngFor="let item of menu_items"
@@ -35,6 +35,13 @@
 </div>
 
 <div id='monolog_pane'>
+  <ul id="bread_crums">
+    <li *ngFor="let item of menu_items"
+        (click)="menu_onClick($event, item)"
+        [ngClass]="menu_state == item? 'selected':''">
+      {{item}}
+    </li>
+  </ul>
   <span id="content">
       <img id="me" src='assets/medias/me.jpg'>
     <br>
