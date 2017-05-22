@@ -1,5 +1,6 @@
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
 import { MenuStateService } from './menu-state.service';
+import { IgService } from './ig.service';
 import { DOCUMENT } from '@angular/platform-browser';
 import {
   trigger,
@@ -33,14 +34,14 @@ import {
       state('*', style({
         display: 'none'
       })),
-      transition('* => *', animate('1000ms ease-in')),
-      // transition('* => inactive', animate('1000ms ease-out'))
+      transition('void => *', animate('1000ms ease-in')),
+       transition('* => void', animate('1000ms ease-out'))
     ])
   ]
 })
 export class AppComponent implements OnInit {
   public menu_items = ['startup', 'software', 'people'];
-  constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService) { }
+  constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) { }
   public menu_state: String;
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -55,7 +56,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.menu_state =  'main';
+    this.menu_state =  'about';
   }
 
   menu_onClick(event: any, item): void {
@@ -63,6 +64,7 @@ export class AppComponent implements OnInit {
     console.log(item);
     this.menuSrvc.setState(item);
     this.menu_state = this.menuSrvc.getState();
+    this.ig.httpLoadPics();
     return;
   }
   monolog_pane_showorhide(id): String {

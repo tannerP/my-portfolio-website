@@ -1,24 +1,25 @@
-<div class="pane_top">
-  <img id='self' src="assets/medias/me.jpg">
-  <div class="about">
-    <h3>Application Developer</h3>
-    <br>
-    <p id="name">Tanner Phan</p>
-    <br>
-    <p id="city">Seattle, WA</p>
-  </div>
-</div>
+<!--<div class="pane_top">-->
+  <!--<img id='self' src="assets/medias/me.jpg">-->
+  <!--<div class="about">-->
+    <!--<h2>Tanner Phan</h2>-->
+    <!--<br>-->
+    <!--<p id="name">Startup | Design | Code</p>-->
+    <!--<br>-->
+    <!--<p id="city">Seattle, WA</p>-->
+  <!--</div>-->
+<!--</div>-->
 <div id="main">
   <div id='visual_pane'>
+   <!--<img src="assets/medias/ig.png">-->
   </div>
 </div>
 
 <div id='monolog_pane'>
   <ul id="bread_crums">
     <span> | </span>
-    <li (click)="menu_onClick($event, 'main')"
-        [ngClass]="menu_state == 'main'? 'selected':''">
-     main
+    <li (click)="menu_onClick($event, 'about')"
+        [ngClass]="menu_state == 'about'? 'selected':''">
+     about
     </li>
     <span> | </span>
     <li *ngFor="let item of menu_items"
@@ -30,23 +31,21 @@
   </ul>
   <span id="content">
       <img id="me" src='assets/medias/me.jpg'>
-    <br>
     <p id="content_span">
       <span id="content_text"
-            [@menu_state_text_content]="menu_state"
-            [style.display]="monolog_pane_showorhide('main')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.
+            [style.display]="monolog_pane_showorhide('about')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.
       Now I enjoy writing software applications to solve efficiency problems.
     </span>
-      <span id="startup" [@menu_state_text_content]="menu_state"
+      <span id="startup"
             [style.display]="monolog_pane_showorhide('startup')">I love startup because it allows radically ideas to take shape.
          Over the last years,
         I've had the opportunity to work at several different startups based in Seattle.
       </span>
-      <span id="software"   [@menu_state_text_content]="menu_state"
+      <span id="software"
             [style.display]="monolog_pane_showorhide('software')">My go-to tools are TypeScript, Angular2 and Ionic2.
         I have experience with system designs and continue to hone the art of writing elegant algorithms.
       </span>
-      <span id="people"   [@menu_state_text_content]="menu_state"
+      <span id="people"
             [style.display]="monolog_pane_showorhide('people')">People are the heart of my work.
         My interest to better understand human behaviors came out of my passion to design awesome product/service.
       </span>
@@ -54,28 +53,28 @@
     </span>
 </div>
 <div id='social_media_bar'>
-  <div id="follow_list">
-    <ul>
-      <li><a href='https://www.linkedin.com/in/tanner-phan-b70999aa/' target='_top'>
-        <img src="assets/medias/linkedin_blk.png">
-      </a></li>
-      <li><a href='https://twitter.com/tannerphan?lang=en' target='_top'>
-        <img src="assets/medias/twitter_blk.png">
-      </a></li>
-      <li><a href='mailto:tannerphan@gmail.com?' target='_top'>
-        <img src="assets/medias/mail_blk.png">
-      </a></li>
-      <li><a href='https://github.com/tannerP' target='_top'>
-        <img src="assets/medias/github_blk.png">
-      </a></li>
-    </ul>
-  </div>
-  <div id="footer">
-    &copy; Tanner Phan 2017
-  </div>
-  <!--<div class="contact"> Collaborate</div>-->
-  <!--<div class="icons">-->
-    <!--<img id="framework_icon" src='assets/medias/angular.png'>-->
-    <!--<img id="framework_icon" src='assets/medias/ionic2.png'>-->
-  <!--</div>-->
+  <span href='https://github.com/tannerP' target='_top'>
+    <img src="assets/medias/mail.png">
+  </span>
+  <span href='https://github.com/tannerP' target='_top'>
+    <img src="assets/medias/linkedin.png">
+  </span>
+  <span href='https://github.com/tannerP' target='_top'>
+    <span id="link">
+    blog
+    </span>
+  </span>
+  <span href='https://github.com/tannerP' target='_top'>
+    <img src="assets/medias/twitter.png">
+  </span>
+  <span href='https://github.com/tannerP' target='_top'>
+    <img src="assets/medias/github.png">
+  </span>
+  <span href='https://github.com/tannerP' target='_top'>
+    work
+  </span>
+
+</div>
+<div id="footer">
+&copy; Tanner Phan 2017
 </div>
