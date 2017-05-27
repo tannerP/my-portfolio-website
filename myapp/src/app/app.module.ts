@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { MenuStateService } from './menu-state.service';
-import { IgService } from './ig.service';
+import { MenuStateService } from './services/menu-state.service';
+import { IgService } from './services/ig.service';
 
 @NgModule({
   declarations: [

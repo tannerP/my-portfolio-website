@@ -1,6 +1,6 @@
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
-import { MenuStateService } from './menu-state.service';
-import { IgService } from './ig.service';
+import { MenuStateService } from './services/menu-state.service';
+import { IgService } from './services/ig.service';
 import { DOCUMENT } from '@angular/platform-browser';
 import {
   trigger,
@@ -40,7 +40,7 @@ import {
   ]
 })
 export class AppComponent implements OnInit {
-  public menu_items = ['startup', 'software', 'people'];
+  public menu_items = ['people', 'startup', 'software'];
   constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) { }
   public menu_state: String;
   @HostListener('window:scroll', [])
@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
     console.log(item);
     this.menuSrvc.setState(item);
     this.menu_state = this.menuSrvc.getState();
-    this.ig.httpLoadPics();
+    //kethis.ig.httpLoadPics();
     return;
   }
   monolog_pane_showorhide(id): String {

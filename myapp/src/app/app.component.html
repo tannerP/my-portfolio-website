@@ -30,11 +30,24 @@
     </li>
   </ul>
   <span id="content">
-      <img id="me" src='assets/medias/me.jpg'>
+    <div id="me_wrap">
+      <div id="me"></div>
+    </div>
+  <!--<div id="me"></div>-->
     <p id="content_span">
       <span id="content_text"
-            [style.display]="monolog_pane_showorhide('about')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.
+            [style.display]="monolog_pane_showorhide('bio')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.
       Now I enjoy writing software applications to solve efficiency problems.
+    </span>
+      <span id="content_text"
+                [style.display]="monolog_pane_showorhide('about')">
+        I'm a freelance software developer based in Seattle.
+        I'm also ava
+        This site is the hub of my social media feed and blog.
+        It also has my professional information for download.
+        Please feel free to reach out to collaborate.
+        <!--<br>-->
+        <!--<span id="content_hashes"> Startup  | Design  | Software </span>-->
     </span>
       <span id="startup"
             [style.display]="monolog_pane_showorhide('startup')">I love startup because it allows radically ideas to take shape.
@@ -60,20 +73,11 @@
     <img src="assets/medias/linkedin.png">
   </span>
   <span href='https://github.com/tannerP' target='_top'>
-    <span id="link">
-    blog
-    </span>
-  </span>
-  <span href='https://github.com/tannerP' target='_top'>
     <img src="assets/medias/twitter.png">
   </span>
   <span href='https://github.com/tannerP' target='_top'>
     <img src="assets/medias/github.png">
   </span>
-  <span href='https://github.com/tannerP' target='_top'>
-    work
-  </span>
-
 </div>
 <div id="footer">
 &copy; Tanner Phan 2017

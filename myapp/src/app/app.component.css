@@ -130,22 +130,62 @@
         font-size: 10pt;
         font-weight: lighter;
         text-indent: 0; }
-      #monolog_pane span#content img#me {
+      #monolog_pane span#content div#me_wrap {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
         border-radius: 50%;
-        opacity: .8;
+        border-width: 2px;
+        opacity: .9;
+        background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
         float: left;
-        width: 50px;
-        height: auto;
+        width: 54px;
+        height: 54px;
         margin: 10px;
-        margin-left: 10px; }
+        padding: 2px; }
+        #monolog_pane span#content div#me_wrap div#me {
+          display: inline-block;
+          position: relative;
+          margin: auto;
+          border-style: solid;
+          border-radius: 50%;
+          background-image: url("../assets/medias/me.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 54px;
+          height: 54px; }
 
   #social_media_bar {
+    background-size: 100%;
+    background-image: -webkit-linear-gradient(#ffffff, #464646);
+    background-image: linear-gradient(#ffffff, #464646);
+    position: relative;
+    z-index: 100;
     display: block;
     position: static;
     width: 100%;
     height: auto;
     overflow: auto;
     white-space: nowrap; }
+    #social_media_bar:before {
+      border-radius: inherit;
+      background-image: -webkit-linear-gradient(#464646, #ffffff);
+      background-image: linear-gradient(#464646, #ffffff);
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -100;
+      -moz-transition: opacity 1s ease-in-out;
+      -webkit-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out; }
+    #social_media_bar:hover:before {
+      opacity: 1; }
     #social_media_bar span {
       width: auto;
       height: auto;
