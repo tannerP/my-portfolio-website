@@ -41,6 +41,8 @@ import {
 })
 export class AppComponent implements OnInit {
   public menu_items = ['people', 'startup', 'software'];
+  public bckgrnd_img_src = ['content1', 'content2', 'content3', 'content4', 'content5',  'content6',
+    'content7', 'content8',  'content9'];
   constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) { }
   public menu_state: String;
   @HostListener('window:scroll', [])
@@ -64,7 +66,7 @@ export class AppComponent implements OnInit {
     console.log(item);
     this.menuSrvc.setState(item);
     this.menu_state = this.menuSrvc.getState();
-    //kethis.ig.httpLoadPics();
+     console.log(this.ig.httpLoadPics());
     return;
   }
   monolog_pane_showorhide(id): String {

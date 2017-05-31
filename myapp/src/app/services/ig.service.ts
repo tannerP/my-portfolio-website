@@ -4,22 +4,22 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
 
 
 @Injectable()
 export class IgService {
-
-  private TOKEN = 'e7fc2385c98c4904bf6131ddf7961314';
-//  private igUrl = 'https://api.instagram.com/v1/users/{1920586937}/?access_token=' + this.TOKEN;
- private igUrl = 'https://api.instagram.com/oauth/authorize/?client_id=' + this.TOKEN + '&redirect_uri=localhost:4200&response_type=code';
-
+  private TOKEN = '1920586937.e7fc238.7b6f87c2fde34caea74c2008ee7fd27c';
+  private ig_url = 'https://api.instagram.com/v1/users/self/media/liked/?access_token=' + this.TOKEN;
+  //private ig_url = 'https//tannerphan.me';
   constructor ( private http: Http ) {};
 
   httpLoadPics() {
     console.log('loading pics');
-    this.http.get(this.igUrl)
+    this.http.get(this.ig_url)
       .toPromise()
-      .then(response => console.log(response) );
+      .then(response => console.log(response.json()))
+      .catch(this.handleError);
   }
   printData(res: Response)  {
     console.log("printing data");

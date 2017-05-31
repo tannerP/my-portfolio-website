@@ -9,9 +9,15 @@
   <!--</div>-->
 <!--</div>-->
 <div id="main">
-  <div id='visual_pane'>
+  <ul id='visual_pane' >
    <!--<img src="assets/medias/ig.png">-->
-  </div>
+   <li class="content" *ngFor="let img_src of bckgrnd_img_src"
+
+   >
+   {{img_src}}
+   </li>
+  </ul>
+
 </div>
 
 <div id='monolog_pane'>
@@ -66,17 +72,20 @@
     </span>
 </div>
 <div id='social_media_bar'>
-  <span href='https://github.com/tannerP' target='_top'>
-    <img src="assets/medias/mail.png">
+    <span href='https://github.com/tannerP' target='_top'>
+    <img src="assets/medias/medium.png">
   </span>
   <span href='https://github.com/tannerP' target='_top'>
-    <img src="assets/medias/linkedin.png">
+    <img src="assets/medias/twitter_blk.png">
   </span>
   <span href='https://github.com/tannerP' target='_top'>
-    <img src="assets/medias/twitter.png">
+    <img src="assets/medias/linkedin_blk.png">
   </span>
   <span href='https://github.com/tannerP' target='_top'>
-    <img src="assets/medias/github.png">
+    <img src="assets/medias/mail_blk.png">
+  </span>
+  <span href='https://github.com/tannerP' target='_top'>
+    <img src="assets/medias/github_blk.png">
   </span>
 </div>
 <div id="footer">
