@@ -39,7 +39,6 @@
     "zone.js": "~0.8.10"
   },
   "devDependencies": {
-    "@angular/cli": "^1.0.6",
     "@types/core-js": "~0.9.41",
     "@types/jasmine": "~2.5.36",
     "@types/node": "~7.0.18",
@@ -83,25 +82,10 @@
     "email": "objectiv@gmail.com"
   },
   "contributors": [
-    {
-      "name": "Cody Lundquist",
-      "email": "cody.lundquist@gmail.com"
-    },
-    {
-      "name": "Jason Shultz",
-      "email": ""
-    },
-    {
-      "name": "Luke Schlangen",
-      "email": "luke@lukeschlangen.com"
-    },
-    {
-      "name": "Sinan Bolel",
-      "email": "sinanbolel@gmail.com"
-    },
-    {
-      "name": "Yannick Koehler",
-      "email": "yannick@koehler.name"
-    }
+    {"name": "Cody Lundquist", "email": "cody.lundquist@gmail.com"},
+    {"name": "Jason Shultz", "email": ""},
+    {"name": "Luke Schlangen", "email": "luke@lukeschlangen.com"},
+    {"name": "Sinan Bolel", "email": "sinanbolel@gmail.com"},
+    {"name": "Yannick Koehler", "email": "yannick@koehler.name"}
   ]
 }

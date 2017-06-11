@@ -8,3 +8,9 @@ var functions = require('firebase-functions');
 // });
 const admin = require('firebase-admin');
 admin.initializeApp(functions.config().firebase);
+
+
+exports.addMessage = functions.https.onRequest((req, res) => {
+  const original = req.query.text;
+    res.status(200).send("Hello world");
+   })

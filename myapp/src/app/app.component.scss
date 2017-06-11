@@ -42,7 +42,7 @@ $icon_bar_height: 80px;
     display: none;
     z-index: 100;
     width: 100%;
-    height: 20%;
+    height: 80%;
     font-size: 14pt;
     .about {
       position: static;
@@ -50,7 +50,7 @@ $icon_bar_height: 80px;
       a, p, h2{
         display: inline-flex;
       }
-      h{
+      h1{
         letter-spacing: 3pt;
         color: black;
         opacity: .7;
@@ -87,31 +87,9 @@ $icon_bar_height: 80px;
     }
   }
   #main {
-    opacity: .7;
     position: static;
-    top: 20%;
-    display: block;
-    height: 65%;
-  //  background-image: url('../assets/medias/ig.png');
-  //  background-size: 90% 90%;
-  //  filter: grayscale(50%);
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //  background-color: white;
+    height: auto;
     #visual_pane {
-      img{
-        visibility: hidden;
-        width: 100%;
-        height: auto;
-      }
-      .content{
-        width: 103.3333px;
-        height: 103.33px;
-        background-color: black;
-        opacity: 0.7;
-        margin:auto;
-        margin-top: 3px;
-      }
       width: 100%;
       position: relative;
       list-style:none;
@@ -119,54 +97,60 @@ $icon_bar_height: 80px;
       flex-flow: wrap;
       color: white;
       text-align: center;
-      height: auto;
-      z-index: 98;
-      .main_menu {
-        height: auto;
-        text-align: center;
-        .menu_title_wrapper {
-          width: auto;
-          height: auto;
-          z-index: 99;
-          .menu_title {
-            letter-spacing: 4pt;
-            opacity: 1;
-            font-size: 50pt;
-            font-weight: 500;
-            span.menu_subtitle {
-              padding: 0;
-              font-size: 35pt;
-            }
-            span.menu_subtitle_selected {
-              color: darkorange;
-              padding: 0;
-              font-size: 35pt;
-            }
-          }
-        }
-        li {
-          list-style-type: none;
-          opacity: 1;
-          font-size: 35pt;
-          font-weight: 400;
-          letter-spacing: 2pt;
-          padding-bottom: 5px;
-        }
-        li.selected {
-          font-size: 35pt;
-          color: darkorange;
-        }
-        li:first-child {
-          padding-top: 10px;
-        }
+      .content{
+        width: 33%;
+        height: 120px;
+        background-color: black;
+        opacity: 0.7;
+        margin: auto;
+        margin-top: 1px;
       }
+      //.main_menu {
+      //  height: auto;
+      //  text-align: center;
+      //  .menu_title_wrapper {
+      //    width: auto;
+      //    height: auto;
+      //    .menu_title {
+      //      letter-spacing: 4pt;
+      //      opacity: 1;
+      //      font-size: 50pt;
+      //      font-weight: 500;
+      //      span.menu_subtitle {
+      //        padding: 0;
+      //        font-size: 35pt;
+      //      }
+      //      span.menu_subtitle_selected {
+      //        color: darkorange;
+      //        padding: 0;
+      //        font-size: 35pt;
+      //      }
+      //    }
+      //  }
+      //  li {
+      //    list-style-type: none;
+      //    opacity: 1;
+      //    font-size: 35pt;
+      //    font-weight: 400;
+      //    letter-spacing: 2pt;
+      //    padding-bottom: 5px;
+      //  }
+      //  li.selected {
+      //    font-size: 35pt;
+      //    color: darkorange;
+      //  }
+      //  li:first-child {
+      //    padding-top: 10px;
+      //  }
+      //}
     }
   }
   #monolog_pane {
-    position: static;
+    position: relative;
+    height: auto;
     //top: 0%;
    // padding: 5px;
-    height: 25%;
+   // height: 25%;
     width: 100%;
     #bread_crums{
       position: relative;
@@ -273,13 +257,11 @@ $icon_bar_height: 80px;
 
   div#footer{
     display: inline-block;
-    position: static;
+    position: absolute;
+    bottom: 0;
     border-style: solid;
-    //border-width: 1px 0 0 0;
-  //  border-color: #9c5200;
     background-color: black;
     opacity: .7;
-   // top: 145%;
     width: 100%;
     height: auto;
     font-size: 8pt;
