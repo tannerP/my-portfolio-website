@@ -40,9 +40,9 @@ import {
   ]
 })
 export class AppComponent implements OnInit {
-  public menu_items = ['people', 'startup', 'software'];
-  public bckgrnd_img_src = ['content1', 'content2', 'content3', 'content4', 'content5',  'content6',
-    'content7', 'content8',  'content9'];
+  public menu_items = ['people', 'startup', 'work'];
+  public bckgrnd_img_src = ['portfolio', '', 'bio', '', 'blog',  '',
+    'Photography', '', 'design'];
   constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) { }
   public menu_state: String;
   @HostListener('window:scroll', [])

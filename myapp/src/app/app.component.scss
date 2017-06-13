@@ -98,6 +98,7 @@ $icon_bar_height: 80px;
       color: white;
       text-align: center;
       .content{
+        line-height: 90px;
         width: 33%;
         height: 120px;
         background-color: black;
@@ -146,13 +147,14 @@ $icon_bar_height: 80px;
     }
   }
   #monolog_pane {
-    position: relative;
+    position: fixed;
     height: auto;
     //top: 0%;
    // padding: 5px;
    // height: 25%;
     width: 100%;
     #bread_crums{
+      cursor: default;
       position: relative;
       top: 3px;
       text-align: center;
@@ -180,13 +182,11 @@ $icon_bar_height: 80px;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         color: black;
-
         opacity: .7;
         font-size: 10pt;
         font-weight: lighter;
         text-indent: 0;
       }
-
       div#me_wrap {
         display: table-cell;
         vertical-align: middle;
@@ -213,14 +213,13 @@ $icon_bar_height: 80px;
           background-size: contain;
           width: 54px;
           height: 54px;
-
         }
       }
     }
   }
   #social_media_bar {
   //  @include gradient-animation( #ffffff, #464646, 1s);
-    display: block;
+    display: none;
     position: static;
     width: 100%;
     height: auto;
@@ -257,7 +256,7 @@ $icon_bar_height: 80px;
 
   div#footer{
     display: inline-block;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     border-style: solid;
     background-color: black;
@@ -442,7 +441,7 @@ $icon_bar_height: 80px;
     }
   }
   #social_media_bar {
-    display: block;
+    display: none;
     position: static;
     width: 50%;
     height: auto;
