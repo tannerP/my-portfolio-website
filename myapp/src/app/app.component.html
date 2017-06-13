@@ -1,3 +1,4 @@
+
 <!--<div class="pane_top">-->
   <!--<img id='self' src="assets/medias/me.jpg">-->
   <!--<div class="about">-->
@@ -8,66 +9,8 @@
     <!--<p id="city">Seattle, WA</p>-->
   <!--</div>-->
 <!--</div>-->
-<div id="main">
-  <ul id='visual_pane' >
-   <!--<img src="assets/medias/ig.png">-->
-   <li class="content" *ngFor="let img_src of bckgrnd_img_src">
-   {{img_src}}
-   </li>
-  </ul>
-</div>
 
-<div id='monolog_pane'>
-  <ul id="bread_crums">
-    <span> | </span>
-    <li (click)="menu_onClick($event, 'about')"
-        [ngClass]="menu_state == 'about'? 'selected':''">
-     about
-    </li>
-    <span> | </span>
-    <li *ngFor="let item of menu_items"
-        (click)="menu_onClick($event, item)"
-        [ngClass]="menu_state == item? 'selected':''">
-      {{item}}
-    <span style="color:black"> | </span>
-    </li>
-  </ul>
-  <span id="content">
-    <div id="me_wrap">
-      <div id="me"></div>
-    </div>
-  <!--<div id="me"></div>-->
-    <p id="content_span">
-      <span id="content_text"
-            [style.display]="monolog_pane_showorhide('bio')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.
-      Now I enjoy writing software applications to solve efficiency problems.
-    </span>
-      <span id="content_text"
-                [style.display]="monolog_pane_showorhide('about')">
-        I'm a freelance software developer based in Seattle.
-        I'm also ava
-        This site is the hub of my social media feed and blog.
-        It also has my professional information for download.
-        Please feel free to reach out to collaborate.
-        <!--<br>-->
-        <!--<span id="content_hashes"> Startup  | Design  | Software </span>-->
-    </span>
-      <span id="startup"
-            [style.display]="monolog_pane_showorhide('startup')">I love startup because it allows radically ideas to take shape.
-         Over the last years,
-        I've had the opportunity to work at several different startups based in Seattle.
-      </span>
-      <span id="software"
-            [style.display]="monolog_pane_showorhide('software')">My go-to tools are TypeScript, Angular2 and Ionic2.
-        I have experience with system designs and continue to hone the art of writing elegant algorithms.
-      </span>
-      <span id="people"
-            [style.display]="monolog_pane_showorhide('people')">People are the heart of my work.
-        My interest to better understand human behaviors came out of my passion to design awesome product/service.
-      </span>
-      </p>
-    </span>
-</div>
+<router-outlet> </router-outlet>
 <div id='social_media_bar'>
     <span href='https://github.com/tannerP' target='_top'>
     <img src="assets/medias/medium.png">
@@ -88,3 +31,4 @@
 <div id="footer">
 &copy; Tanner Phan 2017
 </div>
+

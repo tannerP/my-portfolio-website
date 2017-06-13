@@ -2,13 +2,7 @@ import { Component, HostListener, Inject, OnInit } from '@angular/core';
 import { MenuStateService } from './services/menu-state.service';
 import { IgService } from './services/ig.service';
 import { DOCUMENT } from '@angular/platform-browser';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition
-} from '@angular/animations';
+import {trigger, state, style, animate, transition} from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -43,8 +37,8 @@ export class AppComponent implements OnInit {
   public menu_items = ['people', 'startup', 'work'];
   public bckgrnd_img_src = ['portfolio', '', 'bio', '', 'blog',  '',
     'Photography', '', 'design'];
-  constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) { }
   public menu_state: String;
+  constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) { }
   @HostListener('window:scroll', [])
   onWindowScroll() {
     // let number = this.document.body.scrollTop;
@@ -61,19 +55,5 @@ export class AppComponent implements OnInit {
     this.menu_state =  'about';
   }
 
-  menu_onClick(event: any, item): void {
-    console.log(this.menu_state);
-    console.log(item);
-    this.menuSrvc.setState(item);
-    this.menu_state = this.menuSrvc.getState();
-     console.log(this.ig.httpLoadPics());
-    return;
-  }
-  monolog_pane_showorhide(id): String {
-      return id === this.menu_state ? '' : 'none';
-  }
-  getMenuState(): String {
-    return this.menuSrvc.getState();
-  }
 }
 
