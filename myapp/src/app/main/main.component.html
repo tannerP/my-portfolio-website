@@ -1,13 +1,15 @@
 <div id="main">
   <ul id='visual_pane' >
     <!--<img src="assets/medias/ig.png">-->
-    <li class="content" *ngFor="let img_src of bckgrnd_img_src">
-      {{img_src}}
+    <li class="content" *ngFor="let img_src of bckgrnd_img_src"
+      [ngStyle]="setStyle()">
+      <a href={{img_src}}> {{img_src}} </a>
     </li>
-  </ul>w
+  </ul>
 </div>
 
 <div id='monolog_pane'>
+
   <ul id="bread_crums">
     <span> | </span>
     <li (click)="menu_onClick($event, 'about')"
@@ -22,6 +24,7 @@
       <span style="color:black"> | </span>
     </li>
   </ul>
+
   <span id="content">
     <div id="me_wrap">
       <div id="me"></div>
@@ -29,9 +32,9 @@
     <!--<div id="me"></div>-->
     <p id="content_span">
       <!--<span id="content_text"-->
-            <!--[style.display]="monolog_pane_showorhide('bio')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.-->
+      <!--[style.display]="monolog_pane_showorhide('bio')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.-->
       <!--Now I enjoy writing software applications to solve efficiency problems.-->
-    <!--</span>-->
+      <!--</span>-->
       <span id="content_text"
             [style.display]="monolog_pane_showorhide('about')">
         I'm a freelance software developer based in Seattle.
@@ -55,4 +58,5 @@
       </span>
       </p>
     </span>
+
 </div>

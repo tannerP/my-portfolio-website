@@ -35,8 +35,7 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
 })
 export class AppComponent implements OnInit {
   public menu_items = ['people', 'startup', 'work'];
-  public bckgrnd_img_src = ['portfolio', '', 'bio', '', 'blog',  '',
-    'Photography', '', 'design'];
+  public bckgrnd_img_src = ['portfolio', '', 'bio', '', 'blog',  '', 'Photography', '', 'design'];
   public menu_state: String;
   constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) { }
   @HostListener('window:scroll', [])

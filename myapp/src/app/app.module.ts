@@ -8,24 +8,31 @@ import { AppComponent } from './app.component';
 import { MenuStateService } from './services/menu-state.service';
 import { IgService } from './services/ig.service';
 import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BlogComponent } from './blog/blog.component';
+import { MainComponent } from './main/main.component';
+import { PhotosComponent } from './photos/photos.component';
+import { WorkComponent } from './work/work.component';
 
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: MainComponent },
   { path: 'about',    component: AboutComponent },
   { path: 'blog',    component: BlogComponent },
+  { path: 'portfolio',    component: PortfolioComponent },
+  { path: 'photos',    component: PhotosComponent },
+  { path: 'work',    component: WorkComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    HomeComponent,
     PortfolioComponent,
-    BlogComponent
+    BlogComponent,
+    MainComponent,
+    PhotosComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
