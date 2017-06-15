@@ -1,29 +1,26 @@
-div{
-  float: left;
-}
+div {
+  float: left; }
 
-#hashtagnav{
+#hashtagnav {
   width: 30%;
   background-color: #518a8c;
-  color: white;
-}
+  color: white; }
 
-#content{
+#content {
   width: 70%;
   background-color: darkgray;
-  display: flex;
-  ul{
+  display: flex; }
+  #content ul {
     background-color: darkorange;
     width: 90%;
     padding-top: 20px;
     margin-left: 5%;
-    list-style: none;
-    li{
+    list-style: none; }
+    #content ul li {
       margin-top: 20px;
       float: left;
       display: inline;
       background-color: #2ba9a9;
-      height: 120px;
-    }
-  }
-}
+      height: 120px; }
+
+/*# sourceMappingURL=blog.component.css.map */

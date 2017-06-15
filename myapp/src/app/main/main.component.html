@@ -12,9 +12,9 @@
 
   <ul id="bread_crums">
     <span> | </span>
-    <li (click)="menu_onClick($event, 'about')"
-        [ngClass]="menu_state == 'about'? 'selected':''">
-      about
+    <li (click)="menu_onClick($event, 'myself')"
+        [ngClass]="menu_state == 'myself'? 'selected':''">
+      myself
     </li>
     <span> | </span>
     <li *ngFor="let item of menu_items"
@@ -36,7 +36,7 @@
       <!--Now I enjoy writing software applications to solve efficiency problems.-->
       <!--</span>-->
       <span id="content_text"
-            [style.display]="monolog_pane_showorhide('about')">
+            [style.display]="monolog_pane_showorhide('myself')">
         I'm a freelance software developer based in Seattle.
         I'm also ava
         This site is the hub of my social media feed and blog.
@@ -47,10 +47,6 @@
             [style.display]="monolog_pane_showorhide('startup')">I love startup because it allows radically ideas to take shape.
          Over the last years,
         I've had the opportunity to work at several different startups based in Seattle.
-      </span>
-      <span id="software"
-            [style.display]="monolog_pane_showorhide('software')">My go-to tools are TypeScript, Angular2 and Ionic2.
-        I have experience with system designs and continue to hone the art of writing elegant algorithms.
       </span>
       <span id="people"
             [style.display]="monolog_pane_showorhide('people')">People are the heart of my work.

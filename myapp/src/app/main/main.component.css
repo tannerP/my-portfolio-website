@@ -7,60 +7,61 @@
     list-style: none;
     display: flex;
     flex-flow: wrap;
-    background-color: #1d1d1d;
     text-align: center; }
     #main #visual_pane .content {
-      opacity: .3;
+      opacity: .8;
       width: 33%;
       height: 120px;
       background-color: white;
       margin: auto;
       margin-top: 1px; }
       #main #visual_pane .content a {
-        background-color: darkorange;
-        opacity: .5;
+        width: 100%;
+        background-color: #2ba9a9;
         font-size: x-large;
         font-weight: 800;
         color: white;
-        line-height: 50px;
-        text-decoration: none; }
+        text-decoration: none;
+        opacity: .8; }
       #main #visual_pane .content a:hover, #main #visual_pane .content a:visited, #main #visual_pane .content a:hover {
         color: white; }
     #main #visual_pane .content:active, #main #visual_pane .content:hover {
       opacity: 1; }
+      #main #visual_pane .content:active a, #main #visual_pane .content:hover a {
+        opacity: 1; }
 
 #monolog_pane {
   background-color: white;
-  opacity: .8;
-  position: fixed;
+  position: static;
+  width: 100%;
   height: auto;
-  width: 100%; }
+  opacity: .8; }
   #monolog_pane #bread_crums {
     cursor: default;
     position: relative;
     top: 3px;
     text-align: center;
     height: auto;
-    font-size: 10pt;
+    font-size: 11pt;
     letter-spacing: 1pt;
-    color: gray;
-    opacity: .7; }
+    color: #717171;
+    opacity: 1; }
     #monolog_pane #bread_crums li {
       font-weight: 800;
       display: inline;
       list-style-type: none; }
     #monolog_pane #bread_crums li.selected {
-      color: white; }
+      color: darkgray; }
   #monolog_pane span#content {
     padding: 1px; }
     #monolog_pane span#content h4 {
       padding-top: 10px;
       padding-left: 10px; }
     #monolog_pane span#content p {
+      padding-left: 5px;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
-      color: gray;
-      opacity: .7;
+      color: black;
       font-size: 10pt;
       font-weight: lighter;
       text-indent: 0; }
@@ -71,7 +72,7 @@
       border-radius: 50%;
       border-width: 2px;
       opacity: .9;
-      background: -webkit-linear-gradient(left top, #ffed53 0%, #9f52ff 100%);
+      background: -webkit-linear-gradient(right top, #2ba9a9 30%, #ff5644 80%);
       float: right;
       width: 54px;
       height: 54px;
@@ -80,8 +81,7 @@
       #monolog_pane span#content div#me_wrap div#me {
         display: inline-block;
         position: relative;
-        top: 2px;
-        right: 1px;
+        top: 1px;
         margin: auto;
         border-style: solid;
         border-radius: 50%;
