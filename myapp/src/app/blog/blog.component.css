@@ -8,19 +8,24 @@ div {
 
 #content {
   width: 70%;
-  background-color: darkgray;
+  background-color: white;
   display: flex; }
   #content ul {
-    background-color: darkorange;
-    width: 90%;
+    background-color: #63eeff;
+    width: 96%;
     padding-top: 20px;
     margin-left: 5%;
     list-style: none; }
     #content ul li {
+      transition: 0.9s;
+      transform-style: preserve-3d;
+      transform-origin: 100% 50%;
       margin-top: 20px;
       float: left;
       display: inline;
       background-color: #2ba9a9;
       height: 120px; }
+    #content ul li:active, #content ul li:hover {
+      transform: rotateX(180deg); }
 
 /*# sourceMappingURL=blog.component.css.map */

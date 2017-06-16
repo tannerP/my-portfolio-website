@@ -9,34 +9,24 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    trigger('menu_state_text_content', [
-      state('main', style({
-        backgroundColor: 'darkorange'
+    trigger('socialmediaState', [
+      state('true',   style({
+         transform: 'translateY(-30px)',
+         transition: '0.5s',
       })),
-      state('startup',   style({
-        backgroundColor: 'darkorange',
-        transform: 'translateY(100px)'
+      state('false',   style({
+        display: 'none',
+        transform: 'translateY(30px)',
+        // backgroundColor: 'blue',
+  //      transform: 'translateY(100px)'
       })),
-      state('software',   style({
-        backgroundColor: 'darkorange',
-        transform: 'scale(1.1)'
-      })),
-      state('people',   style({
-
-        transform: 'translateY(100px)'
-      })),
-      state('*', style({
-        display: 'none'
-      })),
-      transition('void => *', animate('1000ms ease-in')),
-       transition('* => void', animate('1000ms ease-out'))
+      transition('true => *', animate('1000ms ease-in')),
+       transition('false => *', animate('1000ms ease-out'))
     ])
   ]
 })
 export class AppComponent implements OnInit {
-  public menu_items = ['people', 'startup', 'work'];
-  public bckgrnd_img_src = ['portfolio', '', 'bio', '', 'blog',  '', 'Photography', '', 'design'];
-  public menu_state: String;
+  public socialmedia_state: Boolean;
   constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) { }
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -51,8 +41,11 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.menu_state =  'about';
+   this.socialmedia_state = false;
   }
-
+  toggle_socialMedia() {
+    this.socialmedia_state = !this.socialmedia_state;
+    console.log(this.socialmedia_state);
+  }
 }
 

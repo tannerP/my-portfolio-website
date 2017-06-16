@@ -1,17 +1,8 @@
 
-<!--<div class="pane_top">-->
-  <!--<img id='self' src="assets/medias/me.jpg">-->
-  <!--<div class="about">-->
-    <!--<h2>Tanner Phan</h2>-->
-    <!--<br>-->
-    <!--<p id="name">Startup | Design | Code</p>-->
-    <!--<br>-->
-    <!--<p id="city">Seattle, WA</p>-->
-  <!--</div>-->
-<!--</div>-->
+
 
 <router-outlet> </router-outlet>
-<div id='social_media_bar'>
+<div id='social_media_bar' [@socialmediaState]="socialmedia_state == true? 'true':'false'" >
     <span href='https://github.com/tannerP' target='_top'>
     <img src="assets/medias/medium.png">
   </span>
@@ -28,7 +19,7 @@
     <img src="assets/medias/github_blk.png">
   </span>
 </div>
-<div id="footer">
+<div id="footer" (click)="toggle_socialMedia()">
 &copy; Tanner Phan 2017
 </div>
 

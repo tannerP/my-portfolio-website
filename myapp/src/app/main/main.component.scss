@@ -9,27 +9,27 @@
     list-style:none;
     display: flex;
     flex-flow: wrap;
-    //background-color: gray;
     text-align: center;
+    background-color: #227f7f;
+    opacity: .8;
     .content {
         opacity: .8;
         width: 33%;
-        height: 120px;
-        background-color: white;
+        height: 100px;
         margin: auto;
         margin-top: 1px;
       a {
+        background-color: black ;
         width: 100%;
-        background-color: #2ba9a9;
         font-size: x-large;
         font-weight: 800;
-        color: white;
-        //line-height: 70px;
+        line-height: 100px;
         text-decoration: none;
-        opacity: .8;
+        opacity: .9;
+        color: #ff7e00;
       }
-      a:hover, a:visited, a:hover{
-        color: white;
+      a:hover, a:hover{
+        //color: white;
       }
     }
     .content:active, .content:hover {
@@ -46,7 +46,7 @@
   width: 100%;
   height: auto;
   opacity: .8;
-  #bread_crums{
+  #bread_crums {
     cursor: default;
     position: relative;
     top: 3px;
@@ -54,15 +54,16 @@
     height: auto;
     font-size: 11pt;
     letter-spacing: 1pt;
-    color: #717171;
+    color: #2ba9a9;
     opacity: 1;
-    li{
+    li {
       font-weight: 800;
       display: inline;
       list-style-type: none;
     }
     li.selected {
-      color: darkgray;
+      color: #2ba9a9;
+      opacity: .5;
     }
   }
   span#content {
@@ -71,7 +72,7 @@
       padding-top: 10px;
       padding-left: 10px;
     }
-    p{
+    p {
       padding-left: 5px;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
@@ -82,13 +83,18 @@
       text-indent: 0;
     }
     div#me_wrap {
+      -webkit-transform: translate(0);
+      -moz-transform: translate(0);
+      -ms-transform: translate(0);
+      -o-transform: translate(0);
+      transition: 1s;
       display: table-cell;
       vertical-align: middle;
       text-align: center;
       border-radius: 50%;
       border-width: 2px;
       opacity: .9;
-      background: -webkit-linear-gradient(right top, #2ba9a9 30%,  #ff5644 80%);
+      background: -webkit-linear-gradient(left bottom, #2ba9a9 30%, #4b3c39 80%);
       float: right;
       width: 54px;
       height: 54px;
@@ -103,11 +109,21 @@
         border-radius: 50%;
         background-image: url('../../assets/medias/me.jpg');
         background-position: center;
-        background-repeat:no-repeat;
+        background-repeat: no-repeat;
         background-size: contain;
         width: 54px;
         height: 54px;
+        transition: 1s;
       }
+    }
+    div#me_wrap:hover {
+      -webkit-transform: translate(100px);
+      -moz-transform: translate(100px);
+      -ms-transform: translate(100px);
+      -o-transform: translate(100px);
+      transition: 1s;
+
     }
   }
 }
+

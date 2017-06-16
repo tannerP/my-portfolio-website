@@ -12,7 +12,7 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
 export class MainComponent implements OnInit {
   public menu_state: String;
   public menu_items = ['people', 'startup'];
-  public bckgrnd_img_src = ['portfolio', '', 'blog', '',  'about',  '', 'photos', '', 'work'];
+  public bckgrnd_img_src = ['portfolio', '', '', '',  'vietnam',  '', '', '', 'writing'];
   constructor(@Inject(DOCUMENT) private document: any, private ig: IgService, public menuService: MenuStateService) { }
 //  @HostListener('window:scroll', [])
   onWindowScroll() {

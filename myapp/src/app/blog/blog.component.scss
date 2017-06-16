@@ -10,20 +10,26 @@ div{
 
 #content{
   width: 70%;
-  background-color: darkgray;
+  background-color: white;
   display: flex;
   ul{
-    background-color: darkorange;
-    width: 90%;
+    background-color: #63eeff;
+    width: 96%;
     padding-top: 20px;
     margin-left: 5%;
     list-style: none;
     li{
+      transition: 0.9s;
+      transform-style: preserve-3d;
+      transform-origin: 100% 50%;
       margin-top: 20px;
       float: left;
       display: inline;
       background-color: #2ba9a9;
       height: 120px;
+    }
+    li:active, li:hover{
+      transform: rotateX(180deg)
     }
   }
 }
