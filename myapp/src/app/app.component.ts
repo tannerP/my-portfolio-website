@@ -11,26 +11,27 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
   animations: [
     trigger('socialmediaState', [
       state('true',   style({
-         transform: 'translateY(-30px)',
-         transition: '0.5s',
+         transform: 'translateY(-40px)',
       })),
       state('false',   style({
         display: 'none',
-        transform: 'translateY(30px)',
-        // backgroundColor: 'blue',
-  //      transform: 'translateY(100px)'
+        transform: 'translateY(4px)',
       })),
       transition('true => *', animate('1000ms ease-in')),
        transition('false => *', animate('1000ms ease-out'))
     ])
   ]
 })
-export class AppComponent implements OnInit {
-  public socialmedia_state: Boolean;
-  constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) { }
+export class AppComponent {
+  public socialmedia_state: Boolean = false;
+  public footer_tog: Boolean = false;
+  constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) {
+    setInterval(() => { console.log('Reset'); this.footer_tog = !this.footer_tog; },  1000 * 3);
+  };
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    // let number = this.document.body.scrollTop;
+    const number: Number = this.document.body.scrollTop;
+    console.log(number);
     // if (number > 120) {
     //   this.navIsFixed = true;
     //   console.log("number " + number);
@@ -40,9 +41,8 @@ export class AppComponent implements OnInit {
     // }
   }
 
-  ngOnInit() {
-   this.socialmedia_state = false;
-  }
+  // ngOnInit() {
+  // }
   toggle_socialMedia() {
     this.socialmedia_state = !this.socialmedia_state;
     console.log(this.socialmedia_state);
