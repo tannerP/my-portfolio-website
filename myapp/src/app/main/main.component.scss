@@ -11,9 +11,9 @@
     flex-flow: wrap;
     text-align: center;
     background-color: #227f7f;
-    opacity: .8;
+    opacity: .9;
     .content {
-        opacity: .8;
+        opacity: .9;
         width: 33%;
         height: 100px;
         margin: auto;
@@ -44,7 +44,7 @@
   background-color: white;
   position: static;
   width: 100%;
-  height: auto;
+  height: 40%;
   opacity: .8;
   #bread_crums {
     cursor: default;
@@ -55,7 +55,6 @@
     font-size: 11pt;
     letter-spacing: 1pt;
     color: #2ba9a9;
-    opacity: 1;
     li {
       font-weight: 800;
       display: inline;
@@ -99,11 +98,11 @@
       width: 54px;
       height: 54px;
       margin: 10px;
-      padding: 2px;
+      padding: 1px;
       div#me {
         display: inline-block;
         position: relative;
-        top: 1px;
+        top: 0px;
         margin: auto;
         border-style: solid;
         border-radius: 50%;
@@ -117,6 +116,7 @@
       }
     }
     div#me_wrap:hover {
+      display: none;
       -webkit-transform: translate(100px);
       -moz-transform: translate(100px);
       -ms-transform: translate(100px);

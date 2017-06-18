@@ -2,7 +2,7 @@
 
 
 <router-outlet> </router-outlet>
-<div id="footer" (click)="toggle_socialMedia()">{{footer_tog == true? '&copy; Tanner Phan 2017':'Reach Out'}}</div>
+<div id="footer" (click)="toggle_socialMedia()">{{footer_tog == true? 'Follow here':' &copy; tannerphan 2017'}}</div>
 <div id='social_media_bar' [@socialmediaState]="socialmedia_state === true ? 'true':'false'" >
   <a href='https://github.com/tannerP' target='_top'>
     <img src="assets/medias/medium.png">

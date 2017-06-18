@@ -1,29 +1,42 @@
 div {
-  float: left; }
+  text-align: center; }
+
+h1 {
+  height: 50px;
+  line-height: 3; }
 
 #hashtagnav {
+  position: fixed;
   width: 30%;
-  background-color: #518a8c;
+  background-color: black;
+  opacity: .8;
   color: white; }
+  #hashtagnav #back {
+    background-color: #63eeff;
+    opacity: .8; }
+  #hashtagnav #reset {
+    background-color: red;
+    opacity: .8; }
+  #hashtagnav #filter_list {
+    margin-top: 20px; }
 
 #content {
   width: 70%;
-  background-color: white;
-  display: flex; }
+  margin-left: 30%;
+  background-color: white; }
   #content ul {
-    background-color: #63eeff;
-    width: 96%;
+    background-color: black;
+    opacity: .6;
+    width: 100%;
     padding-top: 20px;
-    margin-left: 5%;
     list-style: none; }
     #content ul li {
+      display: inline-flex;
       transition: 0.9s;
       transform-style: preserve-3d;
       transform-origin: 100% 50%;
       margin-top: 20px;
-      float: left;
-      display: inline;
-      background-color: #2ba9a9;
+      background-color: #c4c6c6;
       height: 120px; }
     #content ul li:active, #content ul li:hover {
       transform: rotateX(180deg); }

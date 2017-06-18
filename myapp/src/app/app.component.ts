@@ -18,7 +18,8 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
         transform: 'translateY(4px)',
       })),
       transition('true => *', animate('1000ms ease-in')),
-       transition('false => *', animate('1000ms ease-out'))
+      transition('false => *', animate('1000ms ease-out')),
+      transition('void => *', animate('1000ms ease-out')),
     ])
   ]
 })
@@ -26,7 +27,7 @@ export class AppComponent {
   public socialmedia_state: Boolean = false;
   public footer_tog: Boolean = false;
   constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) {
-    setInterval(() => { console.log('Reset'); this.footer_tog = !this.footer_tog; },  1000 * 3);
+    setInterval(() => { console.log('Reset'); this.footer_tog = !this.footer_tog; },  1000 * 4);
   };
   @HostListener('window:scroll', [])
   onWindowScroll() {
