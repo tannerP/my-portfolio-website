@@ -16,7 +16,7 @@ import { VietnamComponent } from './vietnam/vietnam.component';
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
   { path: 'reads',    component: AboutComponent },
-  { path: 'writings',    component: BlogComponent },
+  { path: 'blog',    component: BlogComponent },
   { path: 'portfolio',    component: PortfolioComponent },
   { path: 'vietnam',    component: VietnamComponent },
   { path: '**',         redirectTo: '' },

@@ -11,8 +11,8 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
 
 export class MainComponent implements OnInit {
   public menu_state: String;
-  public menu_items = ['people', 'startup'];
-  public bckgrnd_img_src = ['reads', '', '', '',  'writings',  '', '', '', 'portfolio'];
+  public menu_items = ['about', 'bio', 'people', 'startup'];
+  public bckgrnd_img_src = ['reads', '', 'photos', '',  'blog',  '', 'socials', '', 'portfolio'];
   constructor(@Inject(DOCUMENT) private document: any, private ig: IgService, public menuService: MenuStateService) { }
 //  @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -27,7 +27,7 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.menu_state =  'myself';
+    this.menu_state =  'about';
   }
 
   menu_onClick(event: any, item): void {
@@ -46,9 +46,9 @@ export class MainComponent implements OnInit {
   }
   setStyle(): any {
     let random: number;
-    const url = ['../../assets/blog.jpg',
-      '../../assets/camera.jpg',
-      '../../assets/about.jpg'];
+    const url = ['../../assets/medias/me.jpg',
+      '../../assets/medias/me.jpg',
+      '../../assets/medias/me.jpg'];
 
     random = Math.floor(Math.random() * 3) ;
     const style = {
@@ -56,6 +56,7 @@ export class MainComponent implements OnInit {
         'background-position': 'center',
         'background-repeat':'no-repeat',
         'background-size': 'contain',
+        'height': '100px',
     }
     return style;
   }

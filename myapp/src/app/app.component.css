@@ -70,8 +70,8 @@
 
   div#footer {
     background-size: 100%;
-    background-image: -webkit-linear-gradient(#2ba9a9, #464646);
-    background-image: linear-gradient(#2ba9a9, #464646);
+    background-image: -webkit-linear-gradient(#ffa117, #464646);
+    background-image: linear-gradient(#ffa117, #464646);
     position: relative;
     z-index: 100;
     border-style: solid;
@@ -90,8 +90,8 @@
     text-align: center; }
     div#footer:before {
       border-radius: inherit;
-      background-image: -webkit-linear-gradient(#464646, #2ba9a9);
-      background-image: linear-gradient(#464646, #2ba9a9);
+      background-image: -webkit-linear-gradient(#464646, #ffa117);
+      background-image: linear-gradient(#464646, #ffa117);
       content: '';
       display: block;
       height: 100%;

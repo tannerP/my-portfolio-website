@@ -2,7 +2,40 @@
 
 #main {
   position: static;
-  height: auto;
+  height: 90%;
+  table {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-bottom:5px solid #bfbfbf ;
+    //border-top: 5px solid #bfbfbf;
+    border-collapse: collapse;
+    text-align: center;
+  }
+ table{
+  // height: 100%;
+  // width: 100%;
+   tr{
+     height: auto;
+   }
+   td{
+     width: 33%;
+     height: auto;
+     a {
+       background-color: black ;
+       width: 100%;
+       font-size: large;
+       font-weight: 600;
+       line-height: 300px;
+       text-decoration: none;
+       opacity: .8;
+       color: #ffa117;
+     }
+     a:hover, a:hover{
+       //color: white;
+     }
+   }
+ }
+
   #visual_pane {
     width: 100%;
     position: relative;
@@ -10,23 +43,26 @@
     display: flex;
     flex-flow: wrap;
     text-align: center;
-    background-color: #227f7f;
+    background-color: #bfbfbf;
     opacity: .9;
     .content {
         opacity: .9;
-        width: 33%;
+        width: 33.33%;
         height: 100px;
-        margin: auto;
-        margin-top: 1px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 1%;
+        //margin: auto;
+        //margin-top: 1px;
       a {
         background-color: black ;
         width: 100%;
         font-size: x-large;
-        font-weight: 800;
+        font-weight: 900;
         line-height: 100px;
         text-decoration: none;
-        opacity: .9;
-        color: #ff7e00;
+        opacity: .8;
+        color: #ffa117;
       }
       a:hover, a:hover{
         //color: white;
@@ -40,11 +76,11 @@
     }
   }
 }
-#monolog_pane {
+#secondary {
   background-color: white;
   position: static;
   width: 100%;
-  height: 40%;
+  height: 20%;
   opacity: .8;
   #bread_crums {
     cursor: default;
@@ -54,15 +90,17 @@
     height: auto;
     font-size: 11pt;
     letter-spacing: 1pt;
-    color: #2ba9a9;
+    color: #ffa117;
+    opacity: .7;
+
     li {
       font-weight: 800;
       display: inline;
       list-style-type: none;
     }
     li.selected {
-      color: #2ba9a9;
-      opacity: .5;
+      color: #ffa117;
+      opacity: 1;
     }
   }
   span#content {
@@ -93,7 +131,7 @@
       border-radius: 50%;
       border-width: 2px;
       opacity: .9;
-      background: -webkit-linear-gradient(left bottom, #2ba9a9 30%, #4b3c39 80%);
+      background: -webkit-linear-gradient(left bottom, #ffa117 30%, #4b3c39 80%);
       float: right;
       width: 54px;
       height: 54px;
@@ -115,15 +153,15 @@
         transition: 1s;
       }
     }
-    div#me_wrap:hover {
-      display: none;
-      -webkit-transform: translate(100px);
-      -moz-transform: translate(100px);
-      -ms-transform: translate(100px);
-      -o-transform: translate(100px);
-      transition: 1s;
-
-    }
+    //div#me_wrap:hover {
+    //  display: none;
+    //  -webkit-transform: translate(100px);
+    //  -moz-transform: translate(100px);
+    //  -ms-transform: translate(100px);
+    //  -o-transform: translate(100px);
+    //  transition: 1s;
+    //
+    //}
   }
 }
 

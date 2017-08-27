@@ -1,6 +1,26 @@
 #main {
   position: static;
-  height: auto; }
+  height: 90%; }
+  #main table {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-bottom: 5px solid #bfbfbf;
+    border-collapse: collapse;
+    text-align: center; }
+  #main table tr {
+    height: auto; }
+  #main table td {
+    width: 33%;
+    height: auto; }
+    #main table td a {
+      background-color: black;
+      width: 100%;
+      font-size: large;
+      font-weight: 600;
+      line-height: 300px;
+      text-decoration: none;
+      opacity: .8;
+      color: #ffa117; }
   #main #visual_pane {
     width: 100%;
     position: relative;
@@ -8,35 +28,36 @@
     display: flex;
     flex-flow: wrap;
     text-align: center;
-    background-color: #227f7f;
+    background-color: #bfbfbf;
     opacity: .9; }
     #main #visual_pane .content {
       opacity: .9;
-      width: 33%;
+      width: 33.33%;
       height: 100px;
-      margin: auto;
-      margin-top: 1px; }
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-top: 1%; }
       #main #visual_pane .content a {
         background-color: black;
         width: 100%;
         font-size: x-large;
-        font-weight: 800;
+        font-weight: 900;
         line-height: 100px;
         text-decoration: none;
-        opacity: .9;
-        color: #ff7e00; }
+        opacity: .8;
+        color: #ffa117; }
     #main #visual_pane .content:active, #main #visual_pane .content:hover {
       opacity: 1; }
       #main #visual_pane .content:active a, #main #visual_pane .content:hover a {
         opacity: 1; }
 
-#monolog_pane {
+#secondary {
   background-color: white;
   position: static;
   width: 100%;
-  height: 40%;
+  height: 20%;
   opacity: .8; }
-  #monolog_pane #bread_crums {
+  #secondary #bread_crums {
     cursor: default;
     position: relative;
     top: 3px;
@@ -44,20 +65,21 @@
     height: auto;
     font-size: 11pt;
     letter-spacing: 1pt;
-    color: #2ba9a9; }
-    #monolog_pane #bread_crums li {
+    color: #ffa117;
+    opacity: .7; }
+    #secondary #bread_crums li {
       font-weight: 800;
       display: inline;
       list-style-type: none; }
-    #monolog_pane #bread_crums li.selected {
-      color: #2ba9a9;
-      opacity: .5; }
-  #monolog_pane span#content {
+    #secondary #bread_crums li.selected {
+      color: #ffa117;
+      opacity: 1; }
+  #secondary span#content {
     padding: 1px; }
-    #monolog_pane span#content h4 {
+    #secondary span#content h4 {
       padding-top: 10px;
       padding-left: 10px; }
-    #monolog_pane span#content p {
+    #secondary span#content p {
       padding-left: 5px;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
@@ -65,7 +87,7 @@
       font-size: 10pt;
       font-weight: lighter;
       text-indent: 0; }
-    #monolog_pane span#content div#me_wrap {
+    #secondary span#content div#me_wrap {
       -webkit-transform: translate(0);
       -moz-transform: translate(0);
       -ms-transform: translate(0);
@@ -77,13 +99,13 @@
       border-radius: 50%;
       border-width: 2px;
       opacity: .9;
-      background: -webkit-linear-gradient(left bottom, #2ba9a9 30%, #4b3c39 80%);
+      background: -webkit-linear-gradient(left bottom, #ffa117 30%, #4b3c39 80%);
       float: right;
       width: 54px;
       height: 54px;
       margin: 10px;
       padding: 1px; }
-      #monolog_pane span#content div#me_wrap div#me {
+      #secondary span#content div#me_wrap div#me {
         display: inline-block;
         position: relative;
         top: 0px;
@@ -97,12 +119,5 @@
         width: 54px;
         height: 54px;
         transition: 1s; }
-    #monolog_pane span#content div#me_wrap:hover {
-      display: none;
-      -webkit-transform: translate(100px);
-      -moz-transform: translate(100px);
-      -ms-transform: translate(100px);
-      -o-transform: translate(100px);
-      transition: 1s; }
 
 /*# sourceMappingURL=main.component.css.map */
