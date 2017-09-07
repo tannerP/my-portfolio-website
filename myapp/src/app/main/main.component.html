@@ -1,93 +1,121 @@
-<div id="main">
+<div id="menu_button_flip"> menu </div>
+<div id="menu">
   <table>
     <tr>
       <td [ngStyle]="setStyle()">
-         <a href={{img_src}}> hello  </a>
+        <a href={{img_src}}>photo</a>
       </td>
       <td [ngStyle]="setStyle()">
-        <a href={{img_src}}> hello </a>
-      </td>
-    <td [ngStyle]="setStyle()">
-      <a href={{img_src}}> hello </a>
-    </td>
-    </tr>
-    <tr>
-      <td [ngStyle]="setStyle()">
-        <a href={{img_src}}> hello </a>
+        <a href={{img_src}}>blog</a>
       </td>
       <td [ngStyle]="setStyle()">
-        <a href={{img_src}}> hello </a>
-      </td>
-      <td [ngStyle]="setStyle()">
-        <a href={{img_src}}> hello </a>
+        <a href={{img_src}}>social</a>
       </td>
     </tr>
     <tr>
       <td [ngStyle]="setStyle()">
-        <a href={{img_src}}> hello </a>
+        <a href={{img_src}}>twitter</a>
       </td>
       <td [ngStyle]="setStyle()">
-        <a href={{img_src}}> hello </a>
+        <a href={{img_src}}>home</a>
       </td>
       <td [ngStyle]="setStyle()">
-        <a href={{img_src}}> hello </a>
+        <a href={{img_src}}>work</a>
+      </td>
+    </tr>
+    <tr>
+      <td [ngStyle]="setStyle()">
+        <a href={{img_src}}>contact</a>
+      </td>
+      <td [ngStyle]="setStyle()">
+        <a href={{img_src}}>shop</a>
+      </td>
+      <td [ngStyle]="setStyle()">
+        <a href={{img_src}}>about</a>
       </td>
     </tr>
   </table>
-  <h1> menu </h1>
 </div>
+<!--<div id="menu_button"> menu </div>-->
 
-<div id='secondary'>
-
-  <ul id="bread_crums">
-    <!--<span> | </span>-->
-    <!--<li (click)="menu_onClick($event, 'myself')"-->
-        <!--[ngClass]="menu_state == 'myself'? 'selected':''">-->
-      <!--myself-->
+<!--<div id='secondary'>-->
+  <!--<ul id="bread_crums">-->
+    <!--&lt;!&ndash;<span> | </span>&ndash;&gt;-->
+    <!--&lt;!&ndash;<li (click)="menu_onClick($event, 'myself')"&ndash;&gt;-->
+        <!--&lt;!&ndash;[ngClass]="menu_state == 'myself'? 'selected':''">&ndash;&gt;-->
+      <!--&lt;!&ndash;myself&ndash;&gt;-->
+    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+    <!--&lt;!&ndash;<span> | </span>&ndash;&gt;-->
+    <!--<li *ngFor="let item of menu_items"-->
+        <!--(click)="menu_onClick($event, item)"-->
+        <!--[ngClass]="menu_state == item? 'selected':''">-->
+      <!--{{item}}-->
+      <!--<span> | </span>-->
     <!--</li>-->
-    <span> | </span>
-    <li *ngFor="let item of menu_items"
-        (click)="menu_onClick($event, item)"
-        [ngClass]="menu_state == item? 'selected':''">
-      {{item}}
-      <span style="color:black"> | </span>
-    </li>
-  </ul>
+  <!--</ul>-->
 
-  <span id="content">
-    <div id="me_wrap">
-      <div id="me"></div>
-    </div>
-    <!--<div id="me"></div>-->
-    <p id="content_span">
+  <!--<span id="content">-->
+    <!--<div id="me_wrap">-->
+      <!--<div id="me"></div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;<div id="me"></div>&ndash;&gt;-->
+    <!--<p id="content_span">-->
+      <!--&lt;!&ndash;<span id="content_text"&ndash;&gt;-->
+      <!--&lt;!&ndash;[style.display]="monolog_pane_showorhide('bio')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.&ndash;&gt;-->
+      <!--&lt;!&ndash;Now I enjoy writing software applications to solve efficiency problems.&ndash;&gt;-->
+      <!--&lt;!&ndash;</span>&ndash;&gt;-->
       <!--<span id="content_text"-->
-      <!--[style.display]="monolog_pane_showorhide('bio')">I started hacking at 12 years old when AOL was giving out free internet access on a disc.-->
-      <!--Now I enjoy writing software applications to solve efficiency problems.-->
+            <!--[style.display]="monolog_pane_showorhide('bio')">-->
+        <!--I'm driven to build applications that help us be the best versions of ourselves.-->
+        <!--I study old habits and leverage cutting-edge technologies to find possible solutions.-->
+        <!--On my downtime, I enjoy traveling, talking to people, and learning new cultures.-->
       <!--</span>-->
-      <span id="content_text"
-            [style.display]="monolog_pane_showorhide('bio')">
-        I'm driven to build applications that help us be the best versions of ourselves.
-        I study old habits and leverage cutting-edge technologies to find possible solutions.
-        On my downtime, I enjoy traveling, talking to people, and learning new cultures.
-      </span>
-      <span id="startup"
-            [style.display]="monolog_pane_showorhide('startup')">
-        Startup are often small teams that work rapidly toward finding a market fit for realizing product.
-       A good startup environment creates the strongest camaraderie.
-          I love startup because, ideally, it offers a safe place to try radial ideas quickly.
-      </span>
-      <span id="people"
-            [style.display]="monolog_pane_showorhide('people')">
-        As people, I believe we are at our best when we seek the best for one another.
-       I enjoy working with people and empowering the ones next to me.
-        A strong bond can withhold any obstacles in achieving the team goals.
-      </span>
-       <span id="about"
-             [style.display]="monolog_pane_showorhide('about')">
-         Application Software Developer
-      </span>
-      </p>
-    </span>
+      <!--<span id="people"-->
+            <!--[style.display]="monolog_pane_showorhide('people')">-->
+        <!--As people, I believe we are at our best when we seek the best for one another.-->
+       <!--I enjoy working with people and empowering the ones next to me.-->
+        <!--A strong bond can withhold any obstacles in achieving the team goals.-->
+      <!--</span>-->
+       <!--<span id="about"-->
+             <!--[style.display]="monolog_pane_showorhide('about')">-->
+         <!--Application Software Programmer-->
+         <!--<br>-->
+         <!--Based in Seattle Washington-->
+       <!--</span>-->
+      <!--</p>-->
+    <!--</span>-->
 
 
+<!--</div>-->
+
+<div id="seattle_based_slogan">
+  <h3> SEATTLE BASED </h3>
+  <p> Frontend Programmer</p>
+<img id="seattle_skyline"
+     src="../../assets/medias/seattle_skyline.png">
 </div>
+<div id="tanner_card">
+  <img src="../../assets/medias/me_standing.png">
+  <p> Portfolio =></p>
+</div>
+<div id="about_section">
+  <div>
+    <h2> About </h2>
+    <br>
+    <p>
+      As people, I believe we are at our best when we seek the best for one another.-->
+      I enjoy working with people and empowering the ones next to me.
+      A strong bond can withhold any obstacles in achieving the team goals.
+
+      As people, I believe we are at our best when we seek the best for one another.-->
+      I enjoy working with people and empowering the ones next to me.
+      A strong bond can withhold any obstacles in achieving the team goals.
+
+      <!--As people, I believe we are at our best when we seek the best for one another.&ndash;&gt;-->
+      <!--I enjoy working with people and empowering the ones next to me.-->
+      <!--A strong bond can withhold any obstacles in achieving the team goals.-->
+    </p>
+  </div>
+  <!--<span id="content_text"> </span>-->
+</div>
+<!--<b>-->

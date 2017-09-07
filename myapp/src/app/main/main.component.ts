@@ -11,10 +11,11 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
 
 export class MainComponent implements OnInit {
   public menu_state: String;
-  public menu_items = ['about', 'bio', 'people', 'startup'];
+  public menu_items = ['about', 'bio', 'people'];
   public bckgrnd_img_src = ['reads', '', 'photos', '',  'blog',  '', 'socials', '', 'portfolio'];
   constructor(@Inject(DOCUMENT) private document: any, private ig: IgService, public menuService: MenuStateService) { }
-//  @HostListener('window:scroll', [])
+  public img_src = '../../assets/medias/me.jpg';
+  //  @HostListener('window:scroll', [])
   onWindowScroll() {
     // let number = this.document.body.scrollTop;
     // if (number > 120) {

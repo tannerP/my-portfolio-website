@@ -1,167 +1,241 @@
 @import '../palette.scss';
+@import url('https://fonts.googleapis.com/css?family=Slabo+13px|Suez+13px||Ultra');
 
-#main {
+$cust-orange: #ffa117;
+$link-font-color: $cust-orange;
+#menu {
   position: static;
-  height: 90%;
+  height: 80%;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
   table {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border-bottom:5px solid #bfbfbf ;
+   // margin-top: 5%;
+  //  margin-bottom: 5%;
+    //border-bottom:5px solid #bfbfbf ;
     //border-top: 5px solid #bfbfbf;
     border-collapse: collapse;
     text-align: center;
   }
  table{
-  // height: 100%;
-  // width: 100%;
-   tr{
+  tr{
      height: auto;
    }
    td{
-     width: 33%;
-     height: auto;
+     width: 33.333%;
+    // height: 100%;
      a {
+       position: relative;
+       bottom: 10px;
+       right: 5px;
        background-color: black ;
        width: 100%;
-       font-size: large;
+       font-size: 1.5em;
        font-weight: 600;
-       line-height: 300px;
+       letter-spacing: 2px;
        text-decoration: none;
-       opacity: .8;
+       opacity: .7;
        color: #ffa117;
-     }
-     a:hover, a:hover{
-       //color: white;
+
      }
    }
  }
-
-  #visual_pane {
-    width: 100%;
-    position: relative;
-    list-style:none;
-    display: flex;
-    flex-flow: wrap;
-    text-align: center;
-    background-color: #bfbfbf;
-    opacity: .9;
-    .content {
-        opacity: .9;
-        width: 33.33%;
-        height: 100px;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-top: 1%;
-        //margin: auto;
-        //margin-top: 1px;
-      a {
-        background-color: black ;
-        width: 100%;
-        font-size: x-large;
-        font-weight: 900;
-        line-height: 100px;
-        text-decoration: none;
-        opacity: .8;
-        color: #ffa117;
-      }
-      a:hover, a:hover{
-        //color: white;
-      }
-    }
-    .content:active, .content:hover {
-      opacity: 1;
-      a {
-        opacity: 1;
-      }
-    }
-  }
 }
-#secondary {
-  background-color: white;
-  position: static;
-  width: 100%;
-  height: 20%;
-  opacity: .8;
-  #bread_crums {
-    cursor: default;
-    position: relative;
-    top: 3px;
-    text-align: center;
-    height: auto;
-    font-size: 11pt;
-    letter-spacing: 1pt;
-    color: #ffa117;
+
+@mixin menu_base(){
+  text-align: center;
+  width: 80%;
+  height: auto;
+  color: #333333;
+  font-size: 35px;
+  font-weight: lighter;
+  letter-spacing: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+div#menu_button{
+  @include menu_base();
+  border-bottom: solid;
+ // position: absolute;
+  bottom: 0px;
+  border-width: 1px;
+}
+div#menu_button_flip{
+  @include menu_base();
+  margin-top: 3%;
+  border-top: solid;
+  border-width: 1px;
+}
+
+div#seattle_based_slogan{
+  display: block;
+  text-align: center;
+  height: auto;
+  margin-top: 25%;
+  h3{
+    font-size: 2.2em;
+    font-family: 'Ultra', serif;
+    padding-top: 10%;
+    padding-bottom: 0;
     opacity: .7;
-
-    li {
-      font-weight: 800;
-      display: inline;
-      list-style-type: none;
-    }
-    li.selected {
-      color: #ffa117;
-      opacity: 1;
-    }
+   // opacity: .6;
   }
-  span#content {
-    padding: 1px;
-    h4 {
-      padding-top: 10px;
-      padding-left: 10px;
-    }
-    p {
-      padding-left: 5px;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-      color: black;
-      //opacity: .7;
-      font-size: 10pt;
-      font-weight: lighter;
-      text-indent: 0;
-    }
-    div#me_wrap {
-      -webkit-transform: translate(0);
-      -moz-transform: translate(0);
-      -ms-transform: translate(0);
-      -o-transform: translate(0);
-      transition: 1s;
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-      border-radius: 50%;
-      border-width: 2px;
-      opacity: .9;
-      background: -webkit-linear-gradient(left bottom, #ffa117 30%, #4b3c39 80%);
-      float: right;
-      width: 54px;
-      height: 54px;
-      margin: 10px;
-      padding: 1px;
-      div#me {
-        display: inline-block;
-        position: relative;
-        top: 0px;
-        margin: auto;
-        border-style: solid;
-        border-radius: 50%;
-        background-image: url('../../assets/medias/me.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 54px;
-        height: 54px;
-        transition: 1s;
-      }
-    }
-    //div#me_wrap:hover {
-    //  display: none;
-    //  -webkit-transform: translate(100px);
-    //  -moz-transform: translate(100px);
-    //  -ms-transform: translate(100px);
-    //  -o-transform: translate(100px);
-    //  transition: 1s;
-    //
-    //}
+  p{
+   // font-family: 'Slabo 13px', serif;
+    color: $link-font-color;
+    letter-spacing: .8px;
+    opacity: .9;
   }
 }
+
+ img#seattle_skyline {
+    margin-top: 80%;
+    height: auto;
+    width: 100%;
+    opacity: .5;
+    display: block;
+    filter: grayscale(100%);
+   -moz-box-shadow:    inset 0 0 100px #ffffff;
+   -webkit-box-shadow: inset 0 0 100px #ffffff;
+    box-shadow:         inset 0 0 60px #ffffff;
+ }
+
+div#tanner_card{
+  padding-top: 10px;
+  width: 100%;
+  height: 35%;
+  text-align: right;
+  color: white;
+  font-size: 1em;
+  background-color: $cust-orange;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow:         inset 0 0 10px #ffffff;
+  //-moz-box-shadow:    inset 0 0 30px #ffffff;
+  //-webkit-box-shadow: inset 0 0 30px #ffffff;
+  img{
+      position: relative;
+      width: auto;
+      height: 110%;
+     // height: auto;
+      display: block;
+      bottom: 10%;
+      z-index: 0;
+      }
+  p{
+    font-weight: bold;
+    font-size: 3em;
+    position: relative;
+    bottom: 70%;
+    right: 7%;
+  }
+}
+
+
+div#about_section {
+  height: 100%;
+  background: grey url('../../assets/medias/running.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(50%);
+  div {
+    background: linear-gradient(black, #c7c7c7);
+    opacity: .7;
+    width:auto;
+    //height:100%;
+    h2{
+      display: block;
+      position: relative;
+      color: $cust-orange;
+      left: 15%;
+      top: 5%;
+      width: 50%;
+      //height: auto;
+    }
+    p{
+      position: relative;
+      left: 15%;
+      top: 5%;
+      padding-bottom: 20%;
+      color: white;
+      width: 60%;
+      height: auto;
+      z-index: 10;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
