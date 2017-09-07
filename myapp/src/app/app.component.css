@@ -86,11 +86,12 @@
     div#footer a {
       text-decoration: none; }
       div#footer a img#social_icon {
-        margin-top: 4%;
-        width: 15%;
+        margin-top: 2%;
+        width: 16%;
         height: auto;
         opacity: .7; }
     div#footer p {
+      margin-top: -1%;
       text-align: center;
       color: #ffa117;
       font-size: .7em; } }

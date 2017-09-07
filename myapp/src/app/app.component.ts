@@ -26,13 +26,24 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
 export class AppComponent {
   public socialmedia_state: Boolean = false;
   public footer_tog: Boolean = false;
+  private current_scroll = Number;
   constructor(@Inject(DOCUMENT) private document: any, private menuSrvc: MenuStateService, private ig: IgService) {
     setInterval(() => { console.log('Reset'); this.footer_tog = !this.footer_tog; },  1000 * 4);
   };
+
+
+  isMoving(scroll_index) {
+    if(this.current_scroll === scroll_index) {
+      return false;
+    }
+    return true;
+  }
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const number: Number = this.document.body.scrollTop;
     console.log(number);
+
     // if (number > 120) {
     //   this.navIsFixed = true;
     //   console.log("number " + number);

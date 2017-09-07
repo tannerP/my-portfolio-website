@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Slabo+13px|Suez+13px||Ultra");
+@keyframes move-the-object {
+  0%, 30% {
+    -moz-transform: translateX(-30);
+    -ms-transform: translateX(-30);
+    -webkit-transform: translateX(-30);
+    transform: translateX(-30);
+    font-style: italic; }
+  35% {
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    font-style: italic; } }
+@keyframes moving_background {
+  0%, 30% {
+    transform: translateX(50px) rotate(50deg) translateY(15px); }
+  35% {
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    font-style: italic; } }
 #menu {
   position: static;
   height: 80%;
@@ -70,7 +92,7 @@ div#seattle_based_slogan {
     opacity: .9; }
 
 img#seattle_skyline {
-  margin-top: 80%;
+  margin-top: 70%;
   height: auto;
   width: 100%;
   opacity: .5;
@@ -86,7 +108,7 @@ div#tanner_card {
   height: 35%;
   text-align: right;
   color: white;
-  font-size: 1em;
+  font-size: 2em;
   background-color: #ffa117;
   background-size: contain;
   background-repeat: no-repeat;
@@ -98,12 +120,13 @@ div#tanner_card {
     display: block;
     bottom: 10%;
     z-index: 0; }
-  div#tanner_card p {
+  div#tanner_card p#portfolio {
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2em;
     position: relative;
-    bottom: 70%;
-    right: 7%; }
+    bottom: 40%;
+    right: 5%;
+    animation: move-the-object 1s infinite; }
 
 div#about_section {
   height: 100%;
