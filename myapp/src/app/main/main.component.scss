@@ -29,7 +29,6 @@
     -ms-transform: translateX(-30);
     -webkit-transform: translateX(-30);
     transform: translateX(-30);
-    font-style: italic;
   }
 
   35% {
@@ -65,6 +64,11 @@
 }
 $cust-orange: #ffa117;
 $link-font-color: $cust-orange;
+
+
+
+
+
 #menu {
   position: static;
   height: 80%;
@@ -114,7 +118,6 @@ $link-font-color: $cust-orange;
   letter-spacing: 20px;
   margin-right: auto;
   margin-left: auto;
-
 }
 div#menu_button{
   @include menu_base();
@@ -136,7 +139,7 @@ div#seattle_based_slogan{
   height: auto;
   margin-top: 25%;
   h3{
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-family: 'Ultra', serif;
     padding-top: 10%;
     padding-bottom: 0;
@@ -205,7 +208,9 @@ div#tanner_card{
 div#about_section {
   height: 100%;
   background: grey url('../../assets/medias/running.png');
-  background-size: cover;
+  background-position: 80% 50%;
+  background-size: auto 100%;
+ // background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(50%);
   div {
@@ -214,21 +219,23 @@ div#about_section {
     width:auto;
     //height:100%;
     h2{
+      font-size: 4em;
       display: block;
       position: relative;
       color: $cust-orange;
-      left: 15%;
+      left: 10%;
       top: 5%;
       width: 50%;
       //height: auto;
     }
     p{
+      font-size: 1em;
       position: relative;
-      left: 15%;
+      left: 10%;
       top: 5%;
       padding-bottom: 20%;
       color: white;
-      width: 60%;
+      width: 75%;
       height: auto;
       z-index: 10;
     }
@@ -238,15 +245,250 @@ div#about_section {
 
 
 
+@media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet) {
+  div#seattle_based_slogan{
+    h3{
+      font-size: 6em;
+    }
+    p{
+      font-size: 3em;
+    }
+  }
+
+  div#tanner_card{
+    img{
+    }
+    p#portfolio{
+      font-size: 4em;
+    }
+  }
+
+  div#about_section {
+    font-size: 1.4em;
+    h2{
+      font-size: 6em;
+    }
+  }
+
+  #menu {
+    position: static;
+    height: 80%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    table {
+      // margin-top: 5%;
+      //  margin-bottom: 5%;
+      //border-bottom:5px solid #bfbfbf ;
+      //border-top: 5px solid #bfbfbf;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    table{
+      tr{
+        height: auto;
+      }
+      td{
+        width: 33.333%;
+        // height: 100%;
+
+      span{
+        background-color: black ;
+        position: relative;
+        bottom: 40px;
+        right: 35px;
+        width: 100px;
+        font-size: 1.5em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-decoration: none;
+        opacity: 1;
+        a {
+          color: #ffa117;
+        }
+      }
+      }
+    }
+  }
+}
 
 
+@media (min-width: $breakpoint-tablet) {
+  @mixin menu_base(){
+    text-align: center;
+    width: 80%;
+    height: auto;
+    color: #333333;
+    font-size: 4em;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #menu {
+    position: static;
+    height: 80%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    table {
+      // margin-top: 5%;
+      //  margin-bottom: 5%;
+      //border-bottom:5px solid #bfbfbf ;
+      //border-top: 5px solid #bfbfbf;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    table{
+      tr{
+        height: auto;
+      }
+      td{
+        width: 33.333%;
+        // height: 100%;
+        a {
+          position: relative;
+          bottom: 40px;
+          right: 35px;
+          background-color: black ;
+          width: 100%;
+          font-size: 2em;
+          font-weight: 600;
+          letter-spacing: 2px;
+          text-decoration: none;
+          opacity: .7;
+          color: #ffa117;
+
+        }
+      }
+    }
+  }
+  div#menu_button{
+    @include menu_base();
+    border-bottom: solid;
+    // position: absolute;
+    bottom: 0px;
+    border-width: 1px;
+    font-size: em;
+  }
+  div#menu_button_flip{
+    @include menu_base();
+    margin-top: 3%;
+    border-top: solid;
+    border-width: 1px;
+  }
+
+  div#seattle_based_slogan{
+    display: block;
+    text-align: center;
+    height: auto;
+    margin-top: 25%;
+    h3{
+      font-size: 8em;
+      font-family: 'Ultra', serif;
+      padding-top: 10%;
+      padding-bottom: 0;
+      opacity: .7;
+      // opacity: .6;
+    }
+    p{
+      font-size: 3em;
+      color: $link-font-color;
+      letter-spacing: 1px;
+      opacity: .9;
+    }
+  }
+
+  img#seattle_skyline {
+    margin-top: 70%;
+    height: auto;
+    width: 100%;
+    opacity: .5;
+    display: block;
+    filter: grayscale(100%);
+    -moz-box-shadow:    inset 0 0 100px #ffffff;
+    -webkit-box-shadow: inset 0 0 100px #ffffff;
+    box-shadow:         inset 0 0 60px #ffffff;
+  }
+
+  div#tanner_card{
+    padding-top: 10px;
+    width: 100%;
+    height: 35%;
+    text-align: right;
+    color: white;
+    font-size: 2em;
+    background-color: $cust-orange;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow:         inset 0 0 10px #ffffff;
+    //-moz-box-shadow:    inset 0 0 30px #ffffff;
+    //-webkit-box-shadow: inset 0 0 30px #ffffff;
+    img{
+      position: relative;
+      width: auto;
+      height: 110%;
+      // height: auto;
+      display: block;
+      bottom: 10%;
+      z-index: 0;
+    }
+    p#portfolio{
+      font-weight: bold;
+      font-size: 5em;
+      position: relative;
+      bottom: 50%;
+      right: 5%;
+      //animation
+      //-webkit-animation: move-the-object .5s 4,  move-the-object .5s 1;
+      //-moz-animation:    move-the-object .5s 1,  move-the-object .5s 1;
+      //-o-animation:      move-the-object .5s 1,  move-the-object .5s 1;
+      animation:         move-the-object 1s infinite;
+      // animation-timing-function:ease-in-out;
+
+    }
+  }
 
 
+  div#about_section {
+    height: 100%;
+    background: grey url('../../assets/medias/running.png');
+    background-position: 80% 50%;
+    background-size: auto 100%;
+    // background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(50%);
+    div {
+      background: linear-gradient(black, #5e5e5e);
+      opacity: .7;
+      width:auto;
+      //height:100%;
+      h2{
+        font-size: 6em;
+        display: block;
+        position: relative;
+        color: $cust-orange;
+        left: 10%;
+        top: 5%;
+        width: 50%;
+        //height: auto;
+      }
+      p{
+        font-size: 3em;
+        position: relative;
+        left: 10%;
+        top: 5%;
+        padding-bottom: 20%;
+        color: white;
+        width: 75%;
+        height: auto;
+        z-index: 10;
+      }
+    }
+  }
 
 
-
-
-
+}
 
 
 

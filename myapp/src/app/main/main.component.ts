@@ -47,9 +47,7 @@ export class MainComponent implements OnInit {
   }
   setStyle(): any {
     let random: number;
-    const url = ['../../assets/medias/me.jpg',
-      '../../assets/medias/me.jpg',
-      '../../assets/medias/me.jpg'];
+    const url = ['../../assets/medias/me.jpg'];
 
     random = Math.floor(Math.random() * 3) ;
     const style = {

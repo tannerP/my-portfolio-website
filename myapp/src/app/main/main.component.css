@@ -4,8 +4,7 @@
     -moz-transform: translateX(-30);
     -ms-transform: translateX(-30);
     -webkit-transform: translateX(-30);
-    transform: translateX(-30);
-    font-style: italic; }
+    transform: translateX(-30); }
   35% {
     -moz-transform: translateX(30px);
     -ms-transform: translateX(30px);
@@ -81,7 +80,7 @@ div#seattle_based_slogan {
   height: auto;
   margin-top: 25%; }
   div#seattle_based_slogan h3 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-family: 'Ultra', serif;
     padding-top: 10%;
     padding-bottom: 0;
@@ -131,7 +130,8 @@ div#tanner_card {
 div#about_section {
   height: 100%;
   background: grey url("../../assets/medias/running.png");
-  background-size: cover;
+  background-position: 80% 50%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   filter: grayscale(50%); }
   div#about_section div {
@@ -139,20 +139,202 @@ div#about_section {
     opacity: .7;
     width: auto; }
     div#about_section div h2 {
+      font-size: 4em;
       display: block;
       position: relative;
       color: #ffa117;
-      left: 15%;
+      left: 10%;
       top: 5%;
       width: 50%; }
     div#about_section div p {
+      font-size: 1em;
       position: relative;
-      left: 15%;
+      left: 10%;
       top: 5%;
       padding-bottom: 20%;
       color: white;
-      width: 60%;
+      width: 75%;
       height: auto;
       z-index: 10; }
+
+@media (min-width: 701px) and (max-width: 1200px) {
+  div#seattle_based_slogan h3 {
+    font-size: 6em; }
+  div#seattle_based_slogan p {
+    font-size: 3em; }
+
+  div#tanner_card p#portfolio {
+    font-size: 4em; }
+
+  div#about_section {
+    font-size: 1.4em; }
+    div#about_section h2 {
+      font-size: 6em; }
+
+  #menu {
+    position: static;
+    height: 80%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto; }
+    #menu table {
+      border-collapse: collapse;
+      text-align: center; }
+    #menu table tr {
+      height: auto; }
+    #menu table td {
+      width: 33.333%; }
+      #menu table td span {
+        background-color: black;
+        position: relative;
+        bottom: 40px;
+        right: 35px;
+        width: 100px;
+        font-size: 1.5em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-decoration: none;
+        opacity: 1; }
+        #menu table td span a {
+          color: #ffa117; } }
+@media (min-width: 1200px) {
+  #menu {
+    position: static;
+    height: 80%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto; }
+    #menu table {
+      border-collapse: collapse;
+      text-align: center; }
+    #menu table tr {
+      height: auto; }
+    #menu table td {
+      width: 33.333%; }
+      #menu table td a {
+        position: relative;
+        bottom: 40px;
+        right: 35px;
+        background-color: black;
+        width: 100%;
+        font-size: 2em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-decoration: none;
+        opacity: .7;
+        color: #ffa117; }
+
+  div#menu_button {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    color: #333333;
+    font-size: 4em;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: solid;
+    bottom: 0px;
+    border-width: 1px;
+    font-size: em; }
+
+  div#menu_button_flip {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    color: #333333;
+    font-size: 4em;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3%;
+    border-top: solid;
+    border-width: 1px; }
+
+  div#seattle_based_slogan {
+    display: block;
+    text-align: center;
+    height: auto;
+    margin-top: 25%; }
+    div#seattle_based_slogan h3 {
+      font-size: 8em;
+      font-family: 'Ultra', serif;
+      padding-top: 10%;
+      padding-bottom: 0;
+      opacity: .7; }
+    div#seattle_based_slogan p {
+      font-size: 3em;
+      color: #ffa117;
+      letter-spacing: 1px;
+      opacity: .9; }
+
+  img#seattle_skyline {
+    margin-top: 70%;
+    height: auto;
+    width: 100%;
+    opacity: .5;
+    display: block;
+    filter: grayscale(100%);
+    -moz-box-shadow: inset 0 0 100px #ffffff;
+    -webkit-box-shadow: inset 0 0 100px #ffffff;
+    box-shadow: inset 0 0 60px #ffffff; }
+
+  div#tanner_card {
+    padding-top: 10px;
+    width: 100%;
+    height: 35%;
+    text-align: right;
+    color: white;
+    font-size: 2em;
+    background-color: #ffa117;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 10px #ffffff; }
+    div#tanner_card img {
+      position: relative;
+      width: auto;
+      height: 110%;
+      display: block;
+      bottom: 10%;
+      z-index: 0; }
+    div#tanner_card p#portfolio {
+      font-weight: bold;
+      font-size: 5em;
+      position: relative;
+      bottom: 50%;
+      right: 5%;
+      animation: move-the-object 1s infinite; }
+
+  div#about_section {
+    height: 100%;
+    background: grey url("../../assets/medias/running.png");
+    background-position: 80% 50%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    filter: grayscale(50%); }
+    div#about_section div {
+      background: linear-gradient(black, #5e5e5e);
+      opacity: .7;
+      width: auto; }
+      div#about_section div h2 {
+        font-size: 6em;
+        display: block;
+        position: relative;
+        color: #ffa117;
+        left: 10%;
+        top: 5%;
+        width: 50%; }
+      div#about_section div p {
+        font-size: 3em;
+        position: relative;
+        left: 10%;
+        top: 5%;
+        padding-bottom: 20%;
+        color: white;
+        width: 75%;
+        height: auto;
+        z-index: 10; } }
 
 /*# sourceMappingURL=main.component.css.map */
