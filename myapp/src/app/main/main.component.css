@@ -171,6 +171,35 @@ div#about_section {
     div#about_section h2 {
       font-size: 6em; }
 
+  div#menu_button {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    color: #333333;
+    font-size: 5em;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: solid;
+    bottom: 0px;
+    border-width: 1px;
+    font-size: em; }
+
+  div#menu_button_flip {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    color: #333333;
+    font-size: 5em;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3%;
+    border-top: solid;
+    border-width: 1px; }
+
   #menu {
     position: static;
     height: 80%;
@@ -187,8 +216,8 @@ div#about_section {
       #menu table td span {
         background-color: black;
         position: relative;
-        bottom: 40px;
-        right: 35px;
+        bottom: 35px;
+        right: 25px;
         width: 100px;
         font-size: 1.5em;
         font-weight: 600;
@@ -196,7 +225,61 @@ div#about_section {
         text-decoration: none;
         opacity: 1; }
         #menu table td span a {
-          color: #ffa117; } }
+          color: #ffa117; }
+
+  div#seattle_based_slogan {
+    display: block;
+    text-align: center;
+    height: auto;
+    margin-top: 25%; }
+    div#seattle_based_slogan h3 {
+      font-size: 5em;
+      font-family: 'Ultra', serif;
+      padding-top: 10%;
+      padding-bottom: 0;
+      opacity: .7; }
+    div#seattle_based_slogan p {
+      font-size: 3em;
+      color: #ffa117;
+      letter-spacing: 1px;
+      opacity: .9; }
+
+  img#seattle_skyline {
+    margin-top: 70%;
+    height: auto;
+    width: 100%;
+    opacity: .5;
+    display: block;
+    filter: grayscale(100%);
+    -moz-box-shadow: inset 0 0 100px #ffffff;
+    -webkit-box-shadow: inset 0 0 100px #ffffff;
+    box-shadow: inset 0 0 60px #ffffff; }
+
+  div#tanner_card {
+    padding-top: 10px;
+    width: 100%;
+    height: 35%;
+    text-align: right;
+    color: white;
+    font-size: 2em;
+    background-color: #ffa117;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 10px #ffffff; }
+    div#tanner_card img {
+      position: relative;
+      width: auto;
+      height: 110%;
+      display: block;
+      bottom: 10%;
+      z-index: 0; }
+    div#tanner_card p#portfolio {
+      font-weight: bold;
+      font-size: 5em;
+      position: relative;
+      bottom: 50%;
+      right: 5%;
+      animation: move-the-object 1s infinite; } }
 @media (min-width: 1200px) {
   #menu {
     position: static;
