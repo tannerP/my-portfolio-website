@@ -64,15 +64,13 @@ $cust-orange: #ffa117;
 $link-font-color: $cust-orange;
 
 
-
-
-
 #menu {
   position: static;
   height: 80%;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  font-size: .5em;
   table {
    // margin-top: 5%;
   //  margin-bottom: 5%;
@@ -90,17 +88,16 @@ $link-font-color: $cust-orange;
     // height: 100%;
      a {
        position: relative;
-       bottom: 10px;
+       bottom: 13px;
        right: 5px;
-       background-color: black ;
+       background-color: black;
        width: 100%;
        font-size: 1.5em;
        font-weight: 600;
-       letter-spacing: 2px;
+       letter-spacing: .5em;
        text-decoration: none;
-       opacity: .7;
-       color: #ffa117;
-
+       opacity: .9;
+       color: $cust-orange;
      }
    }
  }
@@ -148,7 +145,6 @@ div#seattle_based_slogan{
    // font-family: 'Slabo 13px', serif;
     color: $link-font-color;
     letter-spacing: .8px;
-    opacity: .9;
   }
 }
 
@@ -214,34 +210,31 @@ div#about_section {
   //filter: grayscale(50%);
   div {
     background: linear-gradient(black, #5e5e5e);
-    opacity: .6;
+    opacity: .7;
     width:auto;
-    //height:100%;
-    h2{
-      font-size: 4em;
-      display: block;
-      position: relative;
-      color: $cust-orange;
-      left: 10%;
-      top: 5%;
-      width: 50%;
-      //height: auto;
+  }
+  h2{;
+    font-size: 4em;
+    display: block;
+    width: 50%;
+    position: relative;
+    color: $cust-orange;
+    left: 10%;
+    top: -80%;
     }
     p{
-      font-size: 1em;
       position: relative;
       left: 10%;
-      top: 5%;
+      top: -80%;
       padding-bottom: 20%;
       color: white;
       width: 85%;
       height: auto;
       z-index: 10;
     }
-  }
 }
 
-@media(max-width: $breakpoint-mobile) and (orientation: landscape) {
+@media(orientation: landscape) {
   div#tanner_card{
     padding-top: 10px;
     width: 100%;
@@ -292,33 +285,36 @@ div#about_section {
     //filter: grayscale(50%);
     div {
       background: linear-gradient(black, #5e5e5e);
-      opacity: .6;
-      width: auto;
-      //height:100%;
-      h2 {
-        font-size: 4em;
-        display: block;
-        position: relative;
-        color: $cust-orange;
-        left: 10%;
-        top: 5%;
-        width: 50%;
-        //height: auto;
-      }
-      p {
-        font-size: 1em;
-        position: relative;
-        left: 10%;
-        top: 5%;
-        padding-bottom: 20%;
-        color: white;
-        width: 65%;
-        height: auto;
-        z-index: 10;
-      }
+      opacity: .7;
+      width:auto;
+
+    }
+    h2{;
+      font-size: 4em;
+      display: block;
+      width: 50%;
+      position: relative;
+      color: $cust-orange;
+      left: 10%;
+      top: -90%;
+    }
+    p{
+      position: relative;
+      left: 10%;
+      top: -90%;
+      padding-bottom: 20%;
+      color: white;
+      width: 85%;
+      height: auto;
+      z-index: 10;
     }
   }
 }
+//@media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet)
+//and (orientation: landscape){
+//
+//}
+  //Tablet view
   @media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet) {
   div#seattle_based_slogan{
     h3{
@@ -360,7 +356,7 @@ div#about_section {
     // position: absolute;
     bottom: 0px;
     border-width: 1px;
-    font-size: em;
+   // font-size: em;
   }
   div#menu_button_flip{
     @include menu_base();
@@ -374,6 +370,7 @@ div#about_section {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
+    font-size: .5em;
     table {
       border-collapse: collapse;
       text-align: center;
@@ -384,21 +381,19 @@ div#about_section {
       }
       td{
         width: 33.333%;
-      span{
-        background-color: black ;
-        position: relative;
-        bottom: 35px;
-        right: 25px;
-        width: 100px;
-        font-size: 1.5em;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-decoration: none;
-        opacity: 1;
         a {
+          position: relative;
+          bottom: 35px;
+          right: 20px;
+          background-color: black ;
+          width: 100%;
+          font-size: 2em;
+          font-weight: 600;
+          letter-spacing: 1em;
+          text-decoration: none;
+          opacity: .9;
           color: #ffa117;
         }
-      }
       }
     }
   }
@@ -481,33 +476,33 @@ div#about_section {
     // background-size: cover;
     background-repeat: no-repeat;
     //filter: grayscale(50%);
-    div {
-      background: linear-gradient(black, #5e5e5e);
-      opacity: .6;
-      width:auto;
-      //height:100%;
-      h2{
-        font-size: 6em;
-        display: block;
-        position: relative;
-        color: $cust-orange;
-        left: 10%;
-        top: 5%;
-        width: 50%;
-        //height: auto;
-      }
-      p{
-        font-size: 1em;
-        position: relative;
-        left: 10%;
-        top: 5%;
-        padding-bottom: 20%;
-        color: white;
-        width: 55%;
-        height: auto;
-        z-index: 10;
-      }
-    }
+    //div {
+    //  background: linear-gradient(black, #5e5e5e);
+    //  opacity: .6;
+    //  width:auto;
+    //  //height:100%;
+    //}
+    //  h2{
+    //    font-size: 6em;
+    //    display: block;
+    //    position: relative;
+    //    color: $cust-orange;
+    //    left: 10%;
+    //    top: 5%;
+    //    width: 50%;
+    //    //height: auto;
+    //  }
+    //  p{
+    //    font-size: 1em;
+    //    position: relative;
+    //    left: 10%;
+    //    top: 5%;
+    //    padding-bottom: 20%;
+    //    color: white;
+    //    width: 55%;
+    //    height: auto;
+    //    z-index: 10;
+    //  }
   }
 
 }
@@ -545,20 +540,18 @@ div#about_section {
       }
       td{
         width: 33.333%;
-        // height: 100%;
         a {
           position: relative;
           bottom: 45px;
-          right: 35px;
+          right: 30px;
           background-color: black ;
           width: 100%;
-          font-size: 3em;
+          font-size: 2em;
           font-weight: 600;
-          letter-spacing: 2px;
+          letter-spacing: 1em;
           text-decoration: none;
           opacity: .9;
           color: #ffa117;
-
         }
       }
     }
@@ -637,7 +630,7 @@ div#about_section {
       font-weight: bold;
       font-size: 5em;
       position: relative;
-      bottom: 50%;
+      bottom: 65%;
       right: 5%;
       //animation
       //-webkit-animation: move-the-object .5s 4,  move-the-object .5s 1;
@@ -653,41 +646,204 @@ div#about_section {
     height: 100%;
     background: white url('../../assets/medias/running.png');
     background-position: left;
-    background-size: auto 100%;
+    background-size: 100% auto;
     // background-size: cover;
     background-repeat: no-repeat;
-    //filter: grayscale(50%);
     div {
       background: linear-gradient(black, #5e5e5e);
-      opacity: .6;
-      width:auto;
-      //height:100%;
-      h2{
-        font-size: 6em;
-        display: block;
-        position: relative;
-        color: $cust-orange;
-        left: 10%;
-        top: 5%;
-        width: 50%;
-        //height: auto;
-      }
-      p{
-        font-size: 2em;
-        position: relative;
-        left: 10%;
-        top: 5%;
-        padding-bottom: 20%;
-        color: white;
-        width: 55%;
+      opacity: .7;
+    }
+    h2{;
+      font-size: 7em;
+      display: block;
+      width: 50%;
+      position: relative;
+      color: $cust-orange;
+      left: 10%;
+      top: -80%;
+    }
+    p{
+      font-size: 2em;
+      position: relative;
+      left: 10%;
+      top: -80%;
+      padding-bottom: 20%;
+      color: white;
+      width: 75%;
+      height: auto;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desk) {
+  @mixin menu_base(){
+    text-align: center;
+    width: 80%;
+    height: auto;
+    color: #333333;
+    font-size: 5em;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #menu {
+    position: static;
+    height: 80%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    table {
+      // margin-top: 5%;
+      //  margin-bottom: 5%;
+      //border-bottom:5px solid #bfbfbf ;
+      //border-top: 5px solid #bfbfbf;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    table{
+      tr{
         height: auto;
-        z-index: 10;
+      }
+      td{
+        width: 33.333%;
+        a {
+          position: relative;
+          bottom: 65px;
+          right: 30px;
+          background-color: black ;
+          width: 100%;
+          font-size: 4em;
+          font-weight: 600;
+          letter-spacing: 1em;
+          text-decoration: none;
+          opacity: .9;
+          color: #ffa117;
+        }
       }
     }
   }
+  div#menu_button{
+    @include menu_base();
+    border-bottom: solid;
+    // position: absolute;
+    bottom: 0px;
+    border-width: 1px;
+    font-size: em;
+  }
+  div#menu_button_flip{
+    @include menu_base();
+    margin-top: 3%;
+    border-top: solid;
+    border-width: 1px;
+  }
 
+  div#seattle_based_slogan{
+    display: block;
+    text-align: center;
+    height: auto;
+    margin-top: 25%;
+    h3{
+      font-size: 8em;
+      font-family: 'Ultra', serif;
+      padding-top: 10%;
+      padding-bottom: 0;
+      opacity: .7;
+      // opacity: .6;
+    }
+    p{
+      font-size: 3em;
+      color: $link-font-color;
+      letter-spacing: 1px;
+      opacity: .9;
+    }
+  }
 
+  img#seattle_skyline {
+    margin-top: 70%;
+    height: auto;
+    width: 100%;
+    opacity: .5;
+    display: block;
+    filter: grayscale(100%);
+    -moz-box-shadow:    inset 0 0 100px #ffffff;
+    -webkit-box-shadow: inset 0 0 100px #ffffff;
+    box-shadow:         inset 0 0 60px #ffffff;
+  }
+
+  div#tanner_card{
+    padding-top: 10px;
+    width: 100%;
+    height: 35%;
+    text-align: right;
+    color: white;
+    font-size: 2em;
+    background-color: $cust-orange;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow:         inset 0 0 10px #ffffff;
+    //-moz-box-shadow:    inset 0 0 30px #ffffff;
+    //-webkit-box-shadow: inset 0 0 30px #ffffff;
+    img{
+      position: relative;
+      width: auto;
+      height: 110%;
+      // height: auto;
+      display: block;
+      bottom: 10%;
+      z-index: 0;
+    }
+    p#portfolio{
+      font-weight: bold;
+      font-size: 5em;
+      position: relative;
+      bottom: 65%;
+      right: 5%;
+      //animation
+      //-webkit-animation: move-the-object .5s 4,  move-the-object .5s 1;
+      //-moz-animation:    move-the-object .5s 1,  move-the-object .5s 1;
+      //-o-animation:      move-the-object .5s 1,  move-the-object .5s 1;
+      animation:         move-the-object 1s infinite;
+      // animation-timing-function:ease-in-out;
+
+    }
+  }
+
+  div#about_section {
+    height: 100%;
+    background: white url('../../assets/medias/running.png');
+    background-position: left;
+    background-size: 100% auto;
+    // background-size: cover;
+    background-repeat: no-repeat;
+    div {
+      background: linear-gradient(black, #5e5e5e);
+      opacity: .7;
+    }
+    h2{;
+      font-size: 7em;
+      display: block;
+      width: 50%;
+      position: relative;
+      color: $cust-orange;
+      left: 10%;
+      top: -80%;
+    }
+    p{
+      font-size: 2em;
+      position: relative;
+      left: 10%;
+      top: -80%;
+      padding-bottom: 20%;
+      color: white;
+      width: 75%;
+      height: auto;
+      z-index: 10;
+    }
+  }
 }
+
 
 
 

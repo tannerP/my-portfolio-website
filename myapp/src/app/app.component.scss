@@ -72,7 +72,7 @@
 @media(max-width: $breakpoint-mobile) and (orientation: landscape) {
   div#footer{
     width: 100%;
-    height: 18%;
+    height: 20%;
     // @include gradient-animation( #ffa117, #464646, 1s);
     span#socialmedia{
     }
@@ -80,11 +80,11 @@
       text-decoration: none;
       img#social_icon{
         width: auto;
-        height: 50%;
+        height: 30%;
       }
     }
     p{
-      font-size: .5em;
+      font-size: .6em;
     }
   }
 }
@@ -131,7 +131,7 @@
     // @include gradient-animation( #ffa117, #464646, 1s);
     background-color: white;
     width: 100%;
-    height: 18%;
+    height: 20%;
     span#socialmedia{
     }
     a{
@@ -150,7 +150,6 @@
 
 
 @media (min-width: $breakpoint-tablet){
-
   div#footer{
     // @include gradient-animation( #ffa117, #464646, 1s);
     display: inline-block;
@@ -185,4 +184,5 @@
       letter-spacing: 3px;
     }
   }
+
 }
