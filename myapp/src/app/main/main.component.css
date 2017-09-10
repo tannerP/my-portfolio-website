@@ -120,23 +120,24 @@ div#tanner_card {
     bottom: 10%;
     z-index: 0; }
   div#tanner_card p#portfolio {
+    position: relative;
+    width: auto;
+    height: auto;
     font-weight: bold;
     font-size: 2em;
-    position: relative;
-    bottom: 40%;
-    right: 5%;
+    bottom: 50%;
+    right: 15%;
     animation: move-the-object 1s infinite; }
 
 div#about_section {
   height: 100%;
-  background: grey url("../../assets/medias/running.png");
-  background-position: 80% 50%;
+  background: white url("../../assets/medias/running.png");
+  background-position: left;
   background-size: auto 100%;
-  background-repeat: no-repeat;
-  filter: grayscale(50%); }
+  background-repeat: no-repeat; }
   div#about_section div {
-    background: linear-gradient(black, #c7c7c7);
-    opacity: .7;
+    background: linear-gradient(black, #5e5e5e);
+    opacity: .6;
     width: auto; }
     div#about_section div h2 {
       font-size: 4em;
@@ -153,10 +154,67 @@ div#about_section {
       top: 5%;
       padding-bottom: 20%;
       color: white;
-      width: 75%;
+      width: 85%;
       height: auto;
       z-index: 10; }
 
+@media (max-width: 700px) and (orientation: landscape) {
+  div#tanner_card {
+    padding-top: 10px;
+    width: 100%;
+    height: 35%;
+    text-align: right;
+    color: white;
+    font-size: 2em;
+    background-color: #ffa117;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 10px #ffffff; }
+    div#tanner_card img {
+      position: relative;
+      width: auto;
+      height: 110%;
+      display: block;
+      bottom: 10%;
+      z-index: 0; }
+    div#tanner_card p#portfolio {
+      position: relative;
+      width: auto;
+      height: auto;
+      font-weight: bold;
+      font-size: 2em;
+      bottom: 60%;
+      right: 15%;
+      animation: move-the-object 1s infinite; }
+
+  div#about_section {
+    height: 100%;
+    background: white url("../../assets/medias/running.png");
+    background-position: left;
+    background-size: 100% auto;
+    background-repeat: no-repeat; }
+    div#about_section div {
+      background: linear-gradient(black, #5e5e5e);
+      opacity: .6;
+      width: auto; }
+      div#about_section div h2 {
+        font-size: 4em;
+        display: block;
+        position: relative;
+        color: #ffa117;
+        left: 10%;
+        top: 5%;
+        width: 50%; }
+      div#about_section div p {
+        font-size: 1em;
+        position: relative;
+        left: 10%;
+        top: 5%;
+        padding-bottom: 20%;
+        color: white;
+        width: 65%;
+        height: auto;
+        z-index: 10; } }
 @media (min-width: 701px) and (max-width: 1200px) {
   div#seattle_based_slogan h3 {
     font-size: 6em; }
@@ -275,11 +333,40 @@ div#about_section {
       z-index: 0; }
     div#tanner_card p#portfolio {
       font-weight: bold;
-      font-size: 5em;
+      font-size: 4em;
       position: relative;
       bottom: 50%;
       right: 5%;
-      animation: move-the-object 1s infinite; } }
+      animation: move-the-object 1s infinite; }
+
+  div#about_section {
+    height: 100%;
+    background: white url("../../assets/medias/running.png");
+    background-position: left;
+    background-size: auto 100%;
+    background-repeat: no-repeat; }
+    div#about_section div {
+      background: linear-gradient(black, #5e5e5e);
+      opacity: .6;
+      width: auto; }
+      div#about_section div h2 {
+        font-size: 6em;
+        display: block;
+        position: relative;
+        color: #ffa117;
+        left: 10%;
+        top: 5%;
+        width: 50%; }
+      div#about_section div p {
+        font-size: 1em;
+        position: relative;
+        left: 10%;
+        top: 5%;
+        padding-bottom: 20%;
+        color: white;
+        width: 55%;
+        height: auto;
+        z-index: 10; } }
 @media (min-width: 1200px) {
   #menu {
     position: static;
@@ -296,15 +383,15 @@ div#about_section {
       width: 33.333%; }
       #menu table td a {
         position: relative;
-        bottom: 40px;
+        bottom: 45px;
         right: 35px;
         background-color: black;
         width: 100%;
-        font-size: 2em;
+        font-size: 3em;
         font-weight: 600;
         letter-spacing: 2px;
         text-decoration: none;
-        opacity: .7;
+        opacity: .9;
         color: #ffa117; }
 
   div#menu_button {
@@ -312,7 +399,7 @@ div#about_section {
     width: 80%;
     height: auto;
     color: #333333;
-    font-size: 4em;
+    font-size: 5em;
     font-weight: lighter;
     letter-spacing: 20px;
     margin-right: auto;
@@ -327,7 +414,7 @@ div#about_section {
     width: 80%;
     height: auto;
     color: #333333;
-    font-size: 4em;
+    font-size: 5em;
     font-weight: lighter;
     letter-spacing: 20px;
     margin-right: auto;
@@ -392,14 +479,13 @@ div#about_section {
 
   div#about_section {
     height: 100%;
-    background: grey url("../../assets/medias/running.png");
-    background-position: 80% 50%;
+    background: white url("../../assets/medias/running.png");
+    background-position: left;
     background-size: auto 100%;
-    background-repeat: no-repeat;
-    filter: grayscale(50%); }
+    background-repeat: no-repeat; }
     div#about_section div {
       background: linear-gradient(black, #5e5e5e);
-      opacity: .7;
+      opacity: .6;
       width: auto; }
       div#about_section div h2 {
         font-size: 6em;
@@ -410,13 +496,13 @@ div#about_section {
         top: 5%;
         width: 50%; }
       div#about_section div p {
-        font-size: 3em;
+        font-size: 2em;
         position: relative;
         left: 10%;
         top: 5%;
         padding-bottom: 20%;
         color: white;
-        width: 75%;
+        width: 55%;
         height: auto;
         z-index: 10; } }
 
