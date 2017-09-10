@@ -40,7 +40,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 12%;
+    height: 15%;
     color: white;
     text-align: center;
     background-color: white;
@@ -72,7 +72,7 @@
 @media(max-width: $breakpoint-mobile) and (orientation: landscape) {
   div#footer{
     width: 100%;
-    height: 15%;
+    height: 18%;
     // @include gradient-animation( #ffa117, #464646, 1s);
     span#socialmedia{
     }
@@ -96,7 +96,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 12%;
+    height: 15%;
     color: white;
     text-align: center;
     background-color: white;
@@ -131,7 +131,7 @@
     // @include gradient-animation( #ffa117, #464646, 1s);
     background-color: white;
     width: 100%;
-    height: 15%;
+    height: 18%;
     span#socialmedia{
     }
     a{
