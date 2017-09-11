@@ -1,37 +1,8 @@
 @import '../palette.scss';
 @import url('https://fonts.googleapis.com/css?family=Slabo+13px|Suez+13px||Ultra');
-//
-//$white: #ffffff;
-//$breakpoint-mobile: 700px;
-//$breakpoint-tablet: 1200px;
-//$breakpoint-desk: 1600px;
-//$opacity_inactive: .8;
-//$background_uri: none;
-//
-//@-webkit-keyframes move-the-object {
-//  0%   { left: -300px; }
-//  //50% { left: 100px;  }
-//  100% { left: 300px; }
-//}
-//@-moz-keyframes move-the-object {
-//  0%   { left: 100px; }
-//  100% { left: 200px; }
-//}
-//@-o-keyframes move-the-object {
-//  0%   { left: 100px; }
-//  100% { left: 200px; }
-//}
+
 @keyframes move-the-object {
-  //0%, 20%, 50%, 80%, 100% {
-  //  transform(translateX(0));
-  //}
-  //40% {
-  //  transform(translateX(-30px));
-  //}
-  //60% {
-  //   transform(translateX(-15px));
-  //}
-  0%, 30%  {
+  0%, 30% {
     -moz-transform: translateX(-30);
     -ms-transform: translateX(-30);
     -webkit-transform: translateX(-30);
@@ -43,12 +14,12 @@
     -ms-transform: translateX(30px);
     -webkit-transform: translateX(30px);
     transform: translateX(30px);
-    font-style: italic;
+    //font-style: italic;
   }
 }
 
 @keyframes moving_background {
-  0%, 30%  {
+  0%, 30% {
     transform: translateX(50px) rotate(50deg) translateY(15px);
   }
 
@@ -60,9 +31,9 @@
     font-style: italic;
   }
 }
+
 $cust-orange: #ffa117;
 $link-font-color: $cust-orange;
-
 
 #menu {
   position: static;
@@ -72,131 +43,118 @@ $link-font-color: $cust-orange;
   margin-left: auto;
   font-size: .5em;
   table {
-   // margin-top: 5%;
-  //  margin-bottom: 5%;
-    //border-bottom:5px solid #bfbfbf ;
-    //border-top: 5px solid #bfbfbf;
     border-collapse: collapse;
     text-align: center;
   }
- table{
-  tr{
-     height: auto;
-   }
-   td{
-     width: 33.333%;
-    // height: 100%;
-     a {
-       position: relative;
-       bottom: 13px;
-       right: 5px;
-       background-color: black;
-       width: 100%;
-       font-size: 1.5em;
-       font-weight: 600;
-       letter-spacing: .5em;
-       text-decoration: none;
-       opacity: .9;
-       color: $cust-orange;
-     }
-   }
- }
+  table {
+    tr {
+      height: auto;
+    }
+    td {
+      width: 33.333%;
+      // height: 100%;
+      a {
+        position: relative;
+        bottom: 13px;
+        right: 5px;
+        background-color: black;
+        width: 100%;
+        font-size: 2em;
+        letter-spacing: .4em;
+        text-decoration: none;
+        opacity: .9;
+        color: $cust-orange;
+      }
+    }
+  }
 }
 
-@mixin menu_base(){
+@mixin menu_base() {
   text-align: center;
   width: 80%;
   height: auto;
   color: #333333;
-  font-size: 35px;
+  font-size: 3em;
   font-weight: lighter;
   letter-spacing: 20px;
   margin-right: auto;
   margin-left: auto;
 }
-div#menu_button{
+
+div#menu_button {
   @include menu_base();
   border-bottom: solid;
- // position: absolute;
+  // position: absolute;
   bottom: 0px;
   border-width: 1px;
 }
-div#menu_button_flip{
+div#menu_button_flip {
   @include menu_base();
   margin-top: 3%;
   border-top: solid;
   border-width: 1px;
 }
-
-div#seattle_based_slogan{
+div#seattle_based_slogan {
   display: block;
   text-align: center;
   height: auto;
-  margin-top: 25%;
-  h3{
-    font-size: 2.5em;
+  margin-top: 20%;
+  h3 {
+    font-size: 2.7em;
     font-family: 'Ultra', serif;
-    padding-top: 10%;
+   // padding-top: 10%;
     padding-bottom: 0;
     opacity: .7;
-   // opacity: .6;
+    // opacity: .6;
   }
-  p{
-   // font-family: 'Slabo 13px', serif;
+  p {
+    // font-family: 'Slabo 13px', serif;
     color: $link-font-color;
     letter-spacing: .8px;
   }
 }
+img#seattle_skyline {
+  margin-top: 50%;
+  height: auto;
+  width: 100%;
+  opacity: .1;
+  display: block;
+  filter: grayscale(100%);
+  -moz-box-shadow: inset 0 0 100px #ffffff;
+  -webkit-box-shadow: inset 0 0 100px #ffffff;
+  box-shadow: inset 0 0 100px #ffffff;
+}
 
- img#seattle_skyline {
-    margin-top: 70%;
-    height: auto;
-    width: 100%;
-    opacity: .5;
-    display: block;
-    filter: grayscale(100%);
-   -moz-box-shadow:    inset 0 0 100px #ffffff;
-   -webkit-box-shadow: inset 0 0 100px #ffffff;
-    box-shadow:         inset 0 0 60px #ffffff;
- }
-
-div#tanner_card{
+div#tanner_card {
   padding-top: 10px;
   width: 100%;
-  height: 35%;
+  height: 10%;
   text-align: right;
   color: white;
   font-size: 2em;
   background-color: $cust-orange;
   background-size: contain;
   background-repeat: no-repeat;
-  box-shadow:         inset 0 0 10px #ffffff;
-  //-moz-box-shadow:    inset 0 0 30px #ffffff;
-  //-webkit-box-shadow: inset 0 0 30px #ffffff;
-  img{
-      position: relative;
-      width: auto;
-      height: 110%;
-     // height: auto;
-      display: block;
-      bottom: 10%;
-      z-index: 0;
-      }
-  p#portfolio{
+  box-shadow: inset 0 0 10px #ffffff;
+  img {
+    position: relative;
+    width: auto;
+    height: 160%;
+    top: -60%;
+    right: -5%;
+    display: block;
+    bottom: 10%;
+    z-index: 0;
+  }
+  p#portfolio {
     position: relative;
     width: auto;
     height: auto;
     font-weight: bold;
-    font-size: 2em;
-    bottom: 50%;
-    right: 15%;
-    //animation
-    //-webkit-animation: move-the-object .5s 4,  move-the-object .5s 1;
-    //-moz-animation:    move-the-object .5s 1,  move-the-object .5s 1;
-    //-o-animation:      move-the-object .5s 1,  move-the-object .5s 1;
-    animation:         move-the-object 1s infinite;
-   // animation-timing-function:ease-in-out;
-
+    font-size: 1.3em;
+    bottom: 150%;
+    right: 10%;
+    animation: move-the-object 1s infinite;
   }
 }
 
@@ -205,165 +163,38 @@ div#about_section {
   background: white url('../../assets/medias/running.png');
   background-position: left;
   background-size: auto 100%;
-  // background-size: cover;
   background-repeat: no-repeat;
-  //filter: grayscale(50%);
   div {
     background: linear-gradient(black, #5e5e5e);
     opacity: .7;
-    width:auto;
+    width: auto;
   }
-  h2{;
-    font-size: 4em;
+  h2 {;
+    font-size: 5em;
     display: block;
     width: 50%;
     position: relative;
     color: $cust-orange;
     left: 10%;
-    top: -80%;
-    }
-    p{
-      position: relative;
-      left: 10%;
-      top: -80%;
-      padding-bottom: 20%;
-      color: white;
-      width: 85%;
-      height: auto;
-      z-index: 10;
-    }
-}
-
-@media(orientation: landscape) {
-  div#tanner_card{
-    padding-top: 10px;
-    width: 100%;
-    height: 35%;
-    text-align: right;
+    top: -90%;
+  }
+  p {
+    position: relative;
+    left: 10%;
+    top: -90%;
+    padding-bottom: 20%;
     color: white;
-    font-size: 2em;
-    background-color: $cust-orange;
-    background-size: contain;
-    background-repeat: no-repeat;
-    box-shadow:         inset 0 0 10px #ffffff;
-    //-moz-box-shadow:    inset 0 0 30px #ffffff;
-    //-webkit-box-shadow: inset 0 0 30px #ffffff;
-    img{
-      position: relative;
-      width: auto;
-      height: 110%;
-      // height: auto;
-      display: block;
-      bottom: 10%;
-      z-index: 0;
-    }
-    p#portfolio{
-      position: relative;
-      width: auto;
-      height: auto;
-      font-weight: bold;
-      font-size: 2em;
-      bottom: 60%;
-      right: 15%;
-      //animation
-      //-webkit-animation: move-the-object .5s 4,  move-the-object .5s 1;
-      //-moz-animation:    move-the-object .5s 1,  move-the-object .5s 1;
-      //-o-animation:      move-the-object .5s 1,  move-the-object .5s 1;
-      animation:         move-the-object 1s infinite;
-      // animation-timing-function:ease-in-out;
-
-    }
-  }
-
-  div#about_section {
-    height: 100%;
-    background: white url('../../assets/medias/running.png');
-    background-position: left;
-    background-size: 100% auto;
-    // background-size: cover;
-    background-repeat: no-repeat;
-    //filter: grayscale(50%);
-    div {
-      background: linear-gradient(black, #5e5e5e);
-      opacity: .7;
-      width:auto;
-
-    }
-    h2{;
-      font-size: 4em;
-      display: block;
-      width: 50%;
-      position: relative;
-      color: $cust-orange;
-      left: 10%;
-      top: -90%;
-    }
-    p{
-      position: relative;
-      left: 10%;
-      top: -90%;
-      padding-bottom: 20%;
-      color: white;
-      width: 85%;
-      height: auto;
-      z-index: 10;
-    }
-  }
-}
-//@media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet)
-//and (orientation: landscape){
-//
-//}
-  //Tablet view
-  @media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet) {
-  div#seattle_based_slogan{
-    h3{
-      font-size: 6em;
-    }
-    p{
-      font-size: 3em;
-    }
-  }
-
-  div#tanner_card{
-    img{
-    }
-    p#portfolio{
-      font-size: 4em;
-    }
-  }
-
-  div#about_section {
-    font-size: 1.4em;
-    h2{
-      font-size: 6em;
-    }
-  }
-  @mixin menu_base(){
-    text-align: center;
     width: 80%;
     height: auto;
-    color: #333333;
-    font-size: 5em;
-    font-weight: lighter;
-    letter-spacing: 20px;
-    margin-right: auto;
-    margin-left: auto;
+    z-index: 3;
+    font-size: 1em;
   }
-  div#menu_button{
-    @include menu_base();
-    border-bottom: solid;
-    // position: absolute;
-    bottom: 0px;
-    border-width: 1px;
-   // font-size: em;
-  }
-  div#menu_button_flip{
-    @include menu_base();
-    margin-top: 3%;
-    border-top: solid;
-    border-width: 1px;
-  }
+}
+
+
+//tablet and larger screen sizes
+//tablet and larger screen sizes
+@media (min-width: $breakpoint-tablet){
   #menu {
     position: static;
     height: 80%;
@@ -375,65 +206,94 @@ div#about_section {
       border-collapse: collapse;
       text-align: center;
     }
-    table{
-      tr{
+    table {
+      tr {
         height: auto;
       }
-      td{
+      td {
         width: 33.333%;
+        // height: 100%;
         a {
           position: relative;
-          bottom: 35px;
+          bottom: 30px;
           right: 20px;
-          background-color: black ;
+          background-color: black;
           width: 100%;
           font-size: 2em;
-          font-weight: 600;
-          letter-spacing: 1em;
+          letter-spacing: .5em;
           text-decoration: none;
           opacity: .9;
-          color: #ffa117;
+          color: $cust-orange;
         }
       }
     }
   }
-  div#seattle_based_slogan{
-    display: block;
-    text-align: center;
-    height: auto;
-    margin-top: 25%;
-    h3{
+  div#seattle_based_slogan {
+    h3 {
       font-size: 5em;
-      font-family: 'Ultra', serif;
-      padding-top: 10%;
-      padding-bottom: 0;
-      opacity: .7;
-      // opacity: .6;
     }
-    p{
-      font-size: 3em;
-      color: $link-font-color;
-      letter-spacing: 1px;
-      opacity: .9;
+    p {
+      font-size: 2em;
     }
   }
-
   img#seattle_skyline {
-    margin-top: 70%;
+    margin-top: 50%;
     height: auto;
     width: 100%;
-    opacity: .5;
+    opacity: .1;
     display: block;
     filter: grayscale(100%);
-    -moz-box-shadow:    inset 0 0 100px #ffffff;
+    -moz-box-shadow: inset 0 0 100px #ffffff;
     -webkit-box-shadow: inset 0 0 100px #ffffff;
-    box-shadow:         inset 0 0 60px #ffffff;
+    box-shadow: inset 0 0 100px #ffffff;
   }
+  div#about_section {
+    height: 100%;
+    background: white url('../../assets/medias/running.png');
+    background-position: left;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    div {
+      background: linear-gradient(black, #5e5e5e);
+      opacity: .7;
+      width: auto;
+    }
+    h2 {;
+      font-size: 6em;
+      display: block;
+      width: 50%;
+      position: relative;
+      color: $cust-orange;
+      left: 10%;
+      top: -85%;
+    }
+    p {
+      position: relative;
+      left: 10%;
+      top: -85%;
+      padding-bottom: 20%;
+      color: white;
+      width: 55%;
+      height: auto;
+      z-index: 3;
+      font-size: 1.2em;
+    }
+  }
+}
+ @media (orientation: landscape) {
+   div#seattle_based_slogan {
+     h3 {
+       font-size: 5em;
+     }
+     p {
+       font-size: 2em;
+     }
+   }
 
-  div#tanner_card {
+   div#tanner_card {
     padding-top: 10px;
     width: 100%;
-    height: 35%;
+    height: 20%;
     text-align: right;
     color: white;
     font-size: 2em;
@@ -446,215 +306,39 @@ div#about_section {
     img {
       position: relative;
       width: auto;
-      height: 110%;
-      // height: auto;
+      height: 140%;
+      top: -40%;
+      right: -10%;
       display: block;
       bottom: 10%;
       z-index: 0;
     }
     p#portfolio {
-      font-weight: bold;
-      font-size: 4em;
       position: relative;
-      bottom: 50%;
-      right: 5%;
-      //animation
-      //-webkit-animation: move-the-object .5s 4,  move-the-object .5s 1;
-      //-moz-animation:    move-the-object .5s 1,  move-the-object .5s 1;
-      //-o-animation:      move-the-object .5s 1,  move-the-object .5s 1;
+      width: auto;
+      height: auto;
+      font-weight: bold;
+      font-size: 1.5em;
+      top: -140%;
+      right: 10%;
       animation: move-the-object 1s infinite;
-      // animation-timing-function:ease-in-out;
-
     }
   }
-
   div#about_section {
-    height: 100%;
+    width: 100%;
     background: white url('../../assets/medias/running.png');
-    background-position: left;
-    background-size: auto 100%;
+    background-position: center;
+    background-size: 100% auto;
     // background-size: cover;
     background-repeat: no-repeat;
     //filter: grayscale(50%);
-    //div {
-    //  background: linear-gradient(black, #5e5e5e);
-    //  opacity: .6;
-    //  width:auto;
-    //  //height:100%;
-    //}
-    //  h2{
-    //    font-size: 6em;
-    //    display: block;
-    //    position: relative;
-    //    color: $cust-orange;
-    //    left: 10%;
-    //    top: 5%;
-    //    width: 50%;
-    //    //height: auto;
-    //  }
-    //  p{
-    //    font-size: 1em;
-    //    position: relative;
-    //    left: 10%;
-    //    top: 5%;
-    //    padding-bottom: 20%;
-    //    color: white;
-    //    width: 55%;
-    //    height: auto;
-    //    z-index: 10;
-    //  }
-  }
-
-}
-
-
-@media (min-width: $breakpoint-tablet) {
-  @mixin menu_base(){
-    text-align: center;
-    width: 80%;
-    height: auto;
-    color: #333333;
-    font-size: 5em;
-    font-weight: lighter;
-    letter-spacing: 20px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  #menu {
-    position: static;
-    height: 80%;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    table {
-      // margin-top: 5%;
-      //  margin-bottom: 5%;
-      //border-bottom:5px solid #bfbfbf ;
-      //border-top: 5px solid #bfbfbf;
-      border-collapse: collapse;
-      text-align: center;
-    }
-    table{
-      tr{
-        height: auto;
-      }
-      td{
-        width: 33.333%;
-        a {
-          position: relative;
-          bottom: 45px;
-          right: 30px;
-          background-color: black ;
-          width: 100%;
-          font-size: 2em;
-          font-weight: 600;
-          letter-spacing: 1em;
-          text-decoration: none;
-          opacity: .9;
-          color: #ffa117;
-        }
-      }
-    }
-  }
-  div#menu_button{
-    @include menu_base();
-    border-bottom: solid;
-    // position: absolute;
-    bottom: 0px;
-    border-width: 1px;
-    font-size: em;
-  }
-  div#menu_button_flip{
-    @include menu_base();
-    margin-top: 3%;
-    border-top: solid;
-    border-width: 1px;
-  }
-
-  div#seattle_based_slogan{
-    display: block;
-    text-align: center;
-    height: auto;
-    margin-top: 25%;
-    h3{
-      font-size: 8em;
-      font-family: 'Ultra', serif;
-      padding-top: 10%;
-      padding-bottom: 0;
-      opacity: .7;
-      // opacity: .6;
-    }
-    p{
-      font-size: 3em;
-      color: $link-font-color;
-      letter-spacing: 1px;
-      opacity: .9;
-    }
-  }
-
-  img#seattle_skyline {
-    margin-top: 70%;
-    height: auto;
-    width: 100%;
-    opacity: .5;
-    display: block;
-    filter: grayscale(100%);
-    -moz-box-shadow:    inset 0 0 100px #ffffff;
-    -webkit-box-shadow: inset 0 0 100px #ffffff;
-    box-shadow:         inset 0 0 60px #ffffff;
-  }
-
-  div#tanner_card{
-    padding-top: 10px;
-    width: 100%;
-    height: 35%;
-    text-align: right;
-    color: white;
-    font-size: 2em;
-    background-color: $cust-orange;
-    background-size: contain;
-    background-repeat: no-repeat;
-    box-shadow:         inset 0 0 10px #ffffff;
-    //-moz-box-shadow:    inset 0 0 30px #ffffff;
-    //-webkit-box-shadow: inset 0 0 30px #ffffff;
-    img{
-      position: relative;
-      width: auto;
-      height: 110%;
-      // height: auto;
-      display: block;
-      bottom: 10%;
-      z-index: 0;
-    }
-    p#portfolio{
-      font-weight: bold;
-      font-size: 5em;
-      position: relative;
-      bottom: 65%;
-      right: 5%;
-      //animation
-      //-webkit-animation: move-the-object .5s 4,  move-the-object .5s 1;
-      //-moz-animation:    move-the-object .5s 1,  move-the-object .5s 1;
-      //-o-animation:      move-the-object .5s 1,  move-the-object .5s 1;
-      animation:         move-the-object 1s infinite;
-      // animation-timing-function:ease-in-out;
-
-    }
-  }
-
-  div#about_section {
-    height: 100%;
-    background: white url('../../assets/medias/running.png');
-    background-position: left;
-    background-size: 100% auto;
-    // background-size: cover;
-    background-repeat: no-repeat;
     div {
       background: linear-gradient(black, #5e5e5e);
       opacity: .7;
+      width: auto;
     }
-    h2{;
-      font-size: 7em;
+    h2 {
+      font-size: 4em;
       display: block;
       width: 50%;
       position: relative;
@@ -662,167 +346,79 @@ div#about_section {
       left: 10%;
       top: -80%;
     }
-    p{
-      font-size: 2em;
+    p {
       position: relative;
       left: 10%;
       top: -80%;
       padding-bottom: 20%;
       color: white;
-      width: 75%;
+      width: 45%;
       height: auto;
-      z-index: 10;
+      z-index: 3;
+      font-size: 1.5em;
     }
   }
+   @media (max-width: $breakpoint-tablet) {
+     div#about_section {
+       height: 100%;
+       background: white url('../../assets/medias/running.png');
+       background-position: left;
+       background-size: 100% auto;
+       background-repeat: no-repeat;
+       div {
+         background: linear-gradient(black, #5e5e5e);
+         opacity: .7;
+         width: auto;
+       }
+       h2 {;
+         font-size: 6em;
+         display: block;
+         width: 50%;
+         position: relative;
+         color: $cust-orange;
+         left: 10%;
+         top: -87%;
+       }
+       p {
+         position: relative;
+         left: 10%;
+         top: -90%;
+         padding-bottom: 20%;
+         color: white;
+         width: 75%;
+         height: auto;
+         z-index: 3;
+         font-size: .9em;
+       }
+     }
+   }
 }
 
-@media (min-width: $breakpoint-desk) {
-  @mixin menu_base(){
-    text-align: center;
-    width: 80%;
-    height: auto;
-    color: #333333;
-    font-size: 5em;
-    font-weight: lighter;
-    letter-spacing: 20px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  #menu {
-    position: static;
-    height: 80%;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    table {
-      // margin-top: 5%;
-      //  margin-bottom: 5%;
-      //border-bottom:5px solid #bfbfbf ;
-      //border-top: 5px solid #bfbfbf;
-      border-collapse: collapse;
-      text-align: center;
-    }
-    table{
-      tr{
-        height: auto;
-      }
-      td{
-        width: 33.333%;
-        a {
-          position: relative;
-          bottom: 65px;
-          right: 30px;
-          background-color: black ;
-          width: 100%;
-          font-size: 4em;
-          font-weight: 600;
-          letter-spacing: 1em;
-          text-decoration: none;
-          opacity: .9;
-          color: #ffa117;
-        }
-      }
-    }
-  }
-  div#menu_button{
-    @include menu_base();
-    border-bottom: solid;
-    // position: absolute;
-    bottom: 0px;
-    border-width: 1px;
-    font-size: em;
-  }
-  div#menu_button_flip{
-    @include menu_base();
-    margin-top: 3%;
-    border-top: solid;
-    border-width: 1px;
-  }
-
-  div#seattle_based_slogan{
-    display: block;
-    text-align: center;
-    height: auto;
-    margin-top: 25%;
-    h3{
-      font-size: 8em;
-      font-family: 'Ultra', serif;
-      padding-top: 10%;
-      padding-bottom: 0;
-      opacity: .7;
-      // opacity: .6;
-    }
-    p{
-      font-size: 3em;
-      color: $link-font-color;
-      letter-spacing: 1px;
-      opacity: .9;
-    }
-  }
-
-  img#seattle_skyline {
-    margin-top: 70%;
-    height: auto;
-    width: 100%;
-    opacity: .5;
-    display: block;
-    filter: grayscale(100%);
-    -moz-box-shadow:    inset 0 0 100px #ffffff;
-    -webkit-box-shadow: inset 0 0 100px #ffffff;
-    box-shadow:         inset 0 0 60px #ffffff;
-  }
-
-  div#tanner_card{
-    padding-top: 10px;
-    width: 100%;
-    height: 35%;
-    text-align: right;
-    color: white;
-    font-size: 2em;
-    background-color: $cust-orange;
-    background-size: contain;
-    background-repeat: no-repeat;
-    box-shadow:         inset 0 0 10px #ffffff;
-    //-moz-box-shadow:    inset 0 0 30px #ffffff;
-    //-webkit-box-shadow: inset 0 0 30px #ffffff;
-    img{
-      position: relative;
-      width: auto;
-      height: 110%;
-      // height: auto;
-      display: block;
-      bottom: 10%;
-      z-index: 0;
-    }
-    p#portfolio{
-      font-weight: bold;
+@media (min-width: $breakpoint-desk-lrg){
+  div#seattle_based_slogan {
+    h3 {
       font-size: 5em;
-      position: relative;
-      bottom: 65%;
-      right: 5%;
-      //animation
-      //-webkit-animation: move-the-object .5s 4,  move-the-object .5s 1;
-      //-moz-animation:    move-the-object .5s 1,  move-the-object .5s 1;
-      //-o-animation:      move-the-object .5s 1,  move-the-object .5s 1;
-      animation:         move-the-object 1s infinite;
-      // animation-timing-function:ease-in-out;
-
+    }
+    p {
+      font-size: 2em;
     }
   }
 
   div#about_section {
-    height: 100%;
+    width: 100%;
     background: white url('../../assets/medias/running.png');
-    background-position: left;
+    background-position: center;
     background-size: 100% auto;
     // background-size: cover;
     background-repeat: no-repeat;
+    //filter: grayscale(50%);
     div {
       background: linear-gradient(black, #5e5e5e);
       opacity: .7;
+      width: auto;
     }
-    h2{;
-      font-size: 7em;
+    h2 {;
+      font-size: 9em;
       display: block;
       width: 50%;
       position: relative;
@@ -830,78 +426,17 @@ div#about_section {
       left: 10%;
       top: -80%;
     }
-    p{
-      font-size: 2em;
+    p {
       position: relative;
       left: 10%;
       top: -80%;
       padding-bottom: 20%;
       color: white;
-      width: 75%;
+      width: 45%;
       height: auto;
-      z-index: 10;
+      z-index: 3;
+      font-size: 3em;
     }
   }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

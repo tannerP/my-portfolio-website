@@ -30,9 +30,7 @@
     }
   }
 }
-
-
-
+// Mobile
 @media(max-width: $breakpoint-mobile) {
   div#footer{
    // @include gradient-animation( #ffa117, #464646, 1s);
@@ -40,7 +38,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 15%;
+    height: 13%;
     color: white;
     text-align: center;
     background-color: white;
@@ -54,7 +52,7 @@
     a{
       text-decoration: none;
         img#social_icon{
-          margin-top: 5px;
+          margin-top: 3%;
           width: auto;
           height: 45%;
           opacity: .7;
@@ -68,7 +66,7 @@
     }
   }
 }
-
+//mobile landscape
 @media(max-width: $breakpoint-mobile) and (orientation: landscape) {
   div#footer{
     width: 100%;
@@ -89,6 +87,7 @@
   }
 }
 
+//tablet
 @media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet) {
   div#footer{
     // @include gradient-animation( #ffa117, #464646, 1s);
@@ -96,7 +95,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 15%;
+    height: 13%;
     color: white;
     text-align: center;
     background-color: white;
@@ -124,14 +123,14 @@
     }
   }
 }
-
+//tablet landscape
 @media(min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet)
   and (orientation: landscape) {
   div#footer{
     // @include gradient-animation( #ffa117, #464646, 1s);
     background-color: white;
     width: 100%;
-    height: 20%;
+    height: 15%;
     span#socialmedia{
     }
     a{
@@ -148,8 +147,8 @@
   }
 }
 
-
-@media (min-width: $breakpoint-tablet){
+//laptop
+@media (min-width: $breakpoint-tablet +1) and (max-width: $breakpoint-desk){
   div#footer{
     // @include gradient-animation( #ffa117, #464646, 1s);
     display: inline-block;
@@ -170,7 +169,7 @@
     a{
       text-decoration: none;
       img#social_icon{
-        margin-top: 2%;
+        margin-top: 1%;
         width: auto;
         height: 50%;
         opacity: .7;
@@ -181,6 +180,45 @@
       text-align: center;
       color: #ffa117;
       font-size: 1.2em;
+      letter-spacing: 3px;
+    }
+  }
+
+}
+
+//large desktop
+@media (min-width: $breakpoint-desk-lrg +1){
+  div#footer{
+    // @include gradient-animation( #ffa117, #464646, 1s);
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    color: white;
+    text-align: center;
+    background-color: white;
+    opacity: .9;
+    span#socialmedia{
+      height: auto;
+      width: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    a{
+      text-decoration: none;
+      img#social_icon{
+        margin-top: 1%;
+        width: auto;
+        height: 50%;
+        opacity: .7;
+      }
+    }
+    p{
+      //margin-top: 1%;
+      text-align: center;
+      color: #ffa117;
+      font-size: 1.4em;
       letter-spacing: 3px;
     }
   }

@@ -1,10 +1,10 @@
-@media (max-width: 700px) {
+@media (max-width: 425px) {
   div#footer {
     display: inline-block;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 15%;
+    height: 13%;
     color: white;
     text-align: center;
     background-color: white;
@@ -17,7 +17,7 @@
     div#footer a {
       text-decoration: none; }
       div#footer a img#social_icon {
-        margin-top: 5px;
+        margin-top: 3%;
         width: auto;
         height: 45%;
         opacity: .7; }
@@ -26,7 +26,7 @@
       color: #ffa117;
       font-size: .6em;
       letter-spacing: 2px; } }
-@media (max-width: 700px) and (orientation: landscape) {
+@media (max-width: 425px) and (orientation: landscape) {
   div#footer {
     width: 100%;
     height: 20%; }
@@ -37,13 +37,13 @@
         height: 30%; }
     div#footer p {
       font-size: .6em; } }
-@media (min-width: 701px) and (max-width: 1200px) {
+@media (min-width: 426px) and (max-width: 750px) {
   div#footer {
     display: inline-block;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 15%;
+    height: 13%;
     color: white;
     text-align: center;
     background-color: white;
@@ -65,11 +65,11 @@
       color: #ffa117;
       font-size: .8em;
       letter-spacing: 3px; } }
-@media (min-width: 701px) and (max-width: 1200px) and (orientation: landscape) {
+@media (min-width: 426px) and (max-width: 750px) and (orientation: landscape) {
   div#footer {
     background-color: white;
     width: 100%;
-    height: 20%; }
+    height: 15%; }
     div#footer a {
       text-decoration: none; }
       div#footer a img#social_icon {
@@ -78,7 +78,7 @@
         width: auto; }
     div#footer p {
       font-size: 1em; } }
-@media (min-width: 1200px) {
+@media (min-width: 751px) and (max-width: 1599px) {
   div#footer {
     display: inline-block;
     position: fixed;
@@ -97,7 +97,7 @@
     div#footer a {
       text-decoration: none; }
       div#footer a img#social_icon {
-        margin-top: 2%;
+        margin-top: 1%;
         width: auto;
         height: 50%;
         opacity: .7; }
@@ -105,6 +105,34 @@
       text-align: center;
       color: #ffa117;
       font-size: 1.2em;
+      letter-spacing: 3px; } }
+@media (min-width: 1442px) {
+  div#footer {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    color: white;
+    text-align: center;
+    background-color: white;
+    opacity: .9; }
+    div#footer span#socialmedia {
+      height: auto;
+      width: auto;
+      margin-right: auto;
+      margin-left: auto; }
+    div#footer a {
+      text-decoration: none; }
+      div#footer a img#social_icon {
+        margin-top: 1%;
+        width: auto;
+        height: 50%;
+        opacity: .7; }
+    div#footer p {
+      text-align: center;
+      color: #ffa117;
+      font-size: 1.4em;
       letter-spacing: 3px; } }
 
 /*# sourceMappingURL=app.component.css.map */
