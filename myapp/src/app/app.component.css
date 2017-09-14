@@ -106,7 +106,7 @@
       color: #ffa117;
       font-size: 1.2em;
       letter-spacing: 3px; } }
-@media (min-width: 1442px) {
+@media (min-width: 1600px) {
   div#footer {
     display: inline-block;
     position: fixed;
