@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
-  private projects = [
+  public projects = [
     {
       name: 'BittyCasting',
       length: '7 months',

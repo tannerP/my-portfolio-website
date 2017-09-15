@@ -1,24 +1,6 @@
-div {
-  text-align: center; }
-
 h1 {
-  height: 50px;
-  line-height: 3; }
-
-#hashtagnav {
-  position: fixed;
-  width: 10%;
-  background-color: black;
-  opacity: .8;
-  color: white; }
-  #hashtagnav #back {
-    background-color: #63eeff;
-    opacity: .8; }
-  #hashtagnav #reset {
-    background-color: #ffa117;
-    opacity: .8; }
-  #hashtagnav #filter_list {
-    margin-top: 20px; }
+  font-size: 4em;
+  color: black; }
 
 #content {
   width: 100%;
@@ -26,13 +8,14 @@ h1 {
   #content ul {
     background-color: white;
     width: 90%;
-    height: 100%;
+    height: 110%;
     padding-top: 20px;
     list-style: none;
     margin-right: auto;
     margin-left: auto; }
     #content ul li {
       margin-top: 8%;
+      margin-bottom: 8%;
       height: 29%;
       width: 100%;
       color: white;
