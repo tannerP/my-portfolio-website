@@ -12,7 +12,7 @@
   <span (click)="back_button()">&#8678;</span>
     <!--<span (click)="back_button()" style="magin:0">back</span>-->
   <a id="right_side" target="_blank"
-        href='../../assets/TannerPhan%202017%20Resume.pdf>Resume</a>
+        href='../../assets/TannerPhan%202017%20Resume.pdf'>Resume</a>
 </div>
 <div id="content">
   <ul>
@@ -22,19 +22,22 @@
       <!--<video id="video-background" #movieplayer>-->
         <!--<source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">-->
       <!--</video>-->
-      <span>
-        <h1>Project: {{project.name}}</h1>
-        <br>
-        Type: {{project.projectType}}
-        <br>
-        <span id="duration"> Time: {{project.length}}</span>
-        <br>
-      </span>
+      <h1>Project: {{project.name}}</h1>
+
       <div id='bottom_bar'>
+      <!--<span id="project_details">-->
+        <!--Type: {{project.projectType}}-->
+        <!--<br>-->
+        <!--<span id="duration"> Time: {{project.length}}</span>-->
+        <!--<br>-->
+      <!--</span>-->
+        <button id="demo" (click)="movieplayer.play">
+          {{project.func}}
+        </button>
+        <a href="{{project.github}}">
         <img src="../../assets/medias/github.png">
-        <button id="demo" (click)="movieplayer.play"> {{project.func}} </button>
+        </a>
       </div>
     </li>
   </ul>
 </div>
-        <!--[ngStyle]= "{'background-image': 'url(' + project.path + ')'}"-->

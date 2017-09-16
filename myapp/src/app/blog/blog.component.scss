@@ -32,6 +32,7 @@ div#utility{
   color: $cust-orange;
   height: auto;
   margin-bottom: 0;
+  opacity: .7;
   h1#portfolio{
     margin-top: 5%;
     margin-bottom: 3%;
@@ -40,14 +41,18 @@ div#utility{
     text-align: center;
   }
   span{
-    position: relative;
-    margin-left: 9%;
+    //position: relative;
+    margin-left: 8%;
     font-size: 1.4em;
   }
-  span#right_side{
-    position: relative;
-    right: -55%;
-    font-size: 1.1em;
+  a#right_side{
+    width: auto;
+    height: auto;
+    color: $cust-orange;
+    position: absolute;
+    right: 8%;
+    font-size: 1em;
+    font-weight: 600;
     text-align: right;
   }
 }
@@ -56,7 +61,7 @@ div#content{
   background-color: white;
   ul{
     background-color: white;
-    width: 90%;
+    width: 85%;
     height: 110%;
     //height: auto;
     padding-top: 20px;
@@ -64,50 +69,48 @@ div#content{
     margin-right: auto;
     margin-left: auto;
     li{
-      padding: 5px;
+      padding: 0px;
+      padding-top: 0px;
       margin-top: 8%;
       margin-bottom: 8%;
-      height: 30%;
+      height: 26%;
       width: 100%;
-      color: black;
+      //color: black;
       -webkit-box-shadow: -10px -1px 24px 0px rgba(0,0,0,.5);
       -moz-box-shadow: -10px -1px 24px 0px rgba(0,0,0,.5);
       box-shadow: -10px -1px 24px 0px rgba(0,0,0,.5);
       border-radius: 5px 5px;
-      span{
-          background-color: $cust-orange;
-          width: auto;
-          height: auto;
-          font-weight: 600;
-          opacity: .6;
-        h1{
-            opacity: .9;
-            text-align: center;
-            border-radius: 5px 5px;
-            font-size: 1.4em;
-            background-color: $cust-orange;
-            width: auto;
-          }
-        span#duration{
-          font-size: .8em;
-        }
+      h1{
+        //opacity: .8;
+        text-align: center;
+        border-radius: 2px;
+        font-size: 1.4em;
+        background-color: $cust-orange;
+        color: white;
+        width: 100%;
+        height: 15%;
       }
       div#bottom_bar{
         text-align: right;
-        bottom: -30%;
-        height: 16%;
         position: relative;
+        bottom: -65%;
+        right: 5%;
+        height: 15%;
+        width: auto;
         border-radius: 5px;
-        opacity: .7;
+        opacity: 1;
         img{
-          position: relative;
-          bottom: -40%;
-          width: 8%;
+          float: right;
+          display: block;
+          height: 100%;
+          width: auto;
+          margin-right: 2%;
           //height: auto;
         }
         button#demo{
-          width: auto;
-          height: 200%;
+          float: right;
+          width: 15%;
+          height: 100%;
           opacity: 1;
           padding: 1%;
           border-radius: 10%;

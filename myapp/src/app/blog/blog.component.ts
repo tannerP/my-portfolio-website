@@ -13,25 +13,29 @@ export class BlogComponent implements OnInit {
       projectType: 'Full-stack Dev',
       path: '../../assets/medias/bittycasting_mock.png',
       func: 'demo',
+      github: 'https://github.com/tannerP/BittyCasting/graphs/contributors',
     },
     {
       name: 'Lane Detection',
-      length: 'April 2017',
+      length: 'Feb 2017',
       projectType: 'Video Processing',
       path: '../../assets/medias/selfDrivingCar_blakwhite.png',
-      func: 'play'
+      func: 'play',
+      github: 'https://github.com/tannerP/detect_driving_lanes/graphs/contributors',
     },
     {
       name: 'How I Built This',
       length: 'Aug 2017',
       projectType: 'Website Design',
       path: '../../assets/medias/sketchapp_background.png',
-      func: 'read'
+      func: 'read',
+      github: 'https://github.com/tannerP/tannerphan.me/graphs/contributors',
     },
   ];
   constructor(private router: Router) { }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
   }
   back_button() {
     this.router.navigateByUrl('/');

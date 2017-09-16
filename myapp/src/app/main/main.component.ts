@@ -19,8 +19,7 @@ export class MainComponent implements OnInit {
               private ig: IgService,
               private  router: Router,
               public menuService: MenuStateService) { }
-
-  ngOnInit(): any{
+  ngOnInit(): any {
     this.menu_state =  'about';
   }
   click_portfolio(): any {
