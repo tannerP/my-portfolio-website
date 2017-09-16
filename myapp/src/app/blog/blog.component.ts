@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -9,26 +9,37 @@ export class BlogComponent implements OnInit {
   public projects = [
     {
       name: 'BittyCasting',
-      length: '7 months',
-      projectType: 'Software Startup',
+      length: 'Jan - July, 2016',
+      projectType: 'Full-stack Dev',
       path: '../../assets/medias/bittycasting_mock.png',
+      func: 'demo',
     },
     {
       name: 'Lane Detection',
-      length: '2 week',
-      projectType: 'Udacity - Self Driving Car ND',
+      length: 'April 2017',
+      projectType: 'Video Processing',
       path: '../../assets/medias/selfDrivingCar_blakwhite.png',
+      func: 'play'
     },
     {
-      name: 'About Tannerphan.me',
-      length: 'Since 2017',
-      projectType: 'Personal Portfolio',
+      name: 'How I Built This',
+      length: 'Aug 2017',
+      projectType: 'Website Design',
       path: '../../assets/medias/sketchapp_background.png',
+      func: 'read'
     },
   ];
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+  back_button() {
+    this.router.navigateByUrl('/');
+  }
+  goto(name: string){
+    this.router.navigateByUrl('/blog/' + name.toLocaleLowerCase());
+  }
+  open_tabwithresume() {
 
+  }
 }

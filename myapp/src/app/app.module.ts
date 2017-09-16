@@ -12,13 +12,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BlogComponent } from './blog/blog.component';
 import { MainComponent } from './main/main.component';
 import { VietnamComponent } from './vietnam/vietnam.component';
+import { BittycastingComponent } from './bittycasting/bittycasting.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'reads',    component: AboutComponent },
   { path: 'blog',    component: BlogComponent },
-  { path: 'portfolio',    component: PortfolioComponent },
-  { path: 'vietnam',    component: VietnamComponent },
+  { path: 'blog/bittycasting',    component: BittycastingComponent },
   { path: '**',         redirectTo: '' },
 ];
 
@@ -29,7 +28,8 @@ const appRoutes: Routes = [
     PortfolioComponent,
     BlogComponent,
     MainComponent,
-    VietnamComponent
+    VietnamComponent,
+    BittycastingComponent
   ],
   imports: [
     BrowserModule,

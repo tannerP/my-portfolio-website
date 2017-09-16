@@ -28,46 +28,94 @@
 //  }
 //}
 
-  h1{
-    font-size: 4em;
-    color: black;
+div#utility{
+  color: $cust-orange;
+  height: auto;
+  margin-bottom: 0;
+  h1#portfolio{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 4.5em;
+    color: $cust-orange;
+    text-align: center;
   }
-#content{
+  span{
+    position: relative;
+    margin-left: 9%;
+    font-size: 1.4em;
+  }
+  span#right_side{
+    position: relative;
+    right: -55%;
+    font-size: 1.1em;
+    text-align: right;
+  }
+}
+div#content{
   width: 100%;
   background-color: white;
   ul{
     background-color: white;
-   // opacity: .6;
     width: 90%;
     height: 110%;
+    //height: auto;
     padding-top: 20px;
     list-style: none;
     margin-right: auto;
     margin-left: auto;
     li{
+      padding: 5px;
       margin-top: 8%;
       margin-bottom: 8%;
-      height: 29%;
+      height: 30%;
       width: 100%;
-      color: white;
-      filter: grayscale(.2);
-      -webkit-box-shadow: -10px -1px 24px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: -10px -1px 24px 0px rgba(0,0,0,0.75);
-      box-shadow: -10px -1px 24px 0px rgba(0,0,0,0.75);
-      padding: 5px;
+      color: black;
+      -webkit-box-shadow: -10px -1px 24px 0px rgba(0,0,0,.5);
+      -moz-box-shadow: -10px -1px 24px 0px rgba(0,0,0,.5);
+      box-shadow: -10px -1px 24px 0px rgba(0,0,0,.5);
       border-radius: 5px 5px;
       span{
           background-color: $cust-orange;
           width: auto;
           height: auto;
           font-weight: 600;
-          opacity: .9;
+          opacity: .6;
         h1{
+            opacity: .9;
+            text-align: center;
             border-radius: 5px 5px;
             font-size: 1.4em;
             background-color: $cust-orange;
             width: auto;
           }
+        span#duration{
+          font-size: .8em;
+        }
+      }
+      div#bottom_bar{
+        text-align: right;
+        bottom: -30%;
+        height: 16%;
+        position: relative;
+        border-radius: 5px;
+        opacity: .7;
+        img{
+          position: relative;
+          bottom: -40%;
+          width: 8%;
+          //height: auto;
+        }
+        button#demo{
+          width: auto;
+          height: 200%;
+          opacity: 1;
+          padding: 1%;
+          border-radius: 10%;
+          color: white;
+          font-weight: bold;
+          font-size: .7em;
+          background-color: $cust-orange;
+        }
       }
     }
   }

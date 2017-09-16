@@ -2,7 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { MenuStateService } from '../services/menu-state.service';
 import { IgService } from '../services/ig.service';
 import { DOCUMENT } from '@angular/platform-browser';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 import {trigger, state, style, animate, transition} from '@angular/animations';
 @Component({
   selector: 'app-main',

@@ -9,3 +9,10 @@ $background_uri: none;
 
 $cust-orange: #ffa117;
 $link-font-color: $cust-orange;
+
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
