@@ -5,7 +5,6 @@ import { DOCUMENT } from '@angular/platform-browser';
 import { Router, NavigationEnd } from '@angular/router';
 import {trigger, state, style, animate, transition} from '@angular/animations';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -29,9 +28,14 @@ export class AppComponent {
   public socialmedia_state: Boolean = false;
   public footer_tog: Boolean = false;
   private current_scroll = Number;
-  constructor(@Inject(DOCUMENT) private document: any,  private router: Router, private menuSrvc: MenuStateService, private ig: IgService) {
-    setInterval(() => { console.log('Reset'); this.footer_tog = !this.footer_tog; },  1000 * 4);
+
+  constructor(@Inject(DOCUMENT) private document: any, private router: Router, private menuSrvc: MenuStateService, private ig: IgService) {
+    setInterval(() => {
+      console.log('Reset');
+      this.footer_tog = !this.footer_tog;
+    }, 1000 * 4);
   };
+
   isMoving(scroll_index) {
     if (this.current_scroll === scroll_index) {
       return false;
@@ -44,10 +48,4 @@ export class AppComponent {
     const number: Number = this.document.body.scrollTop;
     console.log(number);
   }
-
-  // toggle_socialMedia() {
-  //   this.socialmedia_state = !this.socialmedia_state;
-  //   console.log(this.socialmedia_state);
-  // }
 }
-

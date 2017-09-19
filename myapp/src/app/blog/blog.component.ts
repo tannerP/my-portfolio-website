@@ -24,7 +24,7 @@ export class BlogComponent implements OnInit {
       github: 'https://github.com/tannerP/detect_driving_lanes/graphs/contributors',
     },
     {
-      name: 'How I Built This',
+      name: 'My Portfolio',
       length: 'Aug 2017',
       projectType: 'Website Design',
       path: '../../assets/medias/sketchapp_background.png',

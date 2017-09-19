@@ -1,34 +1,7 @@
 @import'../palette.scss';
 
-//div{
-//  text-align: center;
-//}
-//h1{
-//  height: 50px;
-//  line-height: 3;
-//}
-//#hashtagnav{
-//  position: fixed;
-//  width: 10%;
-//  background-color: black;
-//  opacity: .8;
-//  color: white;
-//  #back{
-//    background-color: #63eeff;
-//    opacity:.8;
-//  }
-//  #filter_title{
-//  }
-//  #reset{
-//    background-color: $cust-orange;
-//    opacity:.8;
-//  }
-//  #filter_list{
-//    margin-top: 20px;
-//  }
-//}
-
 div#utility{
+  margin-top: 10%;
   color: $cust-orange;
   height: auto;
   margin-bottom: 0;
@@ -36,21 +9,21 @@ div#utility{
   h1#portfolio{
     margin-top: 5%;
     margin-bottom: 3%;
-    font-size: 4.5em;
+    font-size: 4.2em;
     color: $cust-orange;
     text-align: center;
   }
   span{
     //position: relative;
-    margin-left: 8%;
-    font-size: 1.4em;
+    margin-left: 15%;
+    font-size: 1em;
   }
   a#right_side{
     width: auto;
     height: auto;
     color: $cust-orange;
     position: absolute;
-    right: 8%;
+    right: 15%;
     font-size: 1em;
     font-weight: 600;
     text-align: right;
@@ -69,19 +42,18 @@ div#content{
     margin-right: auto;
     margin-left: auto;
     li{
-      padding: 0px;
-      padding-top: 0px;
-      margin-top: 8%;
-      margin-bottom: 8%;
+      //padding: 0px;
+     // padding-top: 0px;
+      margin-top: 2%;
+      margin-bottom: 6%;
       height: 26%;
       width: 100%;
-      //color: black;
-      -webkit-box-shadow: -10px -1px 24px 0px rgba(0,0,0,.5);
-      -moz-box-shadow: -10px -1px 24px 0px rgba(0,0,0,.5);
-      box-shadow: -10px -1px 24px 0px rgba(0,0,0,.5);
+      -webkit-box-shadow: -5px 7px 19px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: -5px 7px 19px 0px rgba(0,0,0,0.75);
+      box-shadow: -5px 7px 19px 0px rgba(0,0,0,0.75);
       border-radius: 5px 5px;
       h1{
-        //opacity: .8;
+        padding-top: 3%;
         text-align: center;
         border-radius: 2px;
         font-size: 1.4em;
@@ -93,7 +65,7 @@ div#content{
       div#bottom_bar{
         text-align: right;
         position: relative;
-        bottom: -65%;
+        bottom: -60%;
         right: 5%;
         height: 15%;
         width: auto;
@@ -118,6 +90,100 @@ div#content{
           font-weight: bold;
           font-size: .7em;
           background-color: $cust-orange;
+        }
+      }
+    }
+  }
+}
+
+@media(orientation: landscape) {
+  div#utility{
+    cursor: default;
+    margin-top: 10%;
+    color: $cust-orange;
+    height: auto;
+    margin-bottom: 0;
+    opacity: .7;
+    h1#portfolio{
+      margin-top: 5%;
+      margin-bottom: 3%;
+      font-size: 6em;
+      color: $cust-orange;
+      text-align: center;
+    }
+    span{
+      margin-left: 15%;
+      font-size: 3em; }
+    a#right_side{
+      width: auto;
+      height: auto;
+      color: $cust-orange;
+      position: absolute;
+      right: 15%;
+      font-size: 2em;
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+  div#content{
+    width: 100%;
+    background-color: white;
+    ul{
+      background-color: white;
+      width: 75%;
+      height: 110%;
+      padding-top: 20px;
+      list-style: none;
+      margin-right: auto;
+      margin-left: auto;
+      li{
+        margin-top: 2%;
+        margin-bottom: 6%;
+        height: 35%;
+        width: 100%;
+        -webkit-box-shadow: -5px 7px 19px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -5px 7px 19px 0px rgba(0,0,0,0.75);
+        box-shadow: -5px 7px 19px 0px rgba(0,0,0,0.75);
+        border-radius: 5px 5px;
+        h1{
+         // padding-top: 3%;
+          text-align: center;
+          border-radius: 2px;
+          font-size: 2em;
+          background-color: $cust-orange;
+          color: white;
+          width: 100%;
+          height: 20%;
+          opacity: 1;
+        }
+        div#bottom_bar{
+          text-align: right;
+          position: relative;
+          bottom: -50%;
+          right: 5%;
+          height: 15%;
+          width: auto;
+          border-radius: 5px;
+          opacity: 1;
+          img{
+            float: right;
+            display: block;
+            height: 100%;
+            width: auto;
+            margin-right: 2%;
+          }
+          button#demo{
+            float: right;
+            width: 15%;
+            height: 100%;
+            opacity: 1;
+            padding: 1%;
+            border-radius: 10%;
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            background-color: $cust-orange;
+          }
         }
       }
     }

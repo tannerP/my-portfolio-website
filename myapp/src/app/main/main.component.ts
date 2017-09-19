@@ -25,6 +25,9 @@ export class MainComponent implements OnInit {
   click_portfolio(): any {
     this.router.navigateByUrl('blog');
   }
+  change_opacity( opa: number): any {
+    // this.opacity = opa;? opa|.5;
+  }
  setStyle(): any {
     let random: number;
     const url = ['../../assets/medias/me.jpg',
