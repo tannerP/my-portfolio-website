@@ -3,7 +3,7 @@ div#utility{
   background-color: #333333;
   color: $cust-orange;
   height: auto;
-  opacity: .7;
+  opacity: 1;
   padding-bottom: 3%;
   h1#portfolio{
     padding-top: 5%;
@@ -30,20 +30,18 @@ div#utility{
   }
 }
 div#content{
-  width: 100%;
+  opacity: .9;
+  width: 90%;
   background-color: white;
   ul{
     background-color: white;
     width: 85%;
     height: 110%;
-    //height: auto;
     padding-top: 20px;
     list-style: none;
     margin-right: auto;
     margin-left: auto;
     li{
-      //padding: 0px;
-     // padding-top: 0px;
       margin-top: 2%;
       margin-bottom: 6%;
       height: 26%;
@@ -95,9 +93,6 @@ div#content{
     }
   }
 }
-//html {
-//  background-color: #333333;
-//}
 @media(orientation: landscape) {
  div#utility{
     background-color: #333333;
@@ -106,7 +101,7 @@ div#content{
     color: $cust-orange;
     height:30%;
     margin-bottom: 0;
-    opacity: .7;
+    opacity: 1;
     h1#portfolio{
       padding-top: 5%;
       padding-bottom: 5%;
@@ -131,6 +126,7 @@ div#content{
   div#content{
     width: 100%;
     ul{
+      opacity: .9;
       height: 100%;
       width: 75%;
       list-style: none;

@@ -51,13 +51,15 @@
       width: 33.333%;
       // height: 100%;
       a {
+        padding-left: 5%;
+        padding-right: 0;
         position: relative;
         bottom: 13px;
         right: 5px;
         background-color: $cust-orange;
         width: 100%;
         font-size: 1.5em;
-        letter-spacing: .4em;
+        letter-spacing: .2em;
         text-decoration: none;
         opacity: .9;
         color: black;
@@ -74,9 +76,9 @@
   color: #333333;
   font-size: 3em;
   font-weight: lighter;
-  letter-spacing: 20px;
-  margin-right: auto;
-  margin-left: auto;
+  //letter-spacing: .1em;
+  //margin-right: auto;
+  //margin-left: auto;
 }
 div#menu_button {
   @include menu_base();
@@ -455,13 +457,14 @@ div#about_section {
         width: 33.333%;
         a {
           padding: 1%;
+          padding-right: 0;
           position: relative;
           bottom: 35px;
           right: 20px;
           background-color: $cust-orange;
           width: 100%;
           font-size: 3em;
-          letter-spacing: .5em;
+          letter-spacing: .3em;
           text-decoration: none;
           opacity: .9;
           color: black;
@@ -546,6 +549,13 @@ div#about_section {
     }
   }
 }
+
+
+
+
+
+
+
 
 @mixin gradient-animation( $start, $end, $transTime ){
   background-size: 100%;

@@ -7,7 +7,7 @@ div#utility {
   background-color: #333333;
   color: #ffa117;
   height: auto;
-  opacity: .7;
+  opacity: 1;
   padding-bottom: 3%; }
   div#utility h1#portfolio {
     padding-top: 5%;
@@ -30,7 +30,8 @@ div#utility {
     text-align: right; }
 
 div#content {
-  width: 100%;
+  opacity: .9;
+  width: 90%;
   background-color: white; }
   div#content ul {
     background-color: white;
@@ -93,7 +94,7 @@ div#content {
     color: #ffa117;
     height: 30%;
     margin-bottom: 0;
-    opacity: .7; }
+    opacity: 1; }
     div#utility h1#portfolio {
       padding-top: 5%;
       padding-bottom: 5%;
@@ -116,6 +117,7 @@ div#content {
   div#content {
     width: 100%; }
     div#content ul {
+      opacity: .9;
       height: 100%;
       width: 75%;
       list-style: none;
