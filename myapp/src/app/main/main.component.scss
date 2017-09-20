@@ -66,6 +66,7 @@
   }
 }
 
+//BASE
 @mixin menu_base() {
   text-align: center;
   width: 80%;
@@ -77,7 +78,6 @@
   margin-right: auto;
   margin-left: auto;
 }
-
 div#menu_button {
   @include menu_base();
   border-bottom: solid;
@@ -92,10 +92,12 @@ div#menu_button_flip {
   border-width: 1px;
 }
 div#seattle_based_slogan {
+  margin-top: 45%;
   display: block;
   text-align: center;
   height: auto;
-  margin-top: 20%;
+  padding-top: auto;
+  padding-bottom: auto;
   h3 {
     font-family: 'Ultra', serif;
     padding-bottom: 0;
@@ -106,29 +108,37 @@ div#seattle_based_slogan {
     color: $link-font-color;
     letter-spacing: .8px;
   }
-}
-img#seattle_skyline {
-  margin-top: 50%;
-  height: auto;
-  width: 100%;
-  opacity: .15;
-  display: block;
-  -moz-box-shadow: inset 0 0 100px #ffffff;
-  -webkit-box-shadow: inset 0 0 100px #ffffff;
-  box-shadow: inset 0 0 100px #ffffff;
-}
-img#seattle_skyline_active {
-  opacity: 0.8;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+  img#seattle_skyline {
+    margin-top: 45%;
+    height: auto;
+    width: 100%;
+    opacity: .15;
+    display: block;
+    -moz-box-shadow: inset 0 0 100px #ffffff;
+    -webkit-box-shadow: inset 0 0 100px #ffffff;
+    box-shadow: inset 0 0 100px #ffffff;
+  }
+  img#seattle_skyline_active {
+    opacity: 0.8;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+  }
 }
 video#detect_lanes{
+  margin-top: 5%;
   height: auto;
-  opacity: .7;
+  opacity: .5;
   display: block;
-  margin: 0;
-  padding:0;
+}
+span#video_caption{
+  float: right;
+  margin-right: 3%; margin-top:.5%;
+  font-weight: bold;
+  font-size: .7em;
+  text-align: right;
+  padding-right: -25%;
+
 }
 div#tanner_card {
   width: 100%;
@@ -161,7 +171,6 @@ div#tanner_card {
     animation: move-the-object 1s infinite;
   }
 }
-
 div#about_section {
   height: 100%;
   background: white url('../../assets/medias/running.png');
@@ -194,6 +203,7 @@ div#about_section {
     font-size: 1em;
   }
 }
+
 @media (min-width: $breakpoint-tablet){
   #menu {
     position: static;
@@ -444,6 +454,7 @@ div#about_section {
       td {
         width: 33.333%;
         a {
+          padding: 1%;
           position: relative;
           bottom: 35px;
           right: 20px;
@@ -460,10 +471,12 @@ div#about_section {
   }
   div#seattle_based_slogan {
     h3 {
-      font-size: 5em;
+      font-size: 8em;
+      opacity: .7;
     }
     p {
-      font-size: 2em;
+      font-weight: lighter;
+      font-size: 3em;
     }
   }
   div#tanner_card {
@@ -534,8 +547,6 @@ div#about_section {
   }
 }
 
-
-//TODO: Need to refactor
 @mixin gradient-animation( $start, $end, $transTime ){
   background-size: 100%;
   background-image: -webkit-linear-gradient($start, $end);
@@ -595,7 +606,7 @@ div#about_section {
     p{
       text-align: center;
       color: #ffa117;
-      font-size: .6em;
+      font-size: .5em;
       letter-spacing: 2px;
     }
   }
@@ -620,7 +631,6 @@ div#about_section {
     }
   }
 }
-
 //tablet
 @media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet) {
   div#footer{
@@ -680,7 +690,6 @@ and (orientation: landscape) {
     }
   }
 }
-
 //laptop
 @media (min-width: $breakpoint-tablet +1) and (max-width: $breakpoint-desk){
   div#footer{
@@ -719,7 +728,6 @@ and (orientation: landscape) {
   }
 
 }
-
 //large desktop
 @media (min-width: $breakpoint-desk +1){
   div#footer{

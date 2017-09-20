@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import {  HostListener, Component, Inject, OnInit } from '@angular/core';
 import { MenuStateService } from '../services/menu-state.service';
 import { IgService } from '../services/ig.service';
 import { DOCUMENT } from '@angular/platform-browser';
@@ -43,6 +43,12 @@ export class MainComponent implements OnInit {
         'height': '100px',
     }
     return style;
+  }
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const number: Number = this.document.body.scrollTop;
+    console.log(number);
+    console.log(this.document.body);
   }
 
 }

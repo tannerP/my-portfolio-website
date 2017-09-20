@@ -1,14 +1,13 @@
 @import'../palette.scss';
-
 div#utility{
-  margin-top: 10%;
+  background-color: #333333;
   color: $cust-orange;
   height: auto;
-  margin-bottom: 0;
   opacity: .7;
+  padding-bottom: 3%;
   h1#portfolio{
-    margin-top: 5%;
-    margin-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 3%;
     font-size: 4.2em;
     color: $cust-orange;
     text-align: center;
@@ -19,6 +18,7 @@ div#utility{
     font-size: 1em;
   }
   a#right_side{
+    text-decoration: none;
     width: auto;
     height: auto;
     color: $cust-orange;
@@ -95,18 +95,21 @@ div#content{
     }
   }
 }
-
+//html {
+//  background-color: #333333;
+//}
 @media(orientation: landscape) {
-  div#utility{
+ div#utility{
+    background-color: #333333;
     cursor: default;
-    margin-top: 10%;
+    padding-top: 2%;
     color: $cust-orange;
-    height: auto;
+    height:30%;
     margin-bottom: 0;
     opacity: .7;
     h1#portfolio{
-      margin-top: 5%;
-      margin-bottom: 3%;
+      padding-top: 5%;
+      padding-bottom: 5%;
       font-size: 6em;
       color: $cust-orange;
       text-align: center;
@@ -127,18 +130,15 @@ div#content{
   }
   div#content{
     width: 100%;
-    background-color: white;
     ul{
-      background-color: white;
+      height: 100%;
       width: 75%;
-      height: 110%;
-      padding-top: 20px;
       list-style: none;
       margin-right: auto;
       margin-left: auto;
       li{
-        margin-top: 2%;
-        margin-bottom: 6%;
+        margin-top: 4%;
+        margin-bottom: 2%;
         height: 35%;
         width: 100%;
         -webkit-box-shadow: -5px 7px 19px 0px rgba(0,0,0,0.75);
@@ -146,7 +146,6 @@ div#content{
         box-shadow: -5px 7px 19px 0px rgba(0,0,0,0.75);
         border-radius: 5px 5px;
         h1{
-         // padding-top: 3%;
           text-align: center;
           border-radius: 2px;
           font-size: 2em;
@@ -159,16 +158,15 @@ div#content{
         div#bottom_bar{
           text-align: right;
           position: relative;
-          bottom: -50%;
-          right: 5%;
-          height: 15%;
+          height: 30%;
           width: auto;
+          bottom: -53%;
           border-radius: 5px;
           opacity: 1;
           img{
             float: right;
             display: block;
-            height: 100%;
+            height: 50%;
             width: auto;
             margin-right: 2%;
           }

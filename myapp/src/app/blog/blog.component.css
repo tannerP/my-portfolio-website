@@ -4,14 +4,14 @@ html, body {
   margin: 0; }
 
 div#utility {
-  margin-top: 10%;
+  background-color: #333333;
   color: #ffa117;
   height: auto;
-  margin-bottom: 0;
-  opacity: .7; }
+  opacity: .7;
+  padding-bottom: 3%; }
   div#utility h1#portfolio {
-    margin-top: 5%;
-    margin-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 3%;
     font-size: 4.2em;
     color: #ffa117;
     text-align: center; }
@@ -19,6 +19,7 @@ div#utility {
     margin-left: 15%;
     font-size: 1em; }
   div#utility a#right_side {
+    text-decoration: none;
     width: auto;
     height: auto;
     color: #ffa117;
@@ -86,15 +87,16 @@ div#content {
 
 @media (orientation: landscape) {
   div#utility {
+    background-color: #333333;
     cursor: default;
-    margin-top: 10%;
+    padding-top: 2%;
     color: #ffa117;
-    height: auto;
+    height: 30%;
     margin-bottom: 0;
     opacity: .7; }
     div#utility h1#portfolio {
-      margin-top: 5%;
-      margin-bottom: 3%;
+      padding-top: 5%;
+      padding-bottom: 5%;
       font-size: 6em;
       color: #ffa117;
       text-align: center; }
@@ -112,19 +114,16 @@ div#content {
       text-align: right; }
 
   div#content {
-    width: 100%;
-    background-color: white; }
+    width: 100%; }
     div#content ul {
-      background-color: white;
+      height: 100%;
       width: 75%;
-      height: 110%;
-      padding-top: 20px;
       list-style: none;
       margin-right: auto;
       margin-left: auto; }
       div#content ul li {
-        margin-top: 2%;
-        margin-bottom: 6%;
+        margin-top: 4%;
+        margin-bottom: 2%;
         height: 35%;
         width: 100%;
         -webkit-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
@@ -143,16 +142,15 @@ div#content {
         div#content ul li div#bottom_bar {
           text-align: right;
           position: relative;
-          bottom: -50%;
-          right: 5%;
-          height: 15%;
+          height: 30%;
           width: auto;
+          bottom: -53%;
           border-radius: 5px;
           opacity: 1; }
           div#content ul li div#bottom_bar img {
             float: right;
             display: block;
-            height: 100%;
+            height: 50%;
             width: auto;
             margin-right: 2%; }
           div#content ul li div#bottom_bar button#demo {

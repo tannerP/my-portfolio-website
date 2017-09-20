@@ -42,10 +42,4 @@ export class AppComponent {
     }
     return true;
   }
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const number: Number = this.document.body.scrollTop;
-    console.log(number);
-  }
 }
