@@ -7,7 +7,6 @@ Requires internet access to download depencies.
 Get this repo onto local machine.
 
 ### Installing
-
 1. Install npm 
 2. Run npm install in current directory 
 3. Install angular2 CLI
@@ -19,29 +18,24 @@ Get this repo onto local machine.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Angular2](https://angular.io/) - The web framework used
+* [NPM](https://www.npmjs.com/) - Dependency Management
+
 
 ## Contributing
-
-No taking contribution. 
+Not taking contribution. 
 
 ## Versioning
+1.0
 
 ## Authors
-
-* **Tanner Phan** - *Initial work* - [PurpleBooth](https://github.com/tannerP)
+* **Tanner Phan** - *Initial work* - [tannerphan.me](https://github.com/tannerP)
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
 
 
 
