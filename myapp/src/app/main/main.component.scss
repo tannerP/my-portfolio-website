@@ -67,7 +67,6 @@
     }
   }
 }
-
 //BASE
 @mixin menu_base() {
   text-align: center;
@@ -101,10 +100,11 @@ div#seattle_based_slogan {
   padding-top: auto;
   padding-bottom: auto;
   h3 {
+    color:#1d4e41;
     font-family: 'Ultra', serif;
     padding-bottom: 0;
     font-size: 2.7em;
-    opacity: .7;
+    opacity: 1;
       }
   p {
     color: $link-font-color;
@@ -127,31 +127,32 @@ div#seattle_based_slogan {
     -webkit-transition: opacity .25s ease-in-out;
   }
 }
+img#seattle_skyline {
+  margin-top: 50%;
+  height: auto;
+  width: 100%;
+  opacity: .1;
+  display: block;
+  filter: grayscale(100%);
+  -moz-box-shadow: inset 0 0 100px #ffffff;
+  -webkit-box-shadow: inset 0 0 100px #ffffff;
+  box-shadow: inset 0 0 100px #ffffff;
+}
 img#lane_detection{
-  margin-top: 5%;
+  //margin-top: 5%;
   height: auto;
   opacity: .5;
   display: block;
-}
-span#video_caption{
-  height: auto;
-  float: right;
-  margin-right: 3%; margin-top:.5%;
-  font-weight: bold;
-  font-size: .7em;
-  text-align: right;
-  padding-right: -25%;
 }
 div#tanner_card {
   width: 100%;
   height: 10%;
   text-align: right;
-  color: white;
+  color: $cust-orange;
   font-size: 2em;
-  background-color: $cust-orange;
+  background-color:#1d4e41;
   background-size: contain;
   background-repeat: no-repeat;
-  box-shadow: inset 0 0 10px #ffffff;
   img {
     position: relative;
     width: auto;
@@ -184,7 +185,8 @@ div#about_section {
     opacity: .7;
     width: auto;
   }
-  h2 {;
+  h2 {
+    opacity: .8;
     font-size: 5em;
     display: block;
     width: 50%;
@@ -242,6 +244,7 @@ div#about_section {
   }
   div#seattle_based_slogan {
     h3 {
+      color: #1d4e41;
       font-size: 5em;
     }
     p {
@@ -292,6 +295,7 @@ div#about_section {
     }
   }
 }
+
 @media (orientation: landscape) {
    #menu {
      position: static;
@@ -339,13 +343,12 @@ div#about_section {
     width: 100%;
     height: 20%;
     text-align: right;
-    color: white;
+    color: $cust-orange;
     font-size: 2em;
-    background-color: $cust-orange;
+    background-color: #1d4e41;
     background-size: contain;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 10px #ffffff;
-    //-moz-box-shadow:    inset 0 0 30px #ffffff;
+    box-shadow: inset 0 0 5px #ffffff; //-moz-box-shadow:    inset 0 0 30px #ffffff;
     //-webkit-box-shadow: inset 0 0 30px #ffffff;
     img {
       position: relative;
@@ -369,7 +372,7 @@ div#about_section {
       animation: move-the-object 1s infinite;
     }
   }
-  div#about_section {
+   div#about_section {
     width: 100%;
     background: white url('../../assets/medias/running.png');
     background-position: center;
@@ -437,6 +440,7 @@ div#about_section {
      }
    }
 }
+
 @media (min-width: $breakpoint-desk-lrg){
   #menu {
     position: static;
@@ -473,7 +477,7 @@ div#about_section {
     }
   }
   div#seattle_based_slogan {
-    margin-top: 15%;
+    //margin-top: 15%;
     h3 {
       font-size: 8em;
       opacity: .7;
@@ -488,12 +492,11 @@ div#about_section {
     width: 100%;
     height: 20%;
     text-align: right;
-    color: white;
+    color: $cust-orange;
     font-size: 2em;
-    background-color: $cust-orange;
+    background-color: #1d4e41;
     background-size: contain;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 10px #ffffff;
     img {
       position: relative;
       width: auto;
@@ -552,12 +555,7 @@ div#about_section {
 }
 
 
-
-
-
-
-
-
+// footer
 @mixin gradient-animation( $start, $end, $transTime ){
   background-size: 100%;
   background-image: -webkit-linear-gradient($start, $end);
@@ -586,7 +584,7 @@ div#about_section {
     }
   }
 }
-// Mobile
+
 @media(max-width: $breakpoint-mobile) {
   div#footer{
     // @include gradient-animation( #ffa117, #464646, 1s);
@@ -622,7 +620,7 @@ div#about_section {
     }
   }
 }
-//mobile landscape
+
 @media(max-width: $breakpoint-mobile) and (orientation: landscape) { div#footer{
     width: 100%;
     height: 20%;
@@ -641,7 +639,7 @@ div#about_section {
     }
   }
 }
-//tablet
+
 @media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet) {
   div#footer{
     // @include gradient-animation( #ffa117, #464646, 1s);
@@ -677,7 +675,7 @@ div#about_section {
     }
   }
 }
-//tablet landscape
+
 @media(min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet)
 and (orientation: landscape) {
   div#footer{
@@ -700,7 +698,7 @@ and (orientation: landscape) {
     }
   }
 }
-//laptop
+
 @media (min-width: $breakpoint-tablet +1) and (max-width: $breakpoint-desk){
   div#footer{
     // @include gradient-animation( #ffa117, #464646, 1s);
@@ -738,7 +736,7 @@ and (orientation: landscape) {
   }
 
 }
-//large desktop
+
 @media (min-width: $breakpoint-desk +1){
   div#footer{
     // @include gradient-animation( #ffa117, #464646, 1s);

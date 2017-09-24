@@ -1,6 +1,6 @@
 @import'../palette.scss';
 div#utility{
-  background-color: #333333;
+  background-color: #1d4e41;
   color: $cust-orange;
   height: auto;
   opacity: 1;
@@ -96,7 +96,7 @@ div#content{
 }
 @media(orientation: landscape) {
   div#utility{
-    background-color: #333333;
+    background-color: #1d4e41;
     cursor: default;
     padding-top: 2%;
     color: $cust-orange;
