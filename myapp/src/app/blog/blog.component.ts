@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Inject, Component, OnInit, AfterViewInit } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.scss']
 })
-export class BlogComponent implements OnInit {
+export class BlogComponent implements OnInit, AfterViewInit {
   public projects = [
     {
       name: 'BittyCasting',
@@ -32,10 +33,17 @@ export class BlogComponent implements OnInit {
       github: 'https://github.com/tannerP/tannerphan.me/graphs/contributors',
     },
   ];
-  constructor(private router: Router) { }
+  constructor(private router: Router, @Inject(DOCUMENT) private document: any) { }
 
   ngOnInit() {
     window.scrollTo(0, 0);
+  }
+  ngAfterViewInit() {
+    // let a, position;
+    //
+    // a = document.querySelector('#utility');
+    // position = a.getPosition();
+    // console.log(position);
   }
   back_button() {
     this.router.navigateByUrl('/');

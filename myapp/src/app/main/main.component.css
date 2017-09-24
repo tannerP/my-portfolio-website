@@ -27,7 +27,7 @@ html, body {
 #menu {
   position: static;
   height: 80%;
-  width: 90%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   font-size: .5em; }
@@ -54,22 +54,28 @@ html, body {
 
 div#menu_button {
   text-align: center;
-  width: 80%;
+  width: 90%;
   height: auto;
   color: #333333;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: lighter;
+  letter-spacing: .2em;
+  margin-right: auto;
+  margin-left: auto;
   border-bottom: solid;
   bottom: 0px;
   border-width: 1px; }
 
 div#menu_button_flip {
   text-align: center;
-  width: 80%;
+  width: 90%;
   height: auto;
   color: #333333;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: lighter;
+  letter-spacing: .2em;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 3%;
   border-top: solid;
   border-width: 1px; }

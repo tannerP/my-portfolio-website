@@ -103,6 +103,7 @@ div#content {
       text-align: center; }
     div#utility span {
       margin-left: 15%;
+      margin-bottom: 1%;
       font-size: 3em; }
     div#utility a#right_side {
       width: auto;

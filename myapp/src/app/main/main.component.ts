@@ -44,11 +44,13 @@ export class MainComponent implements OnInit {
     }
     return style;
   }
+/*
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const number: Number = this.document.body.scrollTop;
     console.log(number);
     console.log(this.document.body);
   }
+*/
 
 }
