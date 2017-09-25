@@ -100,11 +100,11 @@ div#seattle_based_slogan {
   padding-top: auto;
   padding-bottom: auto;
   h3 {
-    color:#1d4e41;
+    color: black;
     font-family: 'Ultra', serif;
     padding-bottom: 0;
     font-size: 2.7em;
-    opacity: 1;
+    opacity: .7;
       }
   p {
     color: $link-font-color;
@@ -244,7 +244,6 @@ div#about_section {
   }
   div#seattle_based_slogan {
     h3 {
-      color: #1d4e41;
       font-size: 5em;
     }
     p {
@@ -477,7 +476,6 @@ div#about_section {
     }
   }
   div#seattle_based_slogan {
-    //margin-top: 15%;
     h3 {
       font-size: 8em;
       opacity: .7;

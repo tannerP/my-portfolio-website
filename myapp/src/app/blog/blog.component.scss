@@ -96,7 +96,7 @@ div#content{
 }
 @media(orientation: landscape) {
   div#utility{
-    background-color: #1d4e41;
+    background-color: #333333;
     cursor: default;
     padding-top: 2%;
     color: $cust-orange;
@@ -104,21 +104,23 @@ div#content{
     margin-bottom: 0;
     opacity: 1;
     h1#portfolio{
+      padding: 0;
       padding-top: 5%;
-      padding-bottom: 5%;
+      //padding-bottom: 5%;
       font-size: 7em;
       color: $cust-orange;
       text-align: center;
+
     }
     span{
       margin-left: 15%;
-      margin-bottom: 1%;
-      font-size: 3em; }
+      font-size: 5em; }
     a#right_side{
       width: auto;
       height: auto;
       color: $cust-orange;
       position: absolute;
+      top: 32%;
       right: 15%;
       font-size: 2em;
       font-weight: 600;
@@ -194,8 +196,8 @@ div#content{
       margin-bottom: 0;
       opacity: 1;
       h1#portfolio{
+        padding: 0;
         padding-top: 3%;
-        padding-bottom: 3%;
         font-size: 9em;
         color: $cust-orange;
         text-align: center;
@@ -203,14 +205,15 @@ div#content{
       span{
         margin-left: 15%;
         margin-bottom: 1%;
-        font-size: 3em; }
+        font-size: 5em; }
       a#right_side{
         width: auto;
         height: auto;
         color: $cust-orange;
         position: absolute;
+        top: 29%;
         right: 15%;
-        font-size: 2em;
+        font-size: 3em;
         font-weight: 600;
         text-align: right;
       }
