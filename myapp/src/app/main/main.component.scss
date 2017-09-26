@@ -444,7 +444,7 @@ div#about_section {
 
 @media (max-width: $breakpoint-tablet - 1px){
   #seattle_based_slogan{
-    filter: grayscale(.8) blur(2px);
+    filter: grayscale(.7) blur(2px);
     height: 20%;
     width: auto;
     background-image: url(../../assets/medias/seattle_skyline.png);
@@ -452,17 +452,17 @@ div#about_section {
     background-repeat: no-repeat;
     //background-image: url(../../assets/medias/seattle_skyline.png);
     background-position: 50% 50%;
-    opacity: .8;
+    opacity: .5;
   }
   #banner-text{
     text-align: center;
     position: absolute;
-    top: 0;
+    top: 2%;
    h1 {
      filter: grayscale(.5) blur(0px);
      padding-top: 6%;
      font-size: 2.5em;
-     opacity: .6;
+     opacity: .7;
    }
    p {
      color: $cust-orange;
@@ -558,7 +558,7 @@ div#about_section {
     background-size: 150% auto;
     background-repeat: no-repeat;
     background-position: bottom;
-    opacity: .8;
+    opacity: .3;
   }
   #banner-text{
     text-align: center;
@@ -575,7 +575,7 @@ div#about_section {
       margin-left: 8px;
       font-weight: 500;
       font-size:  1.5em;
-      opacity: 1;
+      opacity: 1.2;
     }
   }
   #lane_detection{
