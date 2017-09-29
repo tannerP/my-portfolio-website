@@ -9,7 +9,7 @@
 <!--</div>-->
 <div id='utility'>
   <h1 id='portfolio'> Portfolio</h1>
-  <span (click)="back_button()">&#8678;</span>
+  <a id="back-arrow" (click)="back_button()">&#8678;</a>
     <!--<span (click)="back_button()" style="magin:0">back</span>-->
   <a id="right_side" target="_blank"
         href='../../assets/TannerPhan%202017%20Resume.pdf'>Resume</a>
@@ -22,7 +22,7 @@
       <h1>Project: {{project.name}}</h1>
       <div id='bottom_bar'>
         <a href="{{project.github}}">
-        <img src="../../assets/medias/github.png">
+        <img id="github" src="../../assets/medias/github.png">
         </a>
       </div>
     </li>

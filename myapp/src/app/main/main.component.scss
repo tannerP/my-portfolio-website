@@ -643,12 +643,12 @@ div#about_section {
     padding-top: 0;
     height: 25%;
     width: auto;
-    filter: grayscale(.7) blur(2px);
+    filter: grayscale(.7) blur(3px);
     background-image: url(../../assets/medias/seattle_skyline.png);
     background-size: 150% auto;
     background-repeat: no-repeat;
     background-position: bottom;
-    opacity: .3;
+    opacity: .5;
   }
   #banner-text{
     text-align: center;
@@ -746,6 +746,7 @@ div#about_section {
 @media (min-width: $breakpoint-desk-lrg){
   #seattle_based_slogan {
     filter: grayscale(.7) blur(3px);
+    opacity: .5;
     text-align: center;
     width: auto;
     height: 35%;
@@ -759,15 +760,15 @@ div#about_section {
     text-align: center;
     //top: 20%;
     h1 {
-      line-height: 85%;
+      line-height: 30%;
       color: black;
-      top: 14%;
-      font-size: 74em;
+      //top: 14%;
+      font-size: 64em;
       opacity: .7;
     }
   }
   #lane_detection{
-    height: 50%;
+    height: 40%;
     opacity: .7;
     display: block;
   }
