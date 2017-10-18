@@ -100,19 +100,17 @@ div#content {
 }
 */
 
-body{
-  background-color: $seattle_green;
-}
+
 @media(orientation: landscape) {
   div#utility {
     background-color: #333333;
     cursor: default;
     padding-top: 2%;
     color: $cust-orange;
-    height: 30%;
+    height: auto;
     margin-bottom: 0;
     opacity: 1;
-    h1#portfolio {
+    #portfolio {
       padding: 0;
       padding-top: 5%;
       font-size: 7em;
@@ -122,11 +120,11 @@ body{
     #back-arrow{
       width: auto;
       height: auto;
-      position: relative;
+      position: absolute;
       top: 20%;
-      //line-height: 100%;
       margin-left: 15%;
-      font-size: 3em;
+      font-size: 4em;
+      cursor: pointer;
     }
     #right_side {
       width: auto;
@@ -135,13 +133,12 @@ body{
       position: absolute;
       top: 20%;
       right: 15%;
-      font-size: 1em;
+      font-size: 1.4em;
       font-weight: 600;
       text-align: right;
     }
   }
   div#content {
-    background-color: $seattle_green;
     width: 100%;
     ul {
       display: flex;
@@ -149,26 +146,26 @@ body{
       height: 100%;
       width: 95%;
       list-style: none;
-      margin-right: auto;
-      margin-left: auto;
+      margin: 3% auto;
+
       li {
         margin: 1%;
         //margin-top: 4%;
         //margin-bottom: 2%;
         height: 35%;
-        width: 30%;
+        width: 33.33333%;
         -webkit-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         border-radius: 5px 5px;
-        h1 {
+        h4 {
           text-align: center;
           border-radius: 2px;
           font-size: 2em;
           background-color: $cust-orange;
           color: white;
           width: 100%;
-          height: 20%;
+          //height: 20%;
           opacity: 1;
         }
         div#bottom_bar {
@@ -176,7 +173,7 @@ body{
           position: relative;
           height: 30%;
           width: auto;
-          bottom: -53%;
+          bottom: -70%;
           border-radius: 5px;
           opacity: 1;
           #github {
@@ -205,193 +202,15 @@ body{
       }
     }
   }
-  @media(max-width: $breakpoint-tablet) {
+  @media(min-width: $breakpoint-tablet) {
     div#utility {
-      background-color: #333333;
-      cursor: default;
-      padding-top: 2%;
-      color: $cust-orange;
-      height: 30%;
-      margin-bottom: 0;
-      opacity: 1;
-      h1#portfolio {
-        padding: 0;
-        padding-top: 3%;
-        font-size: 4em;
-        color: $cust-orange;
-        text-align: center;
-      }
-      #back-arrow {
-        position: absolute;
-        //top: 20%;
-        margin-left: 15%;
-        font-size: 3em;
-      }
-      a#right_side {
-        width: auto;
-        height: auto;
-        color: $cust-orange;
-        position: absolute;
-        top: 29%;
-        right: 15%;
-        font-size: .8em;
-        font-weight: 600;
-        text-align: right;
-      }
+      height: 30%
     }
-    div#content {
-      width: 100%;
-      ul {
-        opacity: .9;
-        height: 100%;
-        width: 95%;
-        list-style: none;
-        margin-right: auto;
-        margin-left: auto;
-        li {
-          margin-top: 4%;
-          margin-bottom: 2%;
-          height: 35%;
-          width: 33%;
-          -webkit-box-shadow: -5px 7px 19px 0px #333333;
-          -moz-box-shadow: -5px 7px 19px 0px #333333;
-          box-shadow: -5px 7px 19px 0px #333333;
-          border-radius: 5px 5px;
-          h1 {
-            text-align: center;
-            border-radius: 2px;
-            font-size: 1.7em;
-            background-color: $cust-orange;
-            color: white;
-            width: 100%;
-            height: auto;
-            opacity: 1;
-          }
-          div#bottom_bar {
-            text-align: right;
-            position: relative;
-            height: 30%;
-            width: auto;
-            bottom: -35%;
-            border-radius: 5px;
-            opacity: 1;
-            img {
-              float: right;
-              display: block;
-              height: 50%;
-              width: auto;
-              margin-right: 2%;
-            }
-            button#demo {
-              float: right;
-              width: 15%;
-              height: 100%;
-              opacity: 1;
-              padding: 1%;
-              border-radius: 10%;
-              color: white;
-              font-weight: bold;
-              font-size: 1em;
-              background-color: $cust-orange;
-            }
-          }
-        }
-      }
-    }
-  }
-  @media(min-width: $breakpoint-desk-lrg) {
-    div#utility {
-      background-color: #333333;
-      cursor: default;
-      padding-top: 2%;
-      color: $cust-orange;
-      height: 30%;
-      margin-bottom: 0;
-      opacity: 1;
-      h1{
-        padding: 0;
-        padding-top: 3%;
-        font-size: 9em;
-        color: $cust-orange;
-        text-align: center;
-      }
-      #back-arrow {
-        line-height: 20%;
-        margin-left: 15%;
-        margin-bottom: 20%;
-        font-size: 5em;
-      }
-      a#right_side {
-        width: auto;
-        height: auto;
-        color: $cust-orange;
-        position: absolute;
-        top: 30%;
-        right: 15%;
-        font-size: 1.2em;
-        font-weight: 600;
-        text-align: right;
-      }
-    }
-    div#content {
-      width: 100%;
-      ul {
-        opacity: .9;
-        height: 100%;
-        width: 95%;
-        list-style: none;
-        margin-right: auto;
-        margin-left: auto;
-        li {
-          margin-top: 4%;
-          margin-bottom: 2%;
-          height: 35%;
-          width: 33%;
-          -webkit-box-shadow: -5px 7px 19px 0px #333333;
-          -moz-box-shadow: -5px 7px 19px 0px #333333;
-          box-shadow: -5px 7px 19px 0px #333333;
-          border-radius: 5px 5px;
-          h1 {
-            text-align: center;
-            border-radius: 2px;
-            padding: 2%;
-            font-size: 2.5em;
-            background-color: $cust-orange;
-            color: white;
-            width: 100%;
-            height: auto;
-            opacity: 1;
-          }
-          div#bottom_bar {
-            text-align: right;
-            position: relative;
-            height: 30%;
-            width: auto;
-            bottom: -53%;
-            border-radius: 5px;
-            opacity: 1;
-            img {
-              float: right;
-              display: block;
-              height: 50%;
-              width: auto;
-              margin-right: 2%;
-            }
-            button#demo {
-              float: right;
-              width: 15%;
-              height: 100%;
-              opacity: 1;
-              padding: 1%;
-              border-radius: 10%;
-              color: white;
-              font-weight: bold;
-              font-size: 1em;
-              background-color: $cust-orange;
-            }
-          }
-        }
-      }
+    #back-arrow{
+      top: 10%;
+      margin-left: 15%;
+      font-size: 4em;
+      cursor: pointer;
     }
   }
 }
@@ -599,7 +418,7 @@ body{
     height: 20%;
     width: 100%;
     margin-bottom: 0;
-    opacity: 1;
+    opacity: .8;
     h1#portfolio {
       padding: 0;
       padding-top: 5%;
@@ -629,9 +448,9 @@ body{
     }
   }
   div#content {
-    background-color: $seattle_green;
+    background-color: white;
     width: auto;
-    height: 100%;
+    height: 80%;
     ul {
       align-items: center;
       display: flex;
@@ -644,22 +463,21 @@ body{
       //margin: 0 5% 0 auto;
       li {
         margin: 2%;
-        //margin-top: 4%;
-        //margin-bottom: 2%;
-        height: 25%;
-        width: 90%;
+        height: 30%;
+        width: 80%;
         -webkit-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         border-radius: 5px 5px;
-        h1 {
+        h4 {
+          vertical-align: center;
           text-align: center;
           border-radius: 2px;
-          font-size: 1.8em;
+          font-size: 1em;
           background-color: $cust-orange;
           color: white;
           width: 100%;
-          height: 20%;
+          height: auto;
           opacity: 1;
         }
         div#bottom_bar {
@@ -667,7 +485,7 @@ body{
           position: relative;
           height: 30%;
           width: auto;
-          bottom: -53%;
+          bottom: -65%;
           border-radius: 5px;
           opacity: 1;
           img {
@@ -731,7 +549,7 @@ body{
       }
     }
     div#content {
-      background-color: $seattle_green;
+      background-color: white;
       width: auto;
       height: 100%;
       ul {
@@ -754,7 +572,7 @@ body{
           -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
           box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
           border-radius: 5px 5px;
-          h1 {
+          h4 {
             text-align: center;
             border-radius: 2px;
             font-size: 1.8em;

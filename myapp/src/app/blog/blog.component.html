@@ -19,7 +19,7 @@
     <li *ngFor="let project of projects"
         [style.background-image] = " 'url(' + project.path + ')'"
         style="background-position: center">
-      <h1>Project: {{project.name}}</h1>
+      <h4>Project: {{project.name}}</h4>
       <div id='bottom_bar'>
         <a href="{{project.github}}">
         <img id="github" src="../../assets/medias/github.png">

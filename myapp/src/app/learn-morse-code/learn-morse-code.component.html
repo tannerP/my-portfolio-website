@@ -1,0 +1,75 @@
+
+<header>
+  <h1>
+    {{title}}
+  </h1>
+  <p>
+    {{slogan}}
+  </p>
+</header>
+<div id="main">
+  <!-- Translate English to Morse code on typing-->
+  <div id="select-file-pane">
+    <h2>Demo</h2>
+    <hr>
+    <div id="translate-view" *ngIf="translate_view">
+      {{translate_view.og_word}} <br> {{translate_view.morse_code}}
+      <span *ngIf="!translate_view.morse_code && translate_view.og_word"> No translation </span>
+      <a *ngIf="translate_view.morse_code">
+        sound
+        <img src="../assets/speaker.png">
+      </a>
+    </div>
+    <ul>
+      <li (click)="translate_onChange($event,'Code')"> Code </li>
+      <li (click)="translate_onChange($event, 'Seattle Seahawks')">Seattle Seahawks</li>
+      <li (click)="translate_onChange($event,'Software')">Software</li>
+      <li (click)="translate_onChange($event,'Investment')">Investment</li>
+    </ul>
+    <label>Try presets</label>
+    <textarea  maxlength="45"  placeholder="Enter text to and translate..."
+               [(ngModel)]="text_area" (keyup)="translate_onChange($event, text_area)"></textarea>
+    <button id='addToList-btn' (click)="addtoUrList(this.text_area)" >Add to UR list</button>
+    <p id="morse-info"> Morse code is an electrical telegraph communication
+      pattern based on on/off signals. To learn more, please
+      checkout the end section.</p>
+  </div>
+
+  <button class="divisor" (click)="playSound()">&harr; <br> Samuel <br> &harr; </button>
+  <!-- UR List-->
+  <div id="visual-pane">
+    <h2>UR List</h2>
+    <hr>
+    <span *ngIf="urList.length === 0"> Empty </span>
+    <ol>
+      <li *ngFor="let item of urList; let i = index">
+        {{item.eng}}
+        <br>
+        {{'Translation: ' + item.morse}}
+        <a *ngIf="item" (click)="removeUrlistItem(i)"><img src="../assets/trashbin.png" ></a>
+        <a *ngIf="item"><img src="../assets/speaker.png" ></a>
+      </li>
+    </ol>
+  </div>
+
+  <button class="divisor" (click)="playSound()">&harr; <br> Morse <br> &harr; </button>
+  <!-- Translate file-->
+  <div id="result-pane">
+    <h2> Encode text file </h2>
+    <hr>
+    <p>Accept '.txt' files only</p>
+    <input type="file" (change)="fileInput_onChange($event, mOpertor)" accept=".txt" #inputFile >
+    <span id='clear-file' (click)="fileReset()" *ngIf="mOpertor.getfileEncoded()? true: false">clear</span>
+    <p id="morse-time"> Samuel Morse (1791-1872) </p>
+    <span id="morse-code">
+      <span id="clear-btn" *ngIf="mOpertor.getfileEncoded()? true: false">
+        <img src="../assets/speaker.png">
+      </span>
+      <p> File Morse Code Translation. <br> {{mOpertor.getfileEncoded()}}</p>
+    </span>
+  </div>
+
+  <footer>
+    <label> &copy; Tanner Phan 2017</label>
+  </footer>
+</div>

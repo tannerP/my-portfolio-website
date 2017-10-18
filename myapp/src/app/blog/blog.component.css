@@ -3,63 +3,73 @@ html, body {
   height: 100%;
   margin: 0; }
 
+/*
+
 div#utility {
-  background-color: #333333;
-  color: #ffa117;
-  height: auto;
+  color: $cust-orange;
+  height: 30%;
   opacity: 1;
-  padding-bottom: 3%; }
-  div#utility h1#portfolio {
+  padding-bottom: 3%;
+  h1#portfolio {
     padding-top: 5%;
     padding-bottom: 3%;
     font-size: 4.2em;
-    color: #ffa117;
-    text-align: center; }
-  div#utility span {
+    color: $cust-orange;
+    text-align: center;
+  }
+  span {
+    //position: relative;
     margin-left: 15%;
-    font-size: 1em; }
-  div#utility a#right_side {
+    font-size: 1em;
+  }
+  a#right_side {
     text-decoration: none;
     width: auto;
     height: auto;
-    color: #ffa117;
+    color: $cust-orange;
     position: absolute;
     right: 15%;
     font-size: 1em;
     font-weight: 600;
-    text-align: right; }
+    text-align: right;
+  }
+}
 
 div#content {
+  background-color: $seattle_green;
   opacity: .9;
   width: 90%;
-  background-color: white; }
-  div#content ul {
-    background-color: white;
-    width: 85%;
-    height: 110%;
+  height: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  ul {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+    height: 100%;
     padding-top: 20px;
     list-style: none;
-    margin-right: auto;
-    margin-left: auto; }
-    div#content ul li {
+    li {
       margin-top: 2%;
       margin-bottom: 6%;
       height: 26%;
       width: 100%;
-      -webkit-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
-      border-radius: 5px 5px; }
-      div#content ul li h1 {
+      -webkit-box-shadow: -5px 7px 19px 0px #333333;
+      -moz-box-shadow: -5px 7px 19px 0px #333333;
+      box-shadow: -5px 7px 19px 0px #333333;
+      border-radius: 5px 5px;
+      h1 {
         padding-top: 3%;
         text-align: center;
         border-radius: 2px;
         font-size: 1.4em;
-        background-color: #ffa117;
+        background-color: $cust-orange;
         color: white;
         width: 100%;
-        height: 15%; }
-      div#content ul li div#bottom_bar {
+        height: 15%;
+      }
+      div#bottom_bar {
         text-align: right;
         position: relative;
         bottom: -60%;
@@ -67,14 +77,16 @@ div#content {
         height: 15%;
         width: auto;
         border-radius: 5px;
-        opacity: 1; }
-        div#content ul li div#bottom_bar img {
+        opacity: 1;
+        img {
           float: right;
           display: block;
           height: 100%;
           width: auto;
-          margin-right: 2%; }
-        div#content ul li div#bottom_bar button#demo {
+          margin-right: 2%;
+          //height: auto;
+        }
+        button#demo {
           float: right;
           width: 15%;
           height: 100%;
@@ -84,59 +96,450 @@ div#content {
           color: white;
           font-weight: bold;
           font-size: .7em;
-          background-color: #ffa117; }
-
+          background-color: $cust-orange;
+        }
+      }
+    }
+  }
+}
+*/
 @media (orientation: landscape) {
   div#utility {
     background-color: #333333;
     cursor: default;
     padding-top: 2%;
     color: #ffa117;
-    height: 30%;
+    height: auto;
     margin-bottom: 0;
     opacity: 1; }
-    div#utility h1#portfolio {
+    div#utility #portfolio {
+      padding: 0;
       padding-top: 5%;
-      padding-bottom: 5%;
-      font-size: 6em;
+      font-size: 7em;
       color: #ffa117;
       text-align: center; }
-    div#utility span {
+    div#utility #back-arrow {
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 20%;
       margin-left: 15%;
-      margin-bottom: 1%;
-      font-size: 3em; }
-    div#utility a#right_side {
+      font-size: 4em;
+      cursor: pointer; }
+    div#utility #right_side {
       width: auto;
       height: auto;
       color: #ffa117;
       position: absolute;
+      top: 20%;
       right: 15%;
-      font-size: 2em;
+      font-size: 1.4em;
       font-weight: 600;
       text-align: right; }
 
   div#content {
     width: 100%; }
     div#content ul {
+      display: flex;
       opacity: .9;
       height: 100%;
-      width: 75%;
+      width: 95%;
       list-style: none;
-      margin-right: auto;
-      margin-left: auto; }
+      margin: 3% auto; }
       div#content ul li {
-        margin-top: 4%;
-        margin-bottom: 2%;
+        margin: 1%;
         height: 35%;
-        width: 100%;
+        width: 33.33333%;
         -webkit-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         border-radius: 5px 5px; }
-        div#content ul li h1 {
+        div#content ul li h4 {
           text-align: center;
           border-radius: 2px;
           font-size: 2em;
+          background-color: #ffa117;
+          color: white;
+          width: 100%;
+          opacity: 1; }
+        div#content ul li div#bottom_bar {
+          text-align: right;
+          position: relative;
+          height: 30%;
+          width: auto;
+          bottom: -70%;
+          border-radius: 5px;
+          opacity: 1; }
+          div#content ul li div#bottom_bar #github {
+            float: right;
+            position: relative;
+            right: 5%;
+            display: block;
+            height: 50%;
+            width: auto;
+            margin-right: 2%; }
+          div#content ul li div#bottom_bar button#demo {
+            float: right;
+            width: 15%;
+            height: 100%;
+            opacity: 1;
+            padding: 1%;
+            border-radius: 10%;
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            background-color: #ffa117; } }
+@media (orientation: landscape) and (min-width: 750px) {
+  div#utility {
+    height: 30%; }
+
+  #back-arrow {
+    top: 10%;
+    margin-left: 15%;
+    font-size: 4em;
+    cursor: pointer; } }
+/*
+@media(orientation: landscape) and (max-width: $breakpoint-desk-lrg) {
+  div#utility {
+    background-color: #333333;
+    cursor: default;
+    padding-top: 2%;
+    color: $cust-orange;
+    height: 30%;
+    margin-bottom: 0;
+    opacity: 1;
+    h1#portfolio {
+      padding: 0;
+      padding-top: 5%;
+      font-size: 7em;
+      color: $cust-orange;
+      text-align: center;
+    }
+    span {
+      position: absolute;
+      margin-left: 10%;
+      font-size: 3em;
+      top: 23%;
+    }
+    a#right_side {
+      width: auto;
+      height: auto;
+      color: $cust-orange;
+      position: absolute;
+      top: 27%;
+      right: 15%;
+      font-size: 2em;
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+  div#content {
+    background-color: $seattle_green;
+    width: 100%;
+    ul {
+      display: flex;
+      opacity: .9;
+      height: 100%;
+      width: 95%;
+      list-style: none;
+      margin-right: auto;
+      margin-left: auto;
+      li {
+        margin: 1%;
+        //margin-top: 4%;
+        //margin-bottom: 2%;
+        height: 35%;
+        width: 30%;
+        -webkit-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 5px 5px;
+        h1 {
+          text-align: center;
+          border-radius: 2px;
+          font-size: 2em;
+          background-color: $cust-orange;
+          color: white;
+          width: 100%;
+          height: 20%;
+          opacity: 1;
+        }
+        div#bottom_bar {
+          text-align: right;
+          position: relative;
+          height: 30%;
+          width: auto;
+          bottom: -53%;
+          border-radius: 5px;
+          opacity: 1;
+          img {
+            float: right;
+            display: block;
+            height: 50%;
+            width: auto;
+            margin-right: 2%;
+          }
+          button#demo {
+            float: right;
+            width: 15%;
+            height: 100%;
+            opacity: 1;
+            padding: 1%;
+            border-radius: 10%;
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            background-color: $cust-orange;
+          }
+        }
+      }
+    }
+  }
+  @media(min-width: $breakpoint-desk-lrg) {
+    div#utility {
+      background-color: #333333;
+      cursor: default;
+      padding-top: 2%;
+      color: $cust-orange;
+      height: 30%;
+      margin-bottom: 0;
+      opacity: 1;
+      h1#portfolio {
+        padding: 0;
+        padding-top: 3%;
+        font-size: 9em;
+        color: $cust-orange;
+        text-align: center;
+      }
+      span {
+        margin-left: 15%;
+        margin-bottom: 1%;
+        font-size: 5em;
+      }
+      a#right_side {
+        width: auto;
+        height: auto;
+        color: $cust-orange;
+        position: absolute;
+        top: 29%;
+        right: 15%;
+        font-size: 3em;
+        font-weight: 600;
+        text-align: right;
+      }
+    }
+    div#content {
+      width: 100%;
+      ul {
+        opacity: .9;
+        height: 100%;
+        width: 95%;
+        list-style: none;
+        margin-right: auto;
+        margin-left: auto;
+        li {
+          margin-top: 4%;
+          margin-bottom: 2%;
+          height: 35%;
+          width: 33%;
+          -webkit-box-shadow: -5px 7px 19px 0px #333333;
+          -moz-box-shadow: -5px 7px 19px 0px #333333;
+          box-shadow: -5px 7px 19px 0px #333333;
+          border-radius: 5px 5px;
+          h1 {
+
+            text-align: center;
+            border-radius: 2px;
+            font-size: 3em;
+            background-color: $cust-orange;
+            color: white;
+            width: 100%;
+            height: auto;
+            opacity: 1;
+          }
+          div#bottom_bar {
+            text-align: right;
+            position: relative;
+            height: 30%;
+            width: auto;
+            bottom: -53%;
+            border-radius: 5px;
+            opacity: 1;
+            img {
+              float: right;
+              display: block;
+              height: 50%;
+              width: auto;
+              margin-right: 2%;
+            }
+            button#demo {
+              float: right;
+              width: 15%;
+              height: 100%;
+              opacity: 1;
+              padding: 1%;
+              border-radius: 10%;
+              color: white;
+              font-weight: bold;
+              font-size: 1em;
+              background-color: $cust-orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
+@media (orientation: portrait) {
+  div#utility {
+    background-color: #333333;
+    cursor: default;
+    padding-top: 2%;
+    color: #ffa117;
+    height: 20%;
+    width: 100%;
+    margin-bottom: 0;
+    opacity: .8; }
+    div#utility h1#portfolio {
+      padding: 0;
+      padding-top: 5%;
+      font-size: 4em;
+      width: auto;
+      color: #ffa117;
+      text-align: center; }
+    div#utility #back-arrow {
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 15%;
+      left: 7%;
+      font-size: 2em; }
+    div#utility a#right_side {
+      width: auto;
+      height: auto;
+      color: #ffa117;
+      position: absolute;
+      top: 17%;
+      right: 8%;
+      font-size: .8em;
+      font-weight: 800;
+      text-align: right; }
+
+  div#content {
+    background-color: white;
+    width: auto;
+    height: 80%; }
+    div#content ul {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      opacity: .9;
+      height: 100%;
+      width: 100%;
+      list-style: none;
+      padding-top: 5%; }
+      div#content ul li {
+        margin: 2%;
+        height: 30%;
+        width: 80%;
+        -webkit-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 5px 5px; }
+        div#content ul li h4 {
+          vertical-align: center;
+          text-align: center;
+          border-radius: 2px;
+          font-size: 1em;
+          background-color: #ffa117;
+          color: white;
+          width: 100%;
+          height: auto;
+          opacity: 1; }
+        div#content ul li div#bottom_bar {
+          text-align: right;
+          position: relative;
+          height: 30%;
+          width: auto;
+          bottom: -65%;
+          border-radius: 5px;
+          opacity: 1; }
+          div#content ul li div#bottom_bar img {
+            float: right;
+            display: block;
+            height: 50%;
+            width: auto;
+            margin-right: 2%; }
+          div#content ul li div#bottom_bar button#demo {
+            float: right;
+            width: 15%;
+            height: 100%;
+            opacity: 1;
+            padding: 1%;
+            border-radius: 10%;
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            background-color: #ffa117; } }
+@media (orientation: portrait) and (min-width: 750px) {
+  div#utility {
+    background-color: #333333;
+    cursor: default;
+    padding-top: 2%;
+    color: #ffa117;
+    height: 20%;
+    width: 100%;
+    margin-bottom: 0;
+    opacity: 1; }
+    div#utility h1#portfolio {
+      padding: 0;
+      padding-top: 5%;
+      font-size: 6em;
+      width: auto;
+      color: #ffa117;
+      text-align: center; }
+    div#utility span {
+      position: absolute;
+      top: 15%;
+      left: 7%;
+      font-size: 3em; }
+    div#utility a#right_side {
+      width: auto;
+      height: auto;
+      color: #ffa117;
+      position: absolute;
+      top: 17%;
+      right: 8%;
+      font-size: .8em;
+      font-weight: 800;
+      text-align: right; }
+
+  div#content {
+    background-color: white;
+    width: auto;
+    height: 100%; }
+    div#content ul {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      opacity: .9;
+      height: 100%;
+      width: 100%;
+      list-style: none;
+      padding-top: 5%; }
+      div#content ul li {
+        margin: 2%;
+        height: 25%;
+        width: 90%;
+        -webkit-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 5px 5px; }
+        div#content ul li h4 {
+          text-align: center;
+          border-radius: 2px;
+          font-size: 1.8em;
           background-color: #ffa117;
           color: white;
           width: 100%;

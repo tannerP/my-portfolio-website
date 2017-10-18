@@ -29,9 +29,9 @@ export class AppComponent {
   public footer_tog: Boolean = false;
   private current_scroll = Number;
 
-  constructor(@Inject(DOCUMENT) private document: any, private router: Router, private menuSrvc: MenuStateService, private ig: IgService) {
+  constructor(@Inject(DOCUMENT) private document: any, private router: Router,
+              private menuSrvc: MenuStateService, private ig: IgService) {
     setInterval(() => {
-      console.log('Reset');
       this.footer_tog = !this.footer_tog;
     }, 1000 * 4);
   };
