@@ -6,7 +6,7 @@ html, body {
 /*
 
 div#utility {
-  color: $cust-orange;
+  color: ghostwhite;
   height: 30%;
   opacity: 1;
   padding-bottom: 3%;
@@ -14,7 +14,7 @@ div#utility {
     padding-top: 5%;
     padding-bottom: 3%;
     font-size: 4.2em;
-    color: $cust-orange;
+    color: ghostwhite;
     text-align: center;
   }
   span {
@@ -26,7 +26,7 @@ div#utility {
     text-decoration: none;
     width: auto;
     height: auto;
-    color: $cust-orange;
+    color: ghostwhite;
     position: absolute;
     right: 15%;
     font-size: 1em;
@@ -64,7 +64,7 @@ div#content {
         text-align: center;
         border-radius: 2px;
         font-size: 1.4em;
-        background-color: $cust-orange;
+        background-color: ghostwhite;
         color: white;
         width: 100%;
         height: 15%;
@@ -96,7 +96,7 @@ div#content {
           color: white;
           font-weight: bold;
           font-size: .7em;
-          background-color: $cust-orange;
+          background-color: ghostwhite;
         }
       }
     }
@@ -108,45 +108,44 @@ div#content {
     background-color: #333333;
     cursor: default;
     padding-top: 2%;
-    color: #ffa117;
+    color: ghostwhite;
     height: auto;
     margin-bottom: 0;
     opacity: 1; }
     div#utility #portfolio {
       padding: 0;
       padding-top: 5%;
-      font-size: 7em;
-      color: #ffa117;
+      font-size: 4em;
       text-align: center; }
     div#utility #back-arrow {
       width: auto;
       height: auto;
       position: absolute;
-      top: 20%;
+      top: 12%;
       margin-left: 15%;
       font-size: 4em;
       cursor: pointer; }
     div#utility #right_side {
       width: auto;
       height: auto;
-      color: #ffa117;
+      color: ghostwhite;
       position: absolute;
-      top: 20%;
-      right: 15%;
+      top: 15%;
+      right: 10%;
       font-size: 1.4em;
       font-weight: 600;
       text-align: right; }
 
-  div#content {
+  #content {
     width: 100%; }
-    div#content ul {
+    #content ul {
       display: flex;
       opacity: .9;
       height: 100%;
       width: 95%;
       list-style: none;
       margin: 3% auto; }
-      div#content ul li {
+      #content ul li {
         margin: 1%;
         height: 35%;
         width: 33.33333%;
@@ -154,23 +153,23 @@ div#content {
         -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         border-radius: 5px 5px; }
-        div#content ul li h4 {
+        #content ul li h4 {
           text-align: center;
           border-radius: 2px;
-          font-size: 2em;
-          background-color: #ffa117;
+          font-size: 1.5em;
+          background-color: #333333;
           color: white;
-          width: 100%;
+          padding: 2%;
           opacity: 1; }
-        div#content ul li div#bottom_bar {
+        #content ul li #bottom_bar {
           text-align: right;
           position: relative;
           height: 30%;
           width: auto;
-          bottom: -70%;
+          bottom: -26%;
           border-radius: 5px;
           opacity: 1; }
-          div#content ul li div#bottom_bar #github {
+          #content ul li #bottom_bar #github {
             float: right;
             position: relative;
             right: 5%;
@@ -178,7 +177,7 @@ div#content {
             height: 50%;
             width: auto;
             margin-right: 2%; }
-          div#content ul li div#bottom_bar button#demo {
+          #content ul li #bottom_bar button#demo {
             float: right;
             width: 15%;
             height: 100%;
@@ -188,23 +187,36 @@ div#content {
             color: white;
             font-weight: bold;
             font-size: 1em;
-            background-color: #ffa117; } }
+            background-color: ghostwhite; } }
 @media (orientation: landscape) and (min-width: 750px) {
-  div#utility {
+  #utility {
     height: 30%; }
+    #utility #portfolio {
+      font-size: 5em; }
+    #utility #right_side {
+      top: 15%; }
+    #utility #back-arrow {
+      top: 10%;
+      margin-left: 15%;
+      font-size: 4em;
+      cursor: pointer; }
 
-  #back-arrow {
-    top: 10%;
-    margin-left: 15%;
-    font-size: 4em;
-    cursor: pointer; } }
+  #content ul li h4 {
+    text-align: center;
+    border-radius: 2px;
+    font-size: 2em;
+    background-color: #333333;
+    color: white;
+    width: 96%; }
+  #content ul li #bottom_bar {
+    bottom: -65%; } }
 /*
 @media(orientation: landscape) and (max-width: $breakpoint-desk-lrg) {
   div#utility {
     background-color: #333333;
     cursor: default;
     padding-top: 2%;
-    color: $cust-orange;
+    color: ghostwhite;
     height: 30%;
     margin-bottom: 0;
     opacity: 1;
@@ -212,7 +224,7 @@ div#content {
       padding: 0;
       padding-top: 5%;
       font-size: 7em;
-      color: $cust-orange;
+      color: ghostwhite;
       text-align: center;
     }
     span {
@@ -224,7 +236,7 @@ div#content {
     a#right_side {
       width: auto;
       height: auto;
-      color: $cust-orange;
+      color: ghostwhite;
       position: absolute;
       top: 27%;
       right: 15%;
@@ -258,7 +270,7 @@ div#content {
           text-align: center;
           border-radius: 2px;
           font-size: 2em;
-          background-color: $cust-orange;
+          background-color: ghostwhite;
           color: white;
           width: 100%;
           height: 20%;
@@ -289,7 +301,7 @@ div#content {
             color: white;
             font-weight: bold;
             font-size: 1em;
-            background-color: $cust-orange;
+            background-color: ghostwhite;
           }
         }
       }
@@ -300,7 +312,7 @@ div#content {
       background-color: #333333;
       cursor: default;
       padding-top: 2%;
-      color: $cust-orange;
+      color: ghostwhite;
       height: 30%;
       margin-bottom: 0;
       opacity: 1;
@@ -308,7 +320,7 @@ div#content {
         padding: 0;
         padding-top: 3%;
         font-size: 9em;
-        color: $cust-orange;
+        color: ghostwhite;
         text-align: center;
       }
       span {
@@ -319,7 +331,7 @@ div#content {
       a#right_side {
         width: auto;
         height: auto;
-        color: $cust-orange;
+        color: ghostwhite;
         position: absolute;
         top: 29%;
         right: 15%;
@@ -351,7 +363,7 @@ div#content {
             text-align: center;
             border-radius: 2px;
             font-size: 3em;
-            background-color: $cust-orange;
+            background-color: ghostwhite;
             color: white;
             width: 100%;
             height: auto;
@@ -382,7 +394,7 @@ div#content {
               color: white;
               font-weight: bold;
               font-size: 1em;
-              background-color: $cust-orange;
+              background-color: ghostwhite;
             }
           }
         }
@@ -396,7 +408,7 @@ div#content {
     background-color: #333333;
     cursor: default;
     padding-top: 2%;
-    color: #ffa117;
+    color: ghostwhite;
     height: 20%;
     width: 100%;
     margin-bottom: 0;
@@ -406,7 +418,7 @@ div#content {
       padding-top: 5%;
       font-size: 4em;
       width: auto;
-      color: #ffa117;
+      color: ghostwhite;
       text-align: center; }
     div#utility #back-arrow {
       width: auto;
@@ -418,7 +430,7 @@ div#content {
     div#utility a#right_side {
       width: auto;
       height: auto;
-      color: #ffa117;
+      color: ghostwhite;
       position: absolute;
       top: 17%;
       right: 8%;
@@ -434,7 +446,6 @@ div#content {
       align-items: center;
       display: flex;
       flex-direction: column;
-      opacity: .9;
       height: 100%;
       width: 100%;
       list-style: none;
@@ -448,15 +459,15 @@ div#content {
         box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         border-radius: 5px 5px; }
         div#content ul li h4 {
+          padding: 2%;
           vertical-align: center;
           text-align: center;
           border-radius: 2px;
           font-size: 1em;
-          background-color: #ffa117;
+          background-color: #333333;
           color: white;
-          width: 100%;
-          height: auto;
-          opacity: 1; }
+          width: 96%;
+          height: auto; }
         div#content ul li div#bottom_bar {
           text-align: right;
           position: relative;
@@ -481,23 +492,22 @@ div#content {
             color: white;
             font-weight: bold;
             font-size: 1em;
-            background-color: #ffa117; } }
+            background-color: ghostwhite; } }
 @media (orientation: portrait) and (min-width: 750px) {
   div#utility {
     background-color: #333333;
     cursor: default;
     padding-top: 2%;
-    color: #ffa117;
+    color: ghostwhite;
     height: 20%;
     width: 100%;
-    margin-bottom: 0;
-    opacity: 1; }
+    margin-bottom: 0; }
     div#utility h1#portfolio {
       padding: 0;
       padding-top: 5%;
       font-size: 6em;
       width: auto;
-      color: #ffa117;
+      color: ghostwhite;
       text-align: center; }
     div#utility span {
       position: absolute;
@@ -507,7 +517,7 @@ div#content {
     div#utility a#right_side {
       width: auto;
       height: auto;
-      color: #ffa117;
+      color: ghostwhite;
       position: absolute;
       top: 17%;
       right: 8%;
@@ -516,7 +526,6 @@ div#content {
       text-align: right; }
 
   div#content {
-    background-color: white;
     width: auto;
     height: 100%; }
     div#content ul {
@@ -536,15 +545,6 @@ div#content {
         -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         border-radius: 5px 5px; }
-        div#content ul li h4 {
-          text-align: center;
-          border-radius: 2px;
-          font-size: 1.8em;
-          background-color: #ffa117;
-          color: white;
-          width: 100%;
-          height: 20%;
-          opacity: 1; }
         div#content ul li div#bottom_bar {
           text-align: right;
           position: relative;
@@ -569,6 +569,6 @@ div#content {
             color: white;
             font-weight: bold;
             font-size: 1em;
-            background-color: #ffa117; } }
+            background-color: ghostwhite; } }
 
 /*# sourceMappingURL=blog.component.css.map */

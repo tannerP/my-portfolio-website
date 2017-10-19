@@ -2,7 +2,7 @@
 /*
 
 div#utility {
-  color: $cust-orange;
+  color: ghostwhite;
   height: 30%;
   opacity: 1;
   padding-bottom: 3%;
@@ -10,7 +10,7 @@ div#utility {
     padding-top: 5%;
     padding-bottom: 3%;
     font-size: 4.2em;
-    color: $cust-orange;
+    color: ghostwhite;
     text-align: center;
   }
   span {
@@ -22,7 +22,7 @@ div#utility {
     text-decoration: none;
     width: auto;
     height: auto;
-    color: $cust-orange;
+    color: ghostwhite;
     position: absolute;
     right: 15%;
     font-size: 1em;
@@ -60,7 +60,7 @@ div#content {
         text-align: center;
         border-radius: 2px;
         font-size: 1.4em;
-        background-color: $cust-orange;
+        background-color: ghostwhite;
         color: white;
         width: 100%;
         height: 15%;
@@ -92,7 +92,7 @@ div#content {
           color: white;
           font-weight: bold;
           font-size: .7em;
-          background-color: $cust-orange;
+          background-color: ghostwhite;
         }
       }
     }
@@ -106,22 +106,21 @@ div#content {
     background-color: #333333;
     cursor: default;
     padding-top: 2%;
-    color: $cust-orange;
+    color: ghostwhite;
     height: auto;
     margin-bottom: 0;
     opacity: 1;
     #portfolio {
       padding: 0;
       padding-top: 5%;
-      font-size: 7em;
-      color: $cust-orange;
+      font-size: 4em;
       text-align: center;
     }
     #back-arrow{
       width: auto;
       height: auto;
       position: absolute;
-      top: 20%;
+      top: 12%;
       margin-left: 15%;
       font-size: 4em;
       cursor: pointer;
@@ -129,16 +128,16 @@ div#content {
     #right_side {
       width: auto;
       height: auto;
-      color: $cust-orange;
+      color: ghostwhite;
       position: absolute;
-      top: 20%;
-      right: 15%;
+      top: 15%;
+      right: 10%;
       font-size: 1.4em;
       font-weight: 600;
       text-align: right;
     }
   }
-  div#content {
+  #content {
     width: 100%;
     ul {
       display: flex;
@@ -147,11 +146,8 @@ div#content {
       width: 95%;
       list-style: none;
       margin: 3% auto;
-
       li {
         margin: 1%;
-        //margin-top: 4%;
-        //margin-bottom: 2%;
         height: 35%;
         width: 33.33333%;
         -webkit-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
@@ -161,25 +157,25 @@ div#content {
         h4 {
           text-align: center;
           border-radius: 2px;
-          font-size: 2em;
-          background-color: $cust-orange;
+          font-size: 1.5em;
+          background-color: #333333;
           color: white;
-          width: 100%;
+          padding: 2%;
+          //width: 92%;
           //height: 20%;
           opacity: 1;
         }
-        div#bottom_bar {
+        #bottom_bar {
           text-align: right;
           position: relative;
           height: 30%;
           width: auto;
-          bottom: -70%;
+          bottom: -26%;
           border-radius: 5px;
           opacity: 1;
           #github {
             float: right;
             position: relative;
-            //top: - 5%;
             right: 5%;
             display: block;
             height: 50%;
@@ -196,21 +192,48 @@ div#content {
             color: white;
             font-weight: bold;
             font-size: 1em;
-            background-color: $cust-orange;
+            background-color: ghostwhite;
           }
         }
       }
     }
   }
   @media(min-width: $breakpoint-tablet) {
-    div#utility {
-      height: 30%
+    #utility {
+      height: 30%;
+      #portfolio {
+        font-size: 5em;
+      }
+      #right_side {
+        top: 15%;
+      }
+      #back-arrow {
+        top: 10%;
+        margin-left: 15%;
+        font-size: 4em;
+        cursor: pointer;
+      }
     }
-    #back-arrow{
-      top: 10%;
-      margin-left: 15%;
-      font-size: 4em;
-      cursor: pointer;
+    #content {
+      ul {
+        li {
+          h4 {
+            text-align: center;
+            border-radius: 2px;
+            font-size: 2em;
+            background-color: #333333;
+            color: white;
+            width: 96%;
+          }
+          #bottom_bar {
+            bottom: -65%;
+            #github {
+            }
+            button#demo {
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -221,7 +244,7 @@ div#content {
     background-color: #333333;
     cursor: default;
     padding-top: 2%;
-    color: $cust-orange;
+    color: ghostwhite;
     height: 30%;
     margin-bottom: 0;
     opacity: 1;
@@ -229,7 +252,7 @@ div#content {
       padding: 0;
       padding-top: 5%;
       font-size: 7em;
-      color: $cust-orange;
+      color: ghostwhite;
       text-align: center;
     }
     span {
@@ -241,7 +264,7 @@ div#content {
     a#right_side {
       width: auto;
       height: auto;
-      color: $cust-orange;
+      color: ghostwhite;
       position: absolute;
       top: 27%;
       right: 15%;
@@ -275,7 +298,7 @@ div#content {
           text-align: center;
           border-radius: 2px;
           font-size: 2em;
-          background-color: $cust-orange;
+          background-color: ghostwhite;
           color: white;
           width: 100%;
           height: 20%;
@@ -306,7 +329,7 @@ div#content {
             color: white;
             font-weight: bold;
             font-size: 1em;
-            background-color: $cust-orange;
+            background-color: ghostwhite;
           }
         }
       }
@@ -317,7 +340,7 @@ div#content {
       background-color: #333333;
       cursor: default;
       padding-top: 2%;
-      color: $cust-orange;
+      color: ghostwhite;
       height: 30%;
       margin-bottom: 0;
       opacity: 1;
@@ -325,7 +348,7 @@ div#content {
         padding: 0;
         padding-top: 3%;
         font-size: 9em;
-        color: $cust-orange;
+        color: ghostwhite;
         text-align: center;
       }
       span {
@@ -336,7 +359,7 @@ div#content {
       a#right_side {
         width: auto;
         height: auto;
-        color: $cust-orange;
+        color: ghostwhite;
         position: absolute;
         top: 29%;
         right: 15%;
@@ -368,7 +391,7 @@ div#content {
             text-align: center;
             border-radius: 2px;
             font-size: 3em;
-            background-color: $cust-orange;
+            background-color: ghostwhite;
             color: white;
             width: 100%;
             height: auto;
@@ -399,7 +422,7 @@ div#content {
               color: white;
               font-weight: bold;
               font-size: 1em;
-              background-color: $cust-orange;
+              background-color: ghostwhite;
             }
           }
         }
@@ -414,7 +437,7 @@ div#content {
     background-color: #333333;
     cursor: default;
     padding-top: 2%;
-    color: $cust-orange;
+    color: ghostwhite;
     height: 20%;
     width: 100%;
     margin-bottom: 0;
@@ -424,7 +447,7 @@ div#content {
       padding-top: 5%;
       font-size: 4em;
       width: auto;
-      color: $cust-orange;
+      color: ghostwhite;
       text-align: center;
     }
     #back-arrow {
@@ -438,7 +461,7 @@ div#content {
     a#right_side {
       width: auto;
       height: auto;
-      color: $cust-orange;
+      color: ghostwhite;
       position: absolute;
       top: 17%;
       right: 8%;
@@ -446,8 +469,7 @@ div#content {
       font-weight: 800;
       text-align: right;
     }
-  }
-  div#content {
+  }  div#content {
     background-color: white;
     width: auto;
     height: 80%;
@@ -455,12 +477,10 @@ div#content {
       align-items: center;
       display: flex;
       flex-direction: column;
-      opacity: .9;
       height: 100%;
       width: 100%;
       list-style: none;
       padding-top: 5%;
-      //margin: 0 5% 0 auto;
       li {
         margin: 2%;
         height: 30%;
@@ -470,15 +490,15 @@ div#content {
         box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
         border-radius: 5px 5px;
         h4 {
+          padding: 2%;
           vertical-align: center;
           text-align: center;
           border-radius: 2px;
           font-size: 1em;
-          background-color: $cust-orange;
+          background-color: #333333;
           color: white;
-          width: 100%;
+          width: 96%;
           height: auto;
-          opacity: 1;
         }
         div#bottom_bar {
           text-align: right;
@@ -505,7 +525,7 @@ div#content {
             color: white;
             font-weight: bold;
             font-size: 1em;
-            background-color: $cust-orange;
+            background-color: ghostwhite;
           }
         }
       }
@@ -517,17 +537,16 @@ div#content {
       background-color: #333333;
       cursor: default;
       padding-top: 2%;
-      color: $cust-orange;
+      color: ghostwhite;
       height: 20%;
       width: 100%;
       margin-bottom: 0;
-      opacity: 1;
       h1#portfolio {
         padding: 0;
         padding-top: 5%;
         font-size: 6em;
         width: auto;
-        color: $cust-orange;
+        color: ghostwhite;
         text-align: center;
       }
       span {
@@ -539,7 +558,7 @@ div#content {
       a#right_side {
         width: auto;
         height: auto;
-        color: $cust-orange;
+        color: ghostwhite;
         position: absolute;
         top: 17%;
         right: 8%;
@@ -549,7 +568,6 @@ div#content {
       }
     }
     div#content {
-      background-color: white;
       width: auto;
       height: 100%;
       ul {
@@ -572,16 +590,6 @@ div#content {
           -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
           box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
           border-radius: 5px 5px;
-          h4 {
-            text-align: center;
-            border-radius: 2px;
-            font-size: 1.8em;
-            background-color: $cust-orange;
-            color: white;
-            width: 100%;
-            height: 20%;
-            opacity: 1;
-          }
           div#bottom_bar {
             text-align: right;
             position: relative;
@@ -607,7 +615,7 @@ div#content {
               color: white;
               font-weight: bold;
               font-size: 1em;
-              background-color: $cust-orange;
+              background-color: ghostwhite;
             }
           }
         }

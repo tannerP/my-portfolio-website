@@ -19,7 +19,7 @@ h1, h2, h3, h4, p, ol, ul {
   height: auto;
   width: auto; }
 
-@media (max-width: 425px) {
+@media (max-width: 340px) {
   scroll-snap-points-y: repeat(100%);
   scroll-snap-destination: 0% 0%;
   scroll-snapp-type: mandatory; }
