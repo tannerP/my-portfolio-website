@@ -35,41 +35,48 @@
     </tr>
   </table>
 </div>-->
-<!--<span id="banner-text">-->
-<!--</span>-->
 <img id="lane_detection" src="../../assets/medias/lane_detection.gif">
 <h1> Design &middot; Code &middot; Create</h1>
-<!--<div id="seattle_based_slogan"></div>-->
-<div id="about">
-  <h2> About </h2>
-  <br>
-  <p>
-    I'm a software engineer based in Seattle Washington. I focus on IoT applications and development.
-    I've had the fundamental backgrounds: Physics, Math, Computer Science in my undergrad education.
-    In 2015, I shifted my focus toward web application development.
-    And by 2016, I was working on a startup with three other people that were, on average, 6 years older than me.
-    Of course the startup was unsuccessful. Nevertheless, I grew and learned a ton from building the startup
-    with some really passionate people. Now I'm looking for a position as a full-stack application developer.
-  </p>
-</div>
 <div id="tanner_card">
-  <a id="portfolio" (click)="click_portfolio()"> Portfolio</a>
+  <a id="portfolio_sign" (click)="click_portfolio()"> Portfolio</a>
   <img src="../../assets/medias/me_standing.png">
 </div>
+<div id="twitter_box">
+  <span id="twitter_content">
+    <p id="content">
+      Software Developer Based in Seattle, WA.
+    </p>
+  </span>
+</div>
 <div id="footer">
-<span id="socialmedia">
-<a href='https://www.linkedin.com/in/tanner-phan-b70999aa/' target='_top'>
-<img class="social_icon" src="assets/medias/linkedin_blk.png">
-</a>
-<a href='https://twitter.com/tannerphan?lang=en' target='_top'>
-<img class="social_icon" src="assets/medias/twitter.png">
-</a>
-<a href='https://www.instagram.com/tann3rphan/' target='_top'>
-<img class="social_icon" src="assets/medias/instagram.png">
-</a>
-<a href='https://github.com/tannerP' target='_top'>
-<img class="social_icon" src="assets/medias/github_blk.png">
-</a>
-</span>
+
+  <!--Social Media-->
+  <span id="socialmedia">
+    <a class="social_icon" href='https://www.linkedin.com/in/tanner-phan-b70999aa/' target='_top'>
+      <img src="assets/medias/linkedin_blk.png">
+    </a>
+    <a class="social_icon" href='https://twitter.com/tannerphan?lang=en' target='_top'>
+      <img src="assets/medias/twitter.png">
+    </a>
+    <a class="social_icon" href='https://www.instagram.com/tann3rphan/' target='_top'>
+      <img src="assets/medias/instagram.png">
+    </a>
+    <a class="social_icon" href='https://github.com/tannerP' target='_top'>
+      <img src="assets/medias/github_blk.png">
+    </a>
+  </span>
+
+  <!--MENU-->
+  <span id="menu">
+    <label> Menu: </label>
+    <br>
+    <ul>
+      <li> Blog  </li>
+      <li (click)="click_portfolio()"> Portfolio </li>
+    </ul>
+  </span>
+
+  <!--COPY RIGHTS-->
   <p> &copy; Tanner Phan 2017</p>
+
 </div>

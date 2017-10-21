@@ -4,6 +4,7 @@ import { IgService } from '../services/ig.service';
 import { DOCUMENT } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import {trigger, state, style, animate, transition} from '@angular/animations';
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -23,7 +24,7 @@ export class MainComponent implements OnInit {
     this.menu_state =  'about';
   }
   click_portfolio(): any {
-    this.router.navigateByUrl('blog');
+    this.router.navigateByUrl('portfolio');
   }
   change_opacity( opa: number): any {
     // this.opacity = opa;? opa|.5;

@@ -17,7 +17,7 @@ import { LearnMorseCodeComponent } from './learn-morse-code/learn-morse-code.com
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'blog',    component: BlogComponent },
+  { path: 'portfolio',    component: BlogComponent },
   { path: 'app/morsecode',    component: LearnMorseCodeComponent},
   { path: '**',         redirectTo: '' },
 ];
