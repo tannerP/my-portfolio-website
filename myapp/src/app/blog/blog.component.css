@@ -119,13 +119,13 @@ div#content {
     color: ghostwhite;
     text-align: center; }
   #utility #back_arrow {
+    cursor: pointer;
     position: absolute;
     top: 15%;
     left: 7%;
     font-size: 3em;
     width: auto;
-    height: auto;
-    opacity: .8; }
+    height: auto; }
   #utility #right_side {
     width: auto;
     height: auto;
@@ -178,13 +178,12 @@ div#content {
         display: block;
         height: 35px;
         width: auto;
-        margin-right: 2%; }
+        margin-right: 10px; }
       #content ul li .bottom_bar .demo_btn {
         text-decoration: none;
         border-radius: 3px;
         border: solid 1px;
         background-color: #feae1c;
-        padding: 1px;
         padding-right: 3px;
         padding-left: 3px;
         font-size: 1.2em;
@@ -196,6 +195,22 @@ div#content {
         height: auto;
         margin-right: 10px;
         margin-top: 4px; }
+      #content ul li .bottom_bar .notebook_btn {
+        margin-right: 10px;
+        margin-top: 4px;
+        width: auto;
+        height: auto;
+        display: block;
+        color: white;
+        background-color: white;
+        border-radius: 3px;
+        border: solid 1px;
+        float: right;
+        padding-right: 7px;
+        padding-left: 7px; }
+        #content ul li .bottom_bar .notebook_btn .notebook {
+          height: 22px;
+          width: auto; }
   #content ul li:active, #content ul li:hover {
     background-color: #bdbdbd; }
 
@@ -263,7 +278,89 @@ div#content {
         height: 35px; }
       #content ul li .bottom_bar {
         position: relative;
-        top: 165px;
+        top: 170px;
+        float: right;
+        border-radius: 5px;
+        display: table-footer-group;
+        vertical-align: bottom;
+        height: auto; }
+        #content ul li .bottom_bar .github {
+          float: right;
+          display: block;
+          height: 35px;
+          width: auto;
+          margin-right: 2%; }
+        #content ul li .bottom_bar .demo_btn {
+          padding: 1px;
+          padding-right: 8px;
+          padding-left: 8px; }
+    #content ul li:active, #content ul li:hover {
+      background-color: #bdbdbd; } }
+@media (orientation: landscape) and (min-width: 1000px) {
+  #utility {
+    background-color: #333333;
+    cursor: default;
+    padding-top: 2%;
+    color: ghostwhite;
+    height: 25%;
+    width: 100%;
+    margin-bottom: 0; }
+    #utility #portfolio {
+      padding: 0;
+      padding-top: 2%;
+      font-size: 8em;
+      width: auto;
+      color: ghostwhite;
+      text-align: center; }
+    #utility #back_arrow {
+      position: absolute;
+      top: 15%;
+      left: 7%;
+      font-size: 4em;
+      width: auto;
+      height: auto;
+      opacity: .8; }
+    #utility #right_side {
+      width: auto;
+      height: auto;
+      color: ghostwhite;
+      position: absolute;
+      top: 22%;
+      right: 8%;
+      font-size: 1.2em;
+      font-weight: 800;
+      text-align: right; }
+
+  #content ul {
+    align-items: center;
+    opacity: .9;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    padding-top: 3%; }
+    #content ul li {
+      margin: 2%;
+      margin-top: 1%;
+      background-color: #4b4b4b;
+      background-blend-mode: overlay;
+      -webkit-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: -5px 7px 19px 0px rgba(0, 0, 0, 0.75);
+      border-radius: 5px 5px;
+      width: 29%;
+      height: 260px;
+      float: left; }
+      #content ul li .card_title {
+        text-align: center;
+        border-radius: 2px;
+        font-size: 1.4em;
+        background-color: #333333;
+        color: white;
+        padding: 2%;
+        height: 35px; }
+      #content ul li .bottom_bar {
+        position: relative;
+        top: 160px;
         float: right;
         border-radius: 5px;
         display: table-footer-group;
@@ -302,13 +399,28 @@ div#content {
         padding: 2%;
         height: 20%; }
       #content ul li .bottom_bar {
-        top: 100px; }
+        top: 105px; }
         #content ul li .bottom_bar .github {
           height: 25px; }
         #content ul li .bottom_bar .demo_btn {
           font-size: 1em;
           padding-left: 5px;
-          margin-top: 2px; } }
+          margin-top: 2px; }
+        #content ul li .bottom_bar .notebook_btn {
+          margin-right: 10px;
+          width: auto;
+          height: auto;
+          display: block;
+          color: #feae1c;
+          background-color: white;
+          border-radius: 3px;
+          border: solid 1px;
+          float: right;
+          padding-right: 7px;
+          padding-left: 7px; }
+          #content ul li .bottom_bar .notebook_btn .notebook {
+            height: 16px;
+            width: auto; } }
 @media (orientation: portrait) and (min-width: 600px) {
   #utility {
     height: 20%; }
@@ -331,10 +443,25 @@ div#content {
       font-size: 1.8em;
       height: 18%; }
     #content ul li .bottom_bar {
-      top: 102px; }
+      top: 97px; }
       #content ul li .bottom_bar .demo_btn {
-        margin-top: 0;
+        margin-top: 3px;
         padding-left: 4px;
-        padding-right: 4px; } }
+        padding-right: 4px; }
+      #content ul li .bottom_bar .notebook_btn {
+        margin-right: 10px;
+        width: auto;
+        height: auto;
+        display: block;
+        color: #feae1c;
+        background-color: white;
+        border-radius: 3px;
+        border: solid 1px;
+        float: right;
+        padding-right: 5px;
+        padding-left: 5px; }
+        #content ul li .bottom_bar .notebook_btn .notebook {
+          height: 16px;
+          width: auto; } }
 
 /*# sourceMappingURL=blog.component.css.map */

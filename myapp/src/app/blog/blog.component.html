@@ -11,13 +11,20 @@
     <li *ngFor="let project of projects"
         [style.background-image] = " 'url(' + project.path + ')'"
         style="background-position: center">
-        <h4 class="card_title">Project: {{project.name}}</h4>
+        <h4 class="card_title"> {{project.name}}</h4>
 
         <span class='bottom_bar'>
-          <a class="demo_btn" href="{{project.demo}}" *ngIf="project.demo">
+
+          <a class="notebook_btn" href="{{project.jNoteBook}}" *ngIf="project.jNoteBook"
+             target="_blank">
+              <img class="notebook" src="../../assets/medias/notebook_icon.png">
+          </a>
+          <!--DEMO-->
+          <a class="demo_btn" href="{{project.demo}}" *ngIf="project.demo"  target="_blank">
           &#9658;
           </a>
-          <a href="{{project.github}}">
+          <!--GITHUB-->
+          <a href="{{project.github}}"  target="_blank" *ngIf="project.github">
             <img class="github" src="../../assets/medias/github.png">
           </a>
       </span>

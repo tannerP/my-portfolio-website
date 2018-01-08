@@ -13,16 +13,15 @@ export class BlogComponent implements OnInit, AfterViewInit {
       length: 'Jan - July, 2016',
       projectType: 'Full-stack Dev',
       path: '../../assets/medias/sketchapp_background.png',
-      func: 'demo',
-      github: 'https://github.com/tannerP/BittyCasting',
+      demo: 'https://bittycasting-8e9f4.firebaseapp.com/',
     },
     {
-      name: 'Lane Detection',
+      name: 'Lane Detecting',
       length: 'Feb 2017',
       projectType: 'Video Processing',
       path: '../../assets/medias/selfDrivingCar_blakwhite.png',
-      func: 'play',
-      github: 'https://github.com/tannerP/detect_driving_lanes',
+      jNoteBook: 'https://github.com/tannerP/detect_driving_lanes',
+      github: 'https://github.com/tannerP/detect_driving_lanes'
     },
     // {
     //   name: 'My Portfolio',
@@ -33,22 +32,19 @@ export class BlogComponent implements OnInit, AfterViewInit {
     //   github: 'https://github.com/tannerP/my-portfolio-website',
     // },
     {
-      name: 'Basketball Maps',
+      name: 'My Seattle Ball Parks',
       length: 'Aug 2017',
       projectType: 'Website Design',
       path: '../../assets/medias/bbparks_app.png',
-      func: 'read',
       demo: 'https://basketballmap.firebaseapp.com/',
       github: 'https://github.com/tannerP/seattle-bbparks-weather',
     },
     {
-      name: 'Morse Code App',
+      name: 'Learn Morse Code',
       length: 'Aug 2017',
       projectType: 'Website Design',
       path: '../../assets/medias/morsecode_app.png',
-      func: 'read',
       demo: 'https://russell-demo.firebaseapp.com',
-      github: 'https://github.com/tannerP/morse-code-web-app',
     },
   ];
   constructor(private router: Router, @Inject(DOCUMENT) private document: any) { }
